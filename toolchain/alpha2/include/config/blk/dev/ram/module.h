@@ -1,1 +1,0 @@
-#define CONFIG_BLK_DEV_RAM_MODULE 1

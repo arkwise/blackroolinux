@@ -106,7 +106,7 @@ ifdef CONFIG_PLAYSTATION
 CORE_FILES    += arch/mipsnommu/ps/ps.o
 SUBDIRS       += arch/mipsnommu/ps arch/mipsnommu/ps/prom
 LIBS          += arch/mipsnommu/ps/prom/prom.a
-LOADADDR      += 0x80010000
+LOADADDR      += 0x10000
 ifdef CONFIG_PS_GPU_CONSOLE 
 SUBDIRS	      += arch/mipsnommu/ps/libpsx
 LIBS          += arch/mipsnommu/ps/libpsx/libpsx.a
@@ -139,15 +139,15 @@ LIBS := arch/mipsnommu/lib/lib.a $(LIBS)
 
 MAKEBOOT = $(MAKE) -C arch/$(ARCH)/boot
 
-linux.ecoff: linux
+vmlinux.ecoff: vmlinux
 	@$(MAKEBOOT) $@
 
-zImage: linux
+zImage: vmlinux
 	@$(MAKEBOOT) zImage
 
 compressed: zImage
 
-zdisk: linux
+zdisk: vmlinux
 	@$(MAKEBOOT) zdisk
 
 archclean:

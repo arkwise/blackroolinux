@@ -1,1 +1,0 @@
-#define CONFIG_CPU_R3000 1

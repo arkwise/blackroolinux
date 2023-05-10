@@ -23,7 +23,7 @@
 #include <linux/mman.h>
 #include <linux/proc_fs.h>
 #include <asm/uaccess.h>
-#include <sysivpc.h>
+
 #include "util.h"
 
 struct shmid_kernel /* private to the kernel */

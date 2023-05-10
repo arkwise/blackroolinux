@@ -1,1 +1,0 @@
-#define CONFIG_MIPS_FPU_EMULATOR 1

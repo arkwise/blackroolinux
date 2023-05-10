@@ -1,1 +1,0 @@
-#undef  CONFIG_PSX_MEM_CARD
