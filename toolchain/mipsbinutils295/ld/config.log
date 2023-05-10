@@ -1,0 +1,129 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:605: checking host system type
+configure:626: checking target system type
+configure:644: checking build system type
+configure:679: checking for a BSD compatible install
+configure:732: checking whether build environment is sane
+configure:789: checking whether make sets ${MAKE}
+configure:835: checking for working aclocal
+configure:848: checking for working autoconf
+configure:861: checking for working automake
+configure:874: checking for working autoheader
+configure:887: checking for working makeinfo
+configure:973: checking for ranlib
+configure:1003: checking for gcc
+configure:1116: checking whether the C compiler (gcc -g -O2 -W -Wall ) works
+configure:1132: gcc -o conftest -g -O2 -W -Wall   conftest.c  1>&5
+configure:1129:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ 1129 | main(){return(0);}
+      | ^~~~
+configure:1158: checking whether the C compiler (gcc -g -O2 -W -Wall ) is a cross-compiler
+configure:1163: checking whether we are using GNU C
+configure:1191: checking whether gcc accepts -g
+configure:1234: checking for ld used by GCC
+configure:1297: checking if the linker (/usr/bin/ld) is GNU ld
+configure:1313: checking for BSD-compatible nm
+configure:1351: checking command to parse /usr/bin/nm -B output
+configure:1516: checking for _ prefix in compiled symbols
+configure:1554: checking whether ln -s works
+ltconfig:586: checking for object suffix
+ltconfig:587: gcc -c -g -O2 -W -Wall  conftest.c 1>&5
+ltconfig:717: checking if gcc PIC flag -fPIC works
+ltconfig:718: gcc -c -g -O2 -W -Wall -fPIC -DPIC  conftest.c 1>&5
+ltconfig:760: checking if gcc supports -c -o file.o
+ltconfig:761: gcc -c -g -O2 -W -Wall -c -o conftest2.o  conftest.c 1>&5
+ltconfig:788: checking if gcc supports -c -o file.lo
+ltconfig:789: gcc -c -g -O2 -W -Wall -c -o conftest.lo  conftest.c 1>&5
+ltconfig:840: checking if gcc supports -fno-rtti -fno-exceptions
+ltconfig:841: gcc -c -g -O2 -W -Wall -fno-rtti -fno-exceptions -c conftest.c  conftest.c 1>&5
+ltconfig:884: checking if gcc static flag -static works
+ltconfig:885: gcc -o conftest -g -O2 -W -Wall   -static conftest.c  1>&5
+conftest.c:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+    1 | main(){return(0);}
+      | ^~~~
+GNU ld (GNU Binutils for Ubuntu) 2.34
+ltconfig:1447: checking if global_symbol_pipe works
+ltconfig:1448: gcc -c -g -O2 -W -Wall  conftest.c 1>&5
+conftest.c:9:1: warning: return type defaults to 'int' [-Wimplicit-int]
+    9 | main(){nm_test_var='a';nm_test_func();return(0);}
+      | ^~~~
+ltconfig:1451: eval "/usr/bin/nm -B conftest.o | sed -n -e 's/^.*[ 	]\([ABCDGISTW]\)[ 	][ 	]*\(\)\([_A-Za-z][_A-Za-z0-9]*\)$/  /p' > conftest.nm"
+ltconfig:1503: gcc -o conftest -g -O2 -W -Wall -fno-builtin   conftest.c conftestm.o 1>&5
+conftest.c:6:13: warning: 'main' is usually a function [-Wmain]
+    6 | extern char main;
+      |             ^~~~
+configure:1921: checking for gcc
+configure:2034: checking whether the C compiler (gcc -g -O2 -W -Wall ) works
+configure:2050: gcc -o conftest -g -O2 -W -Wall   conftest.c  1>&5
+configure:2047:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ 2047 | main(){return(0);}
+      | ^~~~
+configure:2076: checking whether the C compiler (gcc -g -O2 -W -Wall ) is a cross-compiler
+configure:2081: checking whether we are using GNU C
+configure:2109: checking whether gcc accepts -g
+configure:2152: checking for a BSD compatible install
+configure:2207: checking how to run the C preprocessor
+configure:2287: checking for POSIXized ISC
+configure:2308: checking for ANSI C header files
+configure:2412: checking for working const
+configure:2487: checking for inline
+configure:2527: checking for off_t
+configure:2560: checking for size_t
+configure:2595: checking for working alloca.h
+configure:2628: checking for alloca
+configure:2830: checking for unistd.h
+configure:2869: checking for getpagesize
+configure:2922: checking for working mmap
+configure:3098: checking for argz.h
+configure:3098: checking for limits.h
+configure:3098: checking for locale.h
+configure:3098: checking for nl_types.h
+configure:3098: checking for malloc.h
+configure:3098: checking for string.h
+configure:3098: checking for unistd.h
+configure:3098: checking for values.h
+configure:3098: checking for sys/param.h
+configure:3138: checking for getcwd
+configure:3138: checking for munmap
+configure:3138: checking for putenv
+configure:3138: checking for setenv
+configure:3138: checking for setlocale
+configure:3138: checking for strchr
+configure:3138: checking for strcasecmp
+configure:3138: checking for __argz_count
+configure:3138: checking for __argz_stringify
+configure:3138: checking for __argz_next
+configure:3257: checking for LC_MESSAGES
+configure:3290: checking whether NLS is requested
+configure:3310: checking whether included gettext is requested
+configure:3329: checking for libintl.h
+configure:3356: checking for gettext in libc
+configure:3459: checking for msgfmt
+configure:3656: checking for msgfmt
+configure:3690: checking for gmsgfmt
+configure:3726: checking for xgettext
+configure:3917: checking for Cygwin environment
+configure:3950: checking for mingw32 environment
+configure:3981: checking for executable suffix
+configure:4017: checking for bison
+configure:4017: checking for byacc
+configure:4053: checking for flex
+configure:4086: checking for flex
+configure:4120: checking for yywrap in -lfl
+configure:4162: checking lex output file root
+configure:4183: checking whether yytext is a pointer
+configure:4225: checking whether to enable maintainer-specific portions of Makefiles
+configure:4259: checking for string.h
+configure:4259: checking for strings.h
+configure:4259: checking for stdlib.h
+configure:4259: checking for unistd.h
+configure:4298: checking for sbrk
+configure:4355: checking for dirent.h that defines DIR
+configure:4393: checking for opendir in -ldir
+configure:4486: checking whether strstr must be declared
+configure:4533: checking whether free must be declared
+configure:4580: checking whether sbrk must be declared
+configure:4627: checking whether getenv must be declared
+configure:4674: checking whether environ must be declared

@@ -1,0 +1,66 @@
+            PSXLinux kernel beta 1 release.
+            --------------------------------
+            
+   This archive contains beta 1 release of Linux kernel for Sony Playstation - PSXLinux.
+PSXLinux based on uClinux 2.4.x kernel (www.uClinux.com) and contains specific support
+for Sony Playstation.
+  Essential features were added:
+1. virtual console over Playstation GPU improved;
+2. Playstation memory card block driver improved:
+ - some bugs fixed;
+ - large memory card (4x,...) support added;
+ - two memory cards into one device joining support added;
+3. console over Playstation SIO added (115200, 8N1);
+4. Runix hardware add-on supported:
+ - USB host controller SL811H driver with keyboard and mouse support;
+ - RTC support.
+
+INSTALLATION:
+-------------      
+I. Prerequistes.
+            
+   To compile PSXLinux kernel you will need:
+	1. Cross-compiler (egcc-1.1.2) and binutils-2.9.5 for Linux/i386 host
+        and MIPS little endian target. Binaries may be downloaded from 
+	http://www.runix.ru or http://oss.sgi.com/mips.
+	2. PSXLinux kernel source tree. Download free the latest version from 
+	http://www.runix.ru.            
+
+II. PSXLinux kernel source tree installation and compilation.
+
+	1. Create directory where kernel sources will be installed an put 
+	kernel archive in it.
+	
+	2. Unpack kernel archive. 
+	
+		gzip -cd <name of PSXLinux kernel sources>.tar.gz | tar xvf -  
+	
+	3. Delete stale object files and dependencies.
+	
+		make mrproper
+	
+	4. Configure kernel.
+	
+		make config 	-- bash based configuration tool
+			or
+		make menuconfig -- text based color configuration tool with
+					   	menus, radiolists & dialogs
+			or
+		make xconfig	-- X windows based configuration tool
+				
+	You may load one of prepared configurations from file Config (simple configuration
+	without Runix hardware add-on support) or Config_Addon (configuration with Runix 
+	hardware add-on support).
+
+	6. Compile kernel. You will get compiled kernel 'linux' in 
+	the directory where kernel sources was installed (current directory). 
+
+		make
+			
+	7. Run compiled kernel on your game console.
+	Visit www.runix.ru for tools an instructions.  
+
+   8. Now you may mount root file system from memory card. The memory card root image,
+   tools and instructions may be found on www.runix.ru.
+
+   Best regards !

@@ -1,0 +1,82 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:602: checking host system type
+configure:625: checking build system type
+configure:651: checking for ar
+configure:683: checking for ranlib
+configure:760: checking for gcc
+configure:839: checking whether we are using GNU C
+configure:863: checking whether gcc accepts -g
+configure:892: checking for POSIXized ISC
+configure:930: checking for a BSD compatible install
+configure:991: checking how to run the C preprocessor
+configure:1074: checking for sys/file.h
+configure:1074: checking for sys/param.h
+configure:1074: checking for stdlib.h
+configure:1074: checking for string.h
+configure:1074: checking for unistd.h
+configure:1074: checking for strings.h
+configure:1074: checking for sys/time.h
+configure:1074: checking for sys/resource.h
+configure:1111: checking for sys/wait.h that is POSIX.1 compatible
+configure:1738: checking whether the C compiler (gcc -g -O2 -W -Wall ) works
+configure:1754: gcc -o conftest -g -O2 -W -Wall   conftest.c  1>&5
+configure:1751:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ 1751 | main(){return(0);}
+      | ^~~~
+configure:1780: checking whether the C compiler (gcc -g -O2 -W -Wall ) is a cross-compiler
+configure:1787: checking for asprintf
+configure:1787: checking for atexit
+configure:1787: checking for basename
+configure:1787: checking for bcmp
+configure:1787: checking for bcopy
+configure:1787: checking for bzero
+configure:1787: checking for calloc
+configure:1787: checking for clock
+configure:1787: checking for getcwd
+configure:1787: checking for getpagesize
+configure:1787: checking for index
+configure:1787: checking for insque
+configure:1787: checking for memchr
+configure:1787: checking for memcmp
+configure:1787: checking for memcpy
+configure:1787: checking for memmove
+configure:1787: checking for memset
+configure:1787: checking for mkstemps
+configure:1787: checking for random
+configure:1787: checking for rename
+configure:1787: checking for rindex
+configure:1787: checking for sigsetmask
+configure:1787: checking for strcasecmp
+configure:1787: checking for strchr
+configure:1787: checking for strdup
+configure:1787: checking for strncasecmp
+configure:1787: checking for strrchr
+configure:1787: checking for strstr
+configure:1787: checking for strtod
+configure:1787: checking for strtol
+configure:1787: checking for strtoul
+configure:1787: checking for tmpnam
+configure:1787: checking for vasprintf
+configure:1787: checking for vfprintf
+configure:1787: checking for vprintf
+configure:1787: checking for vsprintf
+configure:1787: checking for waitpid
+configure:1844: checking for working alloca.h
+configure:1877: checking for alloca
+configure:2076: checking for ANSI C header files
+configure:2180: checking for pid_t
+configure:2214: checking for vfork.h
+configure:2249: checking for working vfork
+configure:2427: checking for sys_errlist
+configure:2427: checking for sys_nerr
+configure:2427: checking for sys_siglist
+configure:2465: checking for getrusage
+configure:2465: checking for on_exit
+configure:2465: checking for psignal
+configure:2465: checking for strerror
+configure:2465: checking for strsignal
+configure:2465: checking for sysconf
+configure:2465: checking for times
+configure:2465: checking for sbrk

@@ -1,0 +1,108 @@
+            PSXLinux kernel installation and compilation
+
+This instruction will guide you step-by-step to the successful compilation
+linux kernel 2.4.x for Playstation.
+      
+I. Prerequistes.
+            
+To compile PSXLinux kernel you will need:
+	1. Cross-compiler (egcc-1.1.2) and binutils-2.9.5 for Linux/i386 host
+        and MIPS little endian target. Binaries may be downloaded from 
+	http://www.runix.ru or http://oss.sgi.com/mips.
+	2. PSXLinux kernel source tree. Download free the latest version from 
+	http://www.runix.ru.            
+
+II. PSXLinux kernel source tree installation.
+	1. Create directory where kernel sources will be installed an put 
+	kernel archive in it.
+	
+	2. Unpack kernel archive. 
+	
+		gzip -cd <name of PSXLinux kernel sources>.tar.gz | tar xvf -  
+	         
+	3. Install cross-compiler for Linux/i386 host and MIPS
+	little endian target (see instructions below).
+	
+	4. Delete stale object files and dependencies.
+	
+		make mrproper
+	
+	5. Configure kernel.
+	
+		make config 	-- bash based configuration tool
+			or
+		make menuconfig -- text based color configuration tool with
+					   	menus, radiolists & dialogs
+			or
+		make xconfig	-- X windows based configuration tool
+				
+	Here minimum are options that are needed to be compiled into the kernel.
+		
+		Prompt for development and/or incomplete code/drivers
+		- YES
+		
+		Support for Sony Playstation
+		- YES
+		
+		Enable loadable module support
+		- NO
+		
+		CPU type
+		- R3000
+		
+		Kernel floating-point emulation
+		- YES					   
+		
+		Kernel support for flat binaries
+		- YES
+
+		Kernel support for a.out binaries
+		- NO
+
+		Kernel support for MISC binaries
+		- NO
+		
+		PSX memory card support
+		- YES
+		
+		Support Playstation SIO console
+		- YES   
+		
+		Support Playstation GPU console
+		- YES
+
+	6. Compile kernel. You will get compiled kernel 'linux' in 
+	the directory where kernel sources was installed (current directory). 
+
+		make
+			
+	7. Run compiled kernel on your game console.
+	coming soon... Visit www.runix.ru for tools an instructions.  
+			
+III. Cross-compiler installation.
+
+Cross compiler should be installed in /usr/local, so you should login as root. 
+   
+	1. Change directory to /.
+	
+	        cd /
+      
+	2. Unzip and untar tools archive.
+ 
+ 	        gzip -cd mipsel-linux-cross-i586.tar.gz | tar xf -
+  	or alternatively
+   	        tar xvfz mipsel-linux-cross-i586.tar.gz
+      
+	3. Create some links to PSXLinux kernel directory created 
+	at section II, step 1.
+
+	        cd include
+                ln -sf <path to PSXLinux kernel directory>/include/asm asm
+  	        ln -sf <path to PSXLinux kernel directory>/include/linux linux
+
+	4. Add path to the installed tools, e.g. in bash you can made so
+   	
+                export PATH=$PATH:/usr/local/bin
+
+           or edit ~.bash_profile.   
+

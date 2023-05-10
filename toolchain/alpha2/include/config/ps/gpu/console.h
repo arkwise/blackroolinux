@@ -1,0 +1,1 @@
+#undef  CONFIG_PS_GPU_CONSOLE

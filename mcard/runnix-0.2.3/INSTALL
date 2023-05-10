@@ -1,0 +1,39 @@
+# RUNNIX 0.1
+# I don't write good docs (anymore) - Kristian Kielhofner <kris@krisk.org>
+
+To install:
+
+create a fat 16 filesystem on something:
+NOTE: syslinux does not seem to like dos volume names
+don't specify -N when running mkdosfs
+
+mkdosfs -F 16 /dev/something1
+
+install syslinux on it:
+
+./syslinux /dev/something1
+cat mbr.bin > /dev/something
+
+mount it:
+
+mount /dev/something1 /mnt/runnix
+
+copy runnix to it:
+
+cp -R rootfs_vfat/* /mnt/runnix/
+
+Now all you have to do is get an image!
+
+AstLinux is currently the only image available, but I will be working
+on more soon.
+
+All you should have to do is put a .run file (and its config file and other
+stuff) in /mnt/runnix/os/
+
+If you are not using a serial console, take a look at the various 
+syslinux.cfg files in /mnt/runnix
+
+Have fun!
+
+--
+Kristian Kielhofner

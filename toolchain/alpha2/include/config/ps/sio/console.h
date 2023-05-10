@@ -1,0 +1,1 @@
+#define CONFIG_PS_SIO_CONSOLE 1

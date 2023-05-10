@@ -1,0 +1,24 @@
+	*************************************
+	 PSPBoot v0.22 Created by Jackson Mo
+	*************************************
+
+Release a new PSPBoot for 2.0+ firmware and slim PSP. Please visit
+http://jacksonm80.googlepages.com/ for more details.
+
+INSTALL
+*******
+Extract the package and copy the entire uClinux/ folder to PSP/GAME. Then copy
+the kernel image and pspboot.conf to uClinux/ as well and run it in XMB. The
+pre-built version of the kernel image can also be found on my website.
+
+
+REVISIONS
+*********
+   v0.22 - Redesigned a way of entering the kernel mode eliminating the risk
+           of overwriting of the running prx code during kernel RAM transfer,
+           and fixed a couple of other bugs as well.
+   v0.21 - Bug fixing primarily.
+   v0.20(slim) - Ported to slim psp by danzel. Great thanks to danzel!
+   v0.20 - Became configurable through a config file and was released along
+           with kernel v0.2.
+   v0.10 - Prototyping

@@ -1,0 +1,10 @@
+# serial 0 19200
+# console 1
+default runnix
+timeout 5
+prompt 1
+display boot.msg
+
+label runnix
+    kernel runnix
+    append initrd=runnix.img root=/dev/ram0 rw init=/runnix runimg=auto rootdelay=10
