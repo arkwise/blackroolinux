@@ -1,0 +1,1 @@
+#define CONFIG_CPU_R5000 1

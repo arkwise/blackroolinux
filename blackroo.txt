@@ -21,6 +21,40 @@ Blackroo linux is a opensource effort called "Runnix"
 
 OK this is the dummies guide to doing this so deal with it and feel free to make changes to it.
 
+
+#1
+ gzip -cd mipsel-linux-cross-i586.tar.gz | tar xf -
+
+
+The build tools MUST be install in /usr/local.... etc, I just renamed my original local and extracted it in /
+Create the two symbolic links in /usr/local/include/ to PSXlinux/include folders asm & linux as per the instructions.
+I got it compiling PSXLinux-kernel-2.4.x-alpha2.tar.gz, it has it's own .config so just reload it after mrproper by: make menuconfig
+
+the file PSXLinux/arch/mipsnommu/boot/Makefile builds and converts it to ecoff (change vmlinux to just linux will automatically do it) ,
+ if you add another location to the $PATH via EXPORT etc it should still build.
+ got it compiling PSXLinux-kernel-2.4.x-alpha2.tar.gz, it has it's own .config so just reload it after mrproper by: make menuconfig
+
+the file PSXLinux/arch/mipsnommu/boot/Makefile builds and converts it to ecoff (change vmlinux to just linux will automatically do it) ,
+I tried :
+
+    Shadow wrote:
+    I compiled and used "elf2ecoff.c" under the "arch\mipsnommu\boot" directory. Under Windows, I then used EXEFIXUP.EXE to make the PS-EXE a multiple of 2048 bytes, and booted the kernel image (PS-EXE) from PSIO, but anything would work (CD-ROM, PSXSERIAL, PSEXE.COM or CATFLAP, etc).
+
+So, I can get linux and linux.ecoff but cant seem to get a working ps1.exe
+After using elf2ecoff (w/o -a), I've tried
+ECO2EXE (w/o) (without it doesnt create PS-X EXE header and exefixup wont work)
+mkboot (from arch\mipsnommu\boot) (w/o) (don't know what this does, but didnt help)
+Then EXEFIXUP
+
+Any ideas?
+
+FYI:
+PSXLinux-kernel-2.4.x-beta1 is the newest
+alpha2 second newest
+beta1 has linux/drivers/char/serial_psx.c (19th of oct 2001 )
+alpha2 doesnt
+
+
 my system ubuntu 20 lts, x86_64 hp-z400
 
 sudo apt install flex

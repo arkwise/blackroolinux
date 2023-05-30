@@ -46,6 +46,18 @@ the old as fuck version this will kinda work
 
 export PATH="/Users/chelson/desktop/blackroo/toolchain/crosstools/usr/local/bin:$PATH"
 
+Where does brew install shit?
+
+
+/usr/local/Cellar/
+/usr/local/opt/
+/usr/local/bin/
+
+brew test binutils after you install with brew.
+
+
+!!!! This will help you install a newer version of binutils for Mac !!!!!
+https://comparch-resources.ece.gatech.edu/resources/gcc-mips/pdfs/GCC_MIPS.pdf
 
 ###   1   ###   UNPACK KERNEL & Mipsel linux Cross
 
@@ -61,6 +73,8 @@ Create some links to PSXLinux kernel directory
      sudo ln -sf <path to PSXLinux kernel directory>/include/linux linux
 
 Add path to the installed tools, e.g. in bash you can made so
+
+First lets tech the existing path with "pwd"
  
      export PATH=$PATH:/usr/local/bin
  
@@ -74,6 +88,9 @@ make mrproper
 make clean
 
 ###   2   ###   Configure Kernel
+
+
+Config_addon is supposed to be the one that works for beta
 
 export CROSS_COMPILE=mipsel-linux-
 export CC=${CROSS_COMPILE}gcc
@@ -103,7 +120,9 @@ export PATH="/~/"
 6. Compile kernel. You will get compiled kernel 'linux' in
 the directory where kernel sources was installed (current directory).
 
-make
+make dep
+
+And then 
 
 ###   3   ### install binutils
 
