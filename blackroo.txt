@@ -31,29 +31,19 @@ Create the two symbolic links in /usr/local/include/ to PSXlinux/include folders
 I got it compiling PSXLinux-kernel-2.4.x-alpha2.tar.gz, it has it's own .config so just reload it after mrproper by: make menuconfig
 
 the file PSXLinux/arch/mipsnommu/boot/Makefile builds and converts it to ecoff (change vmlinux to just linux will automatically do it) ,
+
+
  if you add another location to the $PATH via EXPORT etc it should still build.
+
+
  got it compiling PSXLinux-kernel-2.4.x-alpha2.tar.gz, it has it's own .config so just reload it after mrproper by: make menuconfig
 
 the file PSXLinux/arch/mipsnommu/boot/Makefile builds and converts it to ecoff (change vmlinux to just linux will automatically do it) ,
 I tried :
 
-    Shadow wrote:
-    I compiled and used "elf2ecoff.c" under the "arch\mipsnommu\boot" directory. Under Windows, I then used EXEFIXUP.EXE to make the PS-EXE a multiple of 2048 bytes, and booted the kernel image (PS-EXE) from PSIO, but anything would work (CD-ROM, PSXSERIAL, PSEXE.COM or CATFLAP, etc).
+ 
 
-So, I can get linux and linux.ecoff but cant seem to get a working ps1.exe
-After using elf2ecoff (w/o -a), I've tried
-ECO2EXE (w/o) (without it doesnt create PS-X EXE header and exefixup wont work)
-mkboot (from arch\mipsnommu\boot) (w/o) (don't know what this does, but didnt help)
-Then EXEFIXUP
-
-Any ideas?
-
-FYI:
-PSXLinux-kernel-2.4.x-beta1 is the newest
-alpha2 second newest
-beta1 has linux/drivers/char/serial_psx.c (19th of oct 2001 )
-alpha2 doesnt
-
+========================   BUILDING BINUTILS ( only if you really want to otherwise use the precompiled ones given.)   ============================
 
 my system ubuntu 20 lts, x86_64 hp-z400
 
@@ -74,7 +64,7 @@ linux32 ./configure mips
 apt install gcc-mips-linux-gnu
 ln -sf <path to mipsgnu directory>/
 
-building the alpha 2
+=========================    building the alpha 2    =====================
 
 to build:
 make clean
@@ -86,6 +76,25 @@ make menuconfig
 make dep
 
 make
+
+is all it should take to get it going but here is a few trouble shooting steps also to convert the kernel to a usable playstation executable.
+
+ Use "elf2ecoff.c" under the "arch\mipsnommu\boot" directory. Under Windows, I then used EXEFIXUP.EXE to make the PS-EXE a multiple of 2048 bytes, and booted the kernel image (PS-EXE) from PSIO, but anything would work (CD-ROM, PSXSERIAL, PSEXE.COM or CATFLAP, etc).
+
+So, I can get linux and linux.ecoff but cant seem to get a working ps1.exe
+After using elf2ecoff (w/o -a), I've tried
+ECO2EXE (w/o) (without it doesnt create PS-X EXE header and exefixup wont work)
+mkboot (from arch\mipsnommu\boot) (w/o) (don't know what this does, but didnt help)
+Then EXEFIXUP
+
+Any ideas?
+
+FYI:
+PSXLinux-kernel-2.4.x-beta1 is the newest
+alpha2 second newest
+beta1 has linux/drivers/char/serial_psx.c (19th of oct 2001 )
+alpha2 doesnt
+
 
 Tails92 <tails92@gmail.com> on June 28th, 2008
 *****************************************************************
