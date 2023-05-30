@@ -13,7 +13,9 @@
 
 G'day mate and welcome to the blackroo linux read stuff file. this file is comprised of the collected data for the history of running linux on the playstation r3000 mips system from the old runnix team and the efforts of others in the community.
 
-Blackroo linux is a opensource effort called "Runnix" 
+Blackroo linux is a opensource effort called "Runnix" that is long since dead since around 2007ish. unfortunately they didint leave much to work with and even tho the kernel builds the root fs is still illusive as it required running the sysytem from a RAID of playstation memory cards via the multiport boomarangs.
+
+Blackroo linux is an attempt to make this run from the upgraded EDO RAM (4mb and 8mb upgrades). the system can be loaded from a ramdisk.
 
 
 
@@ -67,11 +69,26 @@ ln -sf <path to mipsgnu directory>/
 =========================    building the alpha 2    =====================
 
 to build:
-make clean
 
-make mrproper
+the toolchain is already compiled and available from https://github.com/arkwise/blackroolinux
 
-make menuconfig
+gzip -cd mipsel-linux-cross-i586.tar.gz | tar xf - 
+
+the alpha 2 version of the Linux MIPS R3000 Kernel
+
+gzip -cd PSXLinux-kernel-2.4.x-alpha2.tar.gz  | tar xf - 
+
+edit the loadr.sh file to set your $PATH (this is for where ever you have extracted the kernel)
+
+now you should be ready to start compiling the kernel
+
+Make mrproper
+
+Make clean
+
+Make menuconfig
+
+the 'config' file is called 'defconfig' and it's located in '/arch/mipsnommu/' which you can load from the make menuconfig
 
 make dep
 
@@ -113,7 +130,10 @@ Now that we have the system ready for cross-compilation for mipsel architectures
 
  let's do the usual make menuconfig and
 
-let's proceed with our configuration by being careful to not select "PlayStation SIO console" in the menu "PlayStation Character devices" unless we have a PSX-serial -> PC-serial adapter (more below I'll offer the link with the scheme that you can use to build it yourself). 
+let's proceed with our configuration by being careful to 
+
+not select "PlayStation SIO console" in the menu "PlayStation Character devices" unless we have a PSX-serial -> PC-serial adapter (more below I'll offer the link with the scheme that you can use to build it yourself). 
+
 
 If you don't have the serial cable, selecting the entries `RAM disk support' e ` Initial RAM disk (initrd) support', both in the `Block devices' menu, is necessary.
 
