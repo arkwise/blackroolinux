@@ -1,0 +1,19 @@
+names.o: names.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/zorro/names.h)
+zorro.o: zorro.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h
+proc.o: proc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h

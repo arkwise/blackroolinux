@@ -1,0 +1,5 @@
+offset.o: offset.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/processor.h

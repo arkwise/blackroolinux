@@ -1,0 +1,109 @@
+rfc1201.o: rfc1201.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h
+com90xx.o: com90xx.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bootmem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h
+arcnet.o: arcnet.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arcnet.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arcnet/1201.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arcnet/1051.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arcnet/raw.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arcnet/com90xx.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/inet.h)
+arc-rawmode.o: arc-rawmode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h
+rfc1051.o: rfc1051.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h
+com20020.o: com20020.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/com20020.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+arc-rimi.o: arc-rimi.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bootmem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h
+com90io.o: com90io.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bootmem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h
+com20020-isa.o: com20020-isa.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bootmem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/com20020.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+com20020-pci.o: com20020-pci.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/arcdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/com20020.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h

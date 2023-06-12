@@ -1,0 +1,12 @@
+uncompress.o: uncompress.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   inflate/zlib.h
+inode.o: inode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pagemap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   cramfs.h

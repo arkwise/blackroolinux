@@ -1,0 +1,290 @@
+iriap_event.o: iriap_event.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap_event.h
+wrapper.o: wrapper.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/wrapper.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irtty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/crc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h
+irlap_event.o: irlap_event.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_event.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/qos.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/parameters.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/fast/rr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/dynamic/window.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h)
+irsyms.o: irsyms.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/compression.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_comp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irias_object.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irttp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/wrapper.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/parameters.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/deflate.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/debug.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irtty.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysctl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irlan.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ircomm.h)
+irlmp.o: irlmp.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/random.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/qos.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp_frame.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/cache/last/lsap.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h)
+irqueue.o: irqueue.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irqueue.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h
+qos.o: qos.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/parameters.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/qos.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/compression.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_comp.h \
+   ../../drivers/net/zlib.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/dynamic/window.h)
+irttp.o: irttp.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/unaligned.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/parameters.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irttp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+discovery.o: discovery.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/discovery.h
+irlmp_frame.o: irlmp_frame.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/discovery.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/cache/last/lsap.h)
+af_irda.o: af_irda.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sockios.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irias_object.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irttp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/discovery.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/debug.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+irda_device.o: irda_device.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ether.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wireless.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ioctls.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/pkt_sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/wrapper.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irtty/sir.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/winbond/fir.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/nsc/fir.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/toshiba/fir.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smc/ircc/fir.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/esi/dongle.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/tekram/dongle.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/actisys/dongle.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/girbil/dongle.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/litelink/dongle.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/old/belkin.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h)
+irlap.o: irlap.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/random.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irqueue.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/qos.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_comp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/compression.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/recycle/rr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/dynamic/window.h)
+parameters.o: parameters.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/unaligned.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/parameters.h
+iriap.o: iriap.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/unaligned.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irttp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irias_object.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap_event.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+irias_object.o: irias_object.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irias_object.h
+irlmp_event.o: irlmp_event.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp_event.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h)
+irproc.o: irproc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/miscdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h
+crc.o: crc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/crc.h
+irsysctl.o: irsysctl.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irias_object.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/debug.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/fast/rr.h)
+irlap_comp.o: irlap_comp.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irqueue.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_comp.h \
+   ../../drivers/net/zlib.h
+irlap_frame.o: irlap_frame.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ether.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/pkt_sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/wrapper.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap_frame.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/qos.h
+timer.o: timer.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irtty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp_event.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda/ultra.h)

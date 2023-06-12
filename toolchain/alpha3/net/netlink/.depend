@@ -1,0 +1,44 @@
+af_netlink.o: af_netlink.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/un.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcntl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/termios.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sockios.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netlink.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/scm.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netlink/dev.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netlink/dev/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+netlink_dev.o: netlink_dev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netlink.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/devfs_fs_kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h

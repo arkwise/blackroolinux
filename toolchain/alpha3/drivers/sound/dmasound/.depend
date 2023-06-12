@@ -1,0 +1,66 @@
+dmasound_q40.o: dmasound_q40.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundcard.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   dmasound.h
+dmasound_core.o: dmasound_core.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sound.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundcard.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   dmasound.h
+dmasound_awacs.o: dmasound_awacs.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundcard.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/cuda.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cuda.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/pmu.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pmu.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   awacs_defs.h \
+   dmasound.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pmac/pbook.h)
+dmasound_atari.o: dmasound_atari.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundcard.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   dmasound.h
+dmasound_paula.o: dmasound_paula.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundcard.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   dmasound.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/heartbeat.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/apus.h)
+dmasound.h: \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/atari.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/atari/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/paula.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/paula/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/q40.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/q40/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/awacs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dmasound/awacs/module.h)
+	@touch dmasound.h
+.PRECIOUS:	dmasound.h \
+

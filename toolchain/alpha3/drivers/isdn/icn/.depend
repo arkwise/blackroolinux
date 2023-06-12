@@ -1,0 +1,24 @@
+icn.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wait.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdnif.h
+	@touch icn.h
+icn.o: icn.c \
+   icn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h
+.PRECIOUS:	icn.h \
+

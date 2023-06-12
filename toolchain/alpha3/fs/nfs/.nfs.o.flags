@@ -1,0 +1,3 @@
+ifeq (inode.o file.o read.o write.o dir.o symlink.o proc.o nfs2xdr.o flushd.o unlink.o nfsroot.o mount_clnt.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += nfs.o
+endif

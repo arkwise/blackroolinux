@@ -1,0 +1,55 @@
+dir.o: dir.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h
+file.o: file.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h
+namei.o: namei.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcntl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/quotaops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+inode.o: inode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/highuid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h
+itree_v1.o: itree_v1.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   itree_common.c
+itree_v2.o: itree_v2.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   itree_common.c
+bitmap.o: bitmap.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/quotaops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h

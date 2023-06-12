@@ -1,0 +1,109 @@
+i2c-core.o: i2c-core.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/chardev.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/algobit.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/bitlp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/bitelv.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/bitvelle.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/bitvia.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/algopcf.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/pcfisa.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/philipspar.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/elv.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/velleman.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/i2c/elektor.h)
+i2c-velleman.o: i2c-velleman.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h
+i2c-algo-pcf.o: i2c-algo-pcf.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-pcf.h \
+   i2c-pcf8584.h
+i2c-philips-par.o: i2c-philips-par.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stddef.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h
+i2c-elv.o: i2c-elv.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h
+i2c-algo-bit.o: i2c-algo-bit.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h
+i2c-dev.o: i2c-dev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/devfs/fs.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/devfs_fs_kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-dev.h
+i2c-elektor.o: i2c-elektor.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-pcf.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-elektor.h \
+   i2c-pcf8584.h

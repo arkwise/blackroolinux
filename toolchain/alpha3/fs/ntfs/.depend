@@ -1,0 +1,98 @@
+dir.o: dir.c \
+   ntfstypes.h \
+   struct.h \
+   dir.h \
+   macros.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   super.h \
+   inode.h \
+   attr.h \
+   support.h \
+   util.h
+support.o: support.c \
+   ntfstypes.h \
+   struct.h \
+   support.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nls.h \
+   util.h \
+   inode.h \
+   macros.h \
+   sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h
+attr.o: attr.c \
+   ntfstypes.h \
+   struct.h \
+   attr.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   macros.h \
+   support.h \
+   util.h \
+   super.h \
+   inode.h
+sysctl.o: sysctl.c \
+   sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h
+ntfstypes.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   ntfsendian.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/posix_types.h
+	@touch ntfstypes.h
+inode.o: inode.c \
+   ntfstypes.h \
+   ntfsendian.h \
+   struct.h \
+   inode.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   macros.h \
+   attr.h \
+   super.h \
+   dir.h \
+   support.h \
+   util.h
+super.o: super.c \
+   ntfstypes.h \
+   struct.h \
+   super.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   macros.h \
+   inode.h \
+   support.h \
+   util.h
+util.o: util.c \
+   ntfstypes.h \
+   struct.h \
+   util.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   support.h
+ntfsendian.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h
+	@touch ntfsendian.h
+support.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h
+	@touch support.h
+fs.o: fs.c \
+   ntfstypes.h \
+   struct.h \
+   util.h \
+   inode.h \
+   super.h \
+   dir.h \
+   support.h \
+   macros.h \
+   sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nls.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ntfs/rw.h)
+.PRECIOUS:	ntfstypes.h \
+	ntfsendian.h \
+	support.h \
+

@@ -1,0 +1,231 @@
+eicon_pci.o: eicon_pci.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   eicon.h \
+   eicon_pci.h \
+   adapter.h \
+   uxio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/pci.h)
+log.o: log.c \
+   sys.h \
+   idi.h \
+   divas.h \
+   adapter.h \
+   divalog.h \
+   uxio.h
+idi.h: \
+   sys.h
+	@touch idi.h
+Divas_mod.o: Divas_mod.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   adapter.h \
+   uxio.h \
+   idi.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h)
+uxio.h: \
+   sys.h \
+   adapter.h
+	@touch uxio.h
+common.o: common.c \
+   sys.h \
+   idi.h \
+   constant.h \
+   divas.h \
+   pc.h \
+   pr_pc.h \
+   uxio.h
+idi.o: idi.c \
+   idi.h \
+   adapter.h \
+   pc.h \
+   pr_pc.h \
+   sys.h \
+   uxio.h
+kprintf.o: kprintf.c \
+   sys.h \
+   divas.h \
+   divalog.h \
+   uxio.h
+eicon_isa.h: \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mca.h)
+	@touch eicon_isa.h
+bri.o: bri.c \
+   sys.h \
+   idi.h \
+   divas.h \
+   pc.h \
+   pr_pc.h \
+   dsp_defs.h \
+   adapter.h \
+   uxio.h
+fourbri.o: fourbri.c \
+   sys.h \
+   idi.h \
+   divas.h \
+   pc.h \
+   pr_pc.h \
+   dsp_defs.h \
+   constant.h \
+   adapter.h \
+   uxio.h
+linsys.o: linsys.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tqueue.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   sys.h \
+   divas.h \
+   adapter.h \
+   divalog.h \
+   uxio.h
+linio.o: linio.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   uxio.h
+eicon_isa.o: eicon_isa.c \
+   eicon.h \
+   eicon_isa.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/isa.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mca.h)
+linchr.o: linchr.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   adapter.h \
+   divas.h \
+   divalog.h
+eicon_idi.h: \
+   pc.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h)
+	@touch eicon_idi.h
+adapter.h: \
+   sys.h \
+   idi.h \
+   divas.h \
+   pc.h
+	@touch adapter.h
+eicon_dsp.h: \
+   dsp_defs.h
+	@touch eicon_dsp.h
+xlog.o: xlog.c \
+   sys.h \
+   idi.h \
+   pc.h \
+   pc_maint.h \
+   divalog.h \
+   adapter.h \
+   uxio.h
+sys.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h
+	@touch sys.h
+fcheck.o: fcheck.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h
+eicon_idi.o: eicon_idi.c \
+   eicon.h \
+   eicon_idi.h \
+   eicon_dsp.h \
+   uxio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h)
+dsp_defs.h: \
+   dspdids.h
+	@touch dsp_defs.h
+divas.h: \
+   sys.h
+	@touch divas.h
+eicon_io.o: eicon_io.c \
+   eicon.h \
+   uxio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/isa.h)
+eicon.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tqueue.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wait.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdnif.h \
+   eicon_isa.h \
+   idi.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h) \
+   eicon_pci.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mca.h) \
+   eicon_idi.h
+	@touch eicon.h
+pri.o: pri.c \
+   sys.h \
+   idi.h \
+   divas.h \
+   pc.h \
+   pr_pc.h \
+   dsp_defs.h \
+   adapter.h \
+   uxio.h
+eicon_mod.o: eicon_mod.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mca.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mca.h \
+   eicon.h \
+   ../avmb1/capicmd.h \
+   adapter.h \
+   uxio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/isa.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h)
+fpga.o: fpga.c \
+   sys.h \
+   idi.h \
+   uxio.h
+lincfg.o: lincfg.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   sys.h \
+   idi.h \
+   constant.h \
+   divas.h \
+   pc.h \
+   pr_pc.h \
+   adapter.h \
+   uxio.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h
+.PRECIOUS:	idi.h \
+	uxio.h \
+	eicon_isa.h \
+	eicon_idi.h \
+	adapter.h \
+	eicon_dsp.h \
+	sys.h \
+	dsp_defs.h \
+	divas.h \
+	eicon.h \
+

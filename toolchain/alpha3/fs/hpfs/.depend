@@ -1,0 +1,58 @@
+name.o: name.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   hpfs_fn.h
+dir.o: dir.c \
+   hpfs_fn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+file.o: file.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   hpfs_fn.h
+namei.o: namei.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   hpfs_fn.h
+alloc.o: alloc.c \
+   hpfs_fn.h
+dnode.o: dnode.c \
+   hpfs_fn.h
+anode.o: anode.c \
+   hpfs_fn.h
+hpfs_fn.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hpfs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   hpfs.h
+	@touch hpfs_fn.h
+super.o: super.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   hpfs_fn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h
+buffer.o: buffer.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   hpfs_fn.h
+ea.o: ea.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   hpfs_fn.h
+map.o: map.c \
+   hpfs_fn.h
+inode.o: inode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   hpfs_fn.h
+dentry.o: dentry.c \
+   hpfs_fn.h
+.PRECIOUS:	hpfs_fn.h \
+

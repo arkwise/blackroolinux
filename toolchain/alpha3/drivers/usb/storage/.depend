@@ -1,0 +1,114 @@
+protocol.o: protocol.c \
+   protocol.h \
+   usb.h \
+   debug.h \
+   scsiglue.h \
+   transport.h
+freecom.o: freecom.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   freecom.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/debug.h)
+usb.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/usb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+	@touch usb.h
+transport.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   usb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/hp8200e.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/sddr09.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/freecom.h)
+	@touch transport.h
+usb.o: usb.c \
+   usb.h \
+   scsiglue.h \
+   transport.h \
+   protocol.h \
+   debug.h \
+   initializers.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/hp8200e.h) \
+   shuttle_usbat.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/sddr09.h) \
+   sddr09.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/dpcm.h) \
+   dpcm.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/freecom.h) \
+   freecom.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h
+transport.o: transport.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/debug.h)
+sddr09.o: sddr09.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   sddr09.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h
+debug.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cdrom.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/debug.h)
+	@touch debug.h
+scsiglue.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h
+	@touch scsiglue.h
+dpcm.o: dpcm.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   dpcm.h \
+   sddr09.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/usb/storage/sddr09.h)
+initializers.h: \
+   usb.h
+	@touch initializers.h
+debug.o: debug.c \
+   debug.h
+scsiglue.o: scsiglue.c \
+   scsiglue.h \
+   usb.h \
+   debug.h \
+   transport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h
+initializers.o: initializers.c \
+   initializers.h \
+   debug.h
+protocol.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   usb.h
+	@touch protocol.h
+shuttle_usbat.o: shuttle_usbat.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   shuttle_usbat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h
+.PRECIOUS:	usb.h \
+	transport.h \
+	debug.h \
+	scsiglue.h \
+	initializers.h \
+	protocol.h \
+

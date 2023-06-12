@@ -1,0 +1,29 @@
+riva_hw.o: riva_hw.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   riva_hw.h \
+   riva_tbl.h
+fbdev.o: fbdev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   riva_hw.h \
+   nv4ref.h \
+   nvreg.h \
+   ../vga.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/prep.h)

@@ -1,0 +1,1561 @@
+hitfb.o: hitfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nubus.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/hd64461/iobase.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sh/lcd/videobase.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sh/lcd/videosize.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sh/lcd/horz.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sh/lcd/vert.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sh/lcd/defaultbpp.h)
+fbcon-cfb2.o: fbcon-cfb2.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb2.h
+retz3fb.o: retz3fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   retz3fb.h
+fbcon-vga.o: fbcon-vga.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-vga.h
+dn_cfb4.o: dn_cfb4.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   dn_accel.h
+fm2fb.o: fm2fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h
+newport_con.o: newport_con.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/page.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/newport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/linux_logo.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+fbcon.o: fbcon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/amiga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atari.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mac.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/apus.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/vga/planes.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/linux_logo.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mac.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/fontwidth8/only.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb16.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb24.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb32.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sbus.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb4.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb8.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/afb.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/ilbm.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/iplan2p2.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/iplan2p4.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/iplan2p8.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/mfb.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/hga.h)
+tgafb.o: tgafb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   tgafb.h
+fbcon-vga-planes.o: fbcon-vga-planes.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_buffer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-vga-planes.h
+mdacon.o: mdacon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_buffer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/vga.h
+vesafb.o: vesafb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mac.h
+sun3fb.o: sun3fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun3.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun3x.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/cgsix.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/bwtwo.h)
+sticon-bmode.o: sticon-bmode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h \
+   sti-bmode.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgalloc.h
+fbmon.o: fbmon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h
+fbcon-iplan2p2.o: fbcon-iplan2p2.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-iplan2p2.h
+hgafb.o: hgafb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/vga.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-hga.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/linux_logo.h
+skeletonfb.o: skeletonfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h
+fbcon-mac.o: fbcon-mac.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mac.h
+fbcon-cfb4.o: fbcon-cfb4.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h
+font_sun12x22.o: font_sun12x22.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+fbcon-iplan2p8.o: fbcon-iplan2p8.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-iplan2p8.h
+fbgen.o: fbgen.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h
+fonts.o: fonts.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/apus.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/8x8.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/8x16.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/6x11.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/mac.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sbus.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/sun8x16.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/sun12x22.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb8.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb16.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb24.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fbcon/cfb32.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/acorn/8x8.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/font/pearl/8x8.h)
+fbcon-sti.o: fbcon-sti.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   sti.h
+macmodes.o: macmodes.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h
+sticon.o: sticon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   sti.h
+fbcon-hga.o: fbcon-hga.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-hga.h
+sticore.o: sticore.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   sti.h
+modedb.o: modedb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h
+imsttfb.o: imsttfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   macmodes.c
+cyber2000fb.o: cyber2000fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/footbridge.h) \
+   cyber2000fb.h
+fbcon-cfb16.o: fbcon-cfb16.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h
+p9100fb.o: p9100fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   p9100.h
+tdfxfb.o: tdfxfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mtrr.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h
+vga.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/amiga.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/vga.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h
+	@touch vga.h
+font_acorn_8x8.o: font_acorn_8x8.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/acorn.h)
+aty128fb.o: aty128fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/nvram.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/pmu.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pmu.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pmac/backlight.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mtrr.h) \
+   aty128.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/cntl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/memsize.h)
+virgefb.o: virgefb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/s3blit.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h
+sa1100fb.o: sa1100fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wrapper.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sa1100/assabet.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sa1100/bitsy.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sa1100/penny.h)
+fbcon-ilbm.o: fbcon-ilbm.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-ilbm.h
+cgthreefb.o: cgthreefb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h
+sgivwfb.o: sgivwfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   sgivwfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mtrr.h)
+cgsixfb.o: cgsixfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+dummycon.o: dummycon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kdev_t.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h
+creatorfb.o: creatorfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h
+fbcon-cfb32.o: fbcon-cfb32.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h
+chipsfb.o: chipsfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pmac/backlight.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pmu.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pmac/pbook.h)
+psxcon.o: psxcon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ps/libpsx.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/vt/console/hires.h)
+cyber2000fb.h: \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/debug/ll.h)
+	@touch cyber2000fb.h
+macfb.o: macfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nubus.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bootinfo.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb2.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h
+atafb.o: atafb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-iplan2p2.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-iplan2p4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-iplan2p8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h
+fbmem.o: fbmem.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/devfs_fs_kernel.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/apus.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/page.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sbus.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/retinaz3.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/amiga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/cyber.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/cyber2000.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/pm2.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/clgen.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/aty.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/aty128.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/virge.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/riva.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/control.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/platinum.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/valkyrie.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/ct65550.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/imstt.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/s3trio.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/fm2.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sis.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/of.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/vesa.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/3dfx.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sgivw.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/acorn.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/atari.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/mac.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/hga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/iga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/apollo.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/q40.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/tga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/hp300.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/g364.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sa1100.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sun3.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/hit.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/vga16.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sti.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/gsp/resolver.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/virtual.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun3.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/cpu/32.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/acorn.h)
+g364fb.o: g364fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/jazz.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h
+font_pearl_8x8.o: font_pearl_8x8.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+promcon.o: promcon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dummy/console.h)
+tcxfb.o: tcxfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h
+igafb.o: igafb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   iga.h
+vga16fb.o: vga16fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-vga-planes.h \
+   vga.h
+dn_accel.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h
+	@touch dn_accel.h
+platinumfb.o: platinumfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   platinumfb.h
+vfb.o: vfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb2.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h
+controlfb.o: controlfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cuda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   controlfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/cuda.h)
+fbcon-cfb24.o: fbcon-cfb24.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h
+valkyriefb.o: valkyriefb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cuda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   valkyriefb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/cuda.h)
+sbusfb.o: sbusfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/creator.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/cgsix.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/cgthree.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/tcx.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/leo.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/bwtwo.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/cgfourteen.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/p9100.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun4.h)
+q40fb.o: q40fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h
+cgfourteenfb.o: cgfourteenfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h
+stifb.o: stifb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   sti.h
+fbcon-cfb8.o: fbcon-cfb8.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h
+offb.o: offb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h
+hpfb.o: hpfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/dio.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb2.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h
+amifb.o: amifb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-afb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-ilbm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/amiga/ocs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/amiga/ecs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/amiga/aga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/gsp/resolver.h)
+cvisionppc.h: \
+   pm2fb.h
+	@touch cvisionppc.h
+fbcmap.o: fbcmap.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+clgenfb.o: clgenfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/zorro.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/amiga.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   clgenfb.h \
+   vga.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/prep.h)
+fbcon-mfb.o: fbcon-mfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h
+font_6x11.o: font_6x11.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+S3triofb.o: S3triofb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/s3blit.h
+dnfb.o: dnfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   dn_accel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h
+atyfb.o: atyfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/pmu.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pmu.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/nvram.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nvram.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pmac/backlight.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   aty.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pmac/pbook.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atari.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/nvram/not/defined.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/chip/id.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/stat0.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/stat1.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h)
+font_8x8.o: font_8x8.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+acornfb.o: acornfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb2.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   acornfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/a5k.h)
+fbcon-afb.o: fbcon-afb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-afb.h
+leofb.o: leofb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+vgacon.o: vgacon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console_struct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ia64/softsdv/hacks.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dummy/console.h)
+dn_cfb8.o: dn_cfb8.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   dn_accel.h
+fbcon-iplan2p4.o: fbcon-iplan2p4.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-iplan2p4.h
+cyberfb.o: cyberfb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   cyberfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h
+pm2fb.o: pm2fb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   pm2fb.h \
+   cvisionppc.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/pm2/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/pm2/cvppc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/pm2/fifo/disconnect.h)
+font_8x16.o: font_8x16.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+font_sun8x16.o: font_sun8x16.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/font.h
+bwtwofb.o: bwtwofb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/sbusfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-mfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun4.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sun3.h)
+.PRECIOUS:	vga.h \
+	cyber2000fb.h \
+	dn_accel.h \
+	cvisionppc.h \
+

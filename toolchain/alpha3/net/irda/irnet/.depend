@@ -1,0 +1,36 @@
+irnet_ppp.h: \
+   irnet.h
+	@touch irnet_ppp.h
+irnet_ppp.o: irnet_ppp.c \
+   irnet_ppp.h
+irnet_irda.h: \
+   irnet.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+	@touch irnet_irda.h
+irnet.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/devfs_fs_kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ppp_defs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ppp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ppp_channel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/iriap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irias_object.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irlmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irttp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/discovery.h
+	@touch irnet.h
+irnet_irda.o: irnet_irda.c \
+   irnet_irda.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+.PRECIOUS:	irnet_ppp.h \
+	irnet_irda.h \
+	irnet.h \
+

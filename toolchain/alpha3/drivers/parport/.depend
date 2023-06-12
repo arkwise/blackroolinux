@@ -1,0 +1,152 @@
+procfs.o: procfs.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysctl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/1284.h)
+daisy.o: daisy.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+share.o: share.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/threads.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/1284.h)
+parport_pc.o: parport_pc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport_pc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/parport.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/pc/fifo.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/1284.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/pc/superio.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/pc/pcmcia.h)
+init.o: init.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/threads.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/pc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysctl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/amiga.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/mfc3.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/atari.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/arc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/sunbpp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/1284.h)
+parport_arc.o: parport_arc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/threads.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+parport_gsc.o: parport_gsc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h
+ieee1284.o: ieee1284.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/threads.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/lp/console.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/1284.h)
+parport_atari.o: parport_atari.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h
+ieee1284_ops.o: ieee1284_ops.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/lp/console.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/parport/1284.h)
+parport_amiga.o: parport_amiga.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+probe.o: probe.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+parport_sunbpp.o: parport_sunbpp.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h
+parport_mfc3.o: parport_mfc3.c \
+   multiface.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mc6821.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h

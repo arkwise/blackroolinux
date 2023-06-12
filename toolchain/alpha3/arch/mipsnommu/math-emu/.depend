@@ -1,0 +1,117 @@
+dp_simple.o: dp_simple.c \
+   ieee754dp.h
+dp_sqrt.o: dp_sqrt.c \
+   ieee754dp.h
+ieee754.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h
+	@touch ieee754.h
+dp_flong.o: dp_flong.c \
+   ieee754dp.h
+ieee754sp.o: ieee754sp.c \
+   ieee754sp.h
+sp_sub.o: sp_sub.c \
+   ieee754sp.h
+sp_cmp.o: sp_cmp.c \
+   ieee754sp.h
+dp_div.o: dp_div.c \
+   ieee754dp.h
+sp_mul.o: sp_mul.c \
+   ieee754sp.h
+dp_tint.o: dp_tint.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   ieee754dp.h
+ieee754.o: ieee754.c \
+   ieee754int.h
+sp_logb.o: sp_logb.c \
+   ieee754sp.h
+sp_fint.o: sp_fint.c \
+   ieee754sp.h
+ieee754int.h: \
+   ieee754.h
+	@touch ieee754int.h
+dp_mul.o: dp_mul.c \
+   ieee754dp.h
+sp_frexp.o: sp_frexp.c \
+   ieee754sp.h
+sp_add.o: sp_add.c \
+   ieee754sp.h
+dp_logb.o: dp_logb.c \
+   ieee754dp.h
+sp_modf.o: sp_modf.c \
+   ieee754sp.h
+sp_scalb.o: sp_scalb.c \
+   ieee754sp.h
+sp_fdp.o: sp_fdp.c \
+   ieee754sp.h
+dp_frexp.o: dp_frexp.c \
+   ieee754dp.h
+dp_sub.o: dp_sub.c \
+   ieee754dp.h
+dp_add.o: dp_add.c \
+   ieee754dp.h
+ieee754xcpt.o: ieee754xcpt.c \
+   ieee754.h
+dp_scalb.o: dp_scalb.c \
+   ieee754dp.h
+dp_modf.o: dp_modf.c \
+   ieee754dp.h
+dp_fint.o: dp_fint.c \
+   ieee754dp.h
+sp_tlong.o: sp_tlong.c \
+   ieee754sp.h
+sp_div.o: sp_div.c \
+   ieee754sp.h
+sp_simple.o: sp_simple.c \
+   ieee754sp.h
+ieee754m.o: ieee754m.c \
+   ieee754.h
+dp_tlong.o: dp_tlong.c \
+   ieee754dp.h
+ieee754d.o: ieee754d.c \
+   ieee754.h
+ieee754dp.h: \
+   ieee754int.h
+	@touch ieee754dp.h
+dp_fsp.o: dp_fsp.c \
+   ieee754dp.h
+dp_cmp.o: dp_cmp.c \
+   ieee754dp.h
+sp_tint.o: sp_tint.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   ieee754sp.h
+cp1emu.o: cp1emu.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/branch.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/inst.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/processor.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mipsregs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/fpu_emulator.h \
+   ieee754.h
+ieee754sp.h: \
+   ieee754int.h
+	@touch ieee754sp.h
+sp_sqrt.o: sp_sqrt.c \
+   ieee754sp.h
+ieee754dp.o: ieee754dp.c \
+   ieee754dp.h
+sp_flong.o: sp_flong.c \
+   ieee754sp.h
+kernel_linkage.o: kernel_linkage.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/processor.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/fpu_emulator.h
+.PRECIOUS:	ieee754.h \
+	ieee754int.h \
+	ieee754dp.h \
+	ieee754sp.h \
+

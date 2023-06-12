@@ -1,0 +1,161 @@
+dir.o: dir.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   udf_i.h \
+   udf_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h
+fsync.o: fsync.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   udf_i.h
+crc.o: crc.c \
+   udfdecl.h
+partition.o: partition.c \
+   udfdecl.h \
+   udf_sb.h \
+   udf_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h
+lowlevel.o: lowlevel.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blkdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cdrom.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/scsi/scsi.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/scsi/scsi_ioctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   udf_sb.h
+udfend.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h
+	@touch udfend.h
+file.o: file.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   udf_i.h \
+   udf_sb.h
+namei.o: namei.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/quotaops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h
+directory.o: directory.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h
+symlink.o: symlink.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pagemap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   udf_i.h
+inode.o: inode.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   udf_i.h \
+   udf_sb.h
+udfdecl.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_167.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_udf.h \
+   udfend.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/udf/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/udf/fs/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs_i.h
+	@touch udfdecl.h
+super.o: super.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blkdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cdrom.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nls.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   udf_sb.h \
+   udf_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/udf/rw.h)
+misc.o: misc.c \
+   udfdecl.h \
+   udf_sb.h \
+   udf_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h
+truncate.o: truncate.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   udf_i.h \
+   udf_sb.h
+udftime.o: udftime.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   udfdecl.h
+ialloc.o: ialloc.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/quotaops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   udf_i.h \
+   udf_sb.h
+balloc.o: balloc.c \
+   udfdecl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/quotaops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h \
+   udf_i.h \
+   udf_sb.h
+unicode.o: unicode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/udf_fs.h \
+   udfdecl.h
+.PRECIOUS:	udfend.h \
+	udfdecl.h \
+

@@ -1,0 +1,60 @@
+init/main.o: init/main.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/devfs_fs_kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/unistd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/utsname.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/raid/md.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hdreg.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/iobuf.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bootmem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bugs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dio.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/dio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/zorro.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zorro.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mtrr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/3215/console.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/nubus.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nubus.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isapnp.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isapnp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/irda.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/irda/irda_device.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/x86/io/apic.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/smp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/tc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysvipc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/quota.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/initrd.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mdisk.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dasd.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/cpq/da.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/cpq/da/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/cpq/ciss/da.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/cpq/ciss/da/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/nftl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/psx/mem/card.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/psx/large/card.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/modules.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysctl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sbus.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mca.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/acorn.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pcmcia.h)
+init/version.o: init/version.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/uts.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/utsname.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h

@@ -106,6 +106,24 @@ Then EXEFIXUP
 
 Any ideas?
 
+
+
++++++++++   MEMORY CARD AND RAM   ++++
+
+perhaps building a memory ccaard file with ext already on it?
+
+dd if=/dev/zero bs=8192 count=16 of=memcard.mcd
+
+mkfs -t fat -i 8192 memcard.img
+
+techinically you get a fat12 drive i think but this might be a start as im pretty sure the ext2 format needs a bigger size that will work over raid
+
+
+1) make sure loopback block devices are configured into the kernel
+ 2) create an empty file system of the appropriate size, e.g.
+    # dd if=/dev/zero of=initrd bs=300k count=1
+    # mke2fs -F -m0 initrd
+
 FYI:
 PSXLinux-kernel-2.4.x-beta1 is the newest
 alpha2 second newest

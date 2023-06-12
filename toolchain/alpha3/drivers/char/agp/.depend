@@ -1,0 +1,52 @@
+agpgart_be.o: agpgart_be.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pagemap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/miscdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/page.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/agp_backend.h \
+   agp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/agp/i810.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/agp/intel.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/agp/via.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/agp/sis.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/agp/amd.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/agp/ali.h)
+agpgart_fe.o: agpgart_fe.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pagemap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/miscdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/agp_backend.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/agpgart.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/page.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mman.h \
+   agp.h

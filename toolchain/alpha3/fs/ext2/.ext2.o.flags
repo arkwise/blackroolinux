@@ -1,0 +1,3 @@
+ifeq (acl.o balloc.o bitmap.o dir.o file.o fsync.o ialloc.o inode.o ioctl.o namei.o super.o symlink.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += ext2.o
+endif

@@ -1,0 +1,270 @@
+softirq.o: softirq.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel_stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tqueue.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/s390.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h)
+time.o: time.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timex.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+ptrace.o: ptrace.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/highmem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+capability.o: capability.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+sysctl.o: sysctl.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/swapctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/utsname.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/capability.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysrq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/highuid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/semaphore.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/root/nfs.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/nfs_fs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysctl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/hotplug.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/chr/dev/sg.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysvipc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bsd/process/acct.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/initrd.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/magic/sysrq.h)
+uid16.o: uid16.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/utsname.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/notifier.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/reboot.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/prctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/highuid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+printk.o: printk.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty_driver.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/uclinux.h)
+exit.o: exit.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bsd/process/acct.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/acct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mmu_context.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h)
+resource.o: resource.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+user.o: user.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h
+pm.o: pm.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pm.h
+panic.o: panic.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/reboot.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/notifier.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysrq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/s390.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h)
+exec_domain.o: exec_domain.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h
+kmod.o: kmod.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/unistd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/hotplug.h)
+sched.o: sched.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel_stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mmu_context.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/x86.h)
+context.o: context.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/unistd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h
+signal.o: signal.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/unistd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h)
+dma.o: dma.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h
+info.o: info.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/unistd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/swap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+acct.o: acct.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bsd/process/acct.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/acct.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/file.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+sys.o: sys.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/utsname.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/notifier.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/reboot.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/prctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/highuid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/semaphore.h
+itimer.o: itimer.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+module.o: module.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/modules.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kallsyms.h)
+ksyms.o: ksyms.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blkdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cdrom.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel_stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sys.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/utsname.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/serial.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/minix_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ext2_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/random.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/reboot.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pagemap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hdreg.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blkpg.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/swap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/file.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/iobuf.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mmzone.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/capability.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/highuid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/brlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/modversions.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/discontigmem.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/highmem.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arch/s390.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/uid16.h)
+fork.o: fork.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/unistd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mmu_context.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/uclinux.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h)
+timer.o: timer.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timex.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel_stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h)

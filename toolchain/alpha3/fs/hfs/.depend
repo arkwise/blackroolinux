@@ -1,0 +1,100 @@
+dir.o: dir.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+dir_cap.o: dir_cap.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+file_cap.o: file_cap.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+trans.o: trans.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+bdelete.o: bdelete.c \
+   hfs_btree.h
+hfs_btree.h: \
+   hfs.h
+	@touch hfs_btree.h
+file_hdr.o: file_hdr.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+binsert.o: binsert.c \
+   hfs_btree.h
+dir_dbl.o: dir_dbl.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+string.o: string.c \
+   hfs.h
+bitops.o: bitops.c \
+   hfs.h
+part_tbl.o: part_tbl.c \
+   hfs.h
+bnode.o: bnode.c \
+   hfs_btree.h
+brec.o: brec.c \
+   hfs_btree.h
+file.o: file.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+super.o: super.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blkdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mac/partition.h)
+bins_del.o: bins_del.c \
+   hfs_btree.h
+dir_nat.o: dir_nat.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h
+mdb.o: mdb.c \
+   hfs.h
+bfind.o: bfind.c \
+   hfs_btree.h
+sysdep.o: sysdep.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+btree.o: btree.c \
+   hfs_btree.h
+bitmap.o: bitmap.c \
+   hfs.h
+hfs.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_sysdep.h
+	@touch hfs.h
+catalog.o: catalog.c \
+   hfs.h
+balloc.o: balloc.c \
+   hfs_btree.h
+extent.o: extent.c \
+   hfs.h
+inode.o: inode.c \
+   hfs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_sb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs_i.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hfs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+.PRECIOUS:	hfs_btree.h \
+	hfs.h \
+

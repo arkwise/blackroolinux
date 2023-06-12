@@ -1,0 +1,161 @@
+cardwi.o: cardwi.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   hwaccess.h \
+   timer.h \
+   recmgr.h \
+   audio.h \
+   cardwi.h
+ecard.h: \
+   8010.h \
+   hwaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h
+	@touch ecard.h
+irqmgr.o: irqmgr.c \
+   hwaccess.h \
+   8010.h \
+   cardmi.h \
+   cardmo.h \
+   irqmgr.h
+emuadxmg.o: emuadxmg.c \
+   hwaccess.h
+recmgr.h: \
+   hwaccess.h \
+   cardwi.h
+	@touch recmgr.h
+mixer.o: mixer.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   hwaccess.h \
+   8010.h \
+   recmgr.h
+ecard.o: ecard.c \
+   ecard.h \
+   hwaccess.h
+midi.o: midi.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   hwaccess.h \
+   cardmo.h \
+   cardmi.h \
+   midi.h
+recmgr.o: recmgr.c \
+   8010.h \
+   recmgr.h
+cardmo.h: \
+   icardmid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h
+	@touch cardmo.h
+audio.o: audio.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wrapper.h \
+   hwaccess.h \
+   cardwo.h \
+   cardwi.h \
+   recmgr.h \
+   irqmgr.h \
+   audio.h
+cardmi.o: cardmi.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   hwaccess.h \
+   8010.h \
+   cardmi.h \
+   irqmgr.h
+cardmo.o: cardmo.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   hwaccess.h \
+   8010.h \
+   cardmo.h \
+   irqmgr.h
+cardwo.o: cardwo.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   hwaccess.h \
+   8010.h \
+   voicemgr.h \
+   cardwo.h \
+   audio.h
+8010.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h
+	@touch 8010.h
+cardwi.h: \
+   icardwav.h \
+   audio.h \
+   timer.h
+	@touch cardwi.h
+main.o: main.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   hwaccess.h \
+   8010.h \
+   efxmgr.h \
+   cardwo.h \
+   cardwi.h \
+   cardmo.h \
+   cardmi.h \
+   recmgr.h \
+   ecard.h
+voicemgr.h: \
+   hwaccess.h
+	@touch voicemgr.h
+timer.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   hwaccess.h
+	@touch timer.h
+voicemgr.o: voicemgr.c \
+   voicemgr.h \
+   8010.h
+hwaccess.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sound.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundcard.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   emu_wrapper.h
+	@touch hwaccess.h
+cardwo.h: \
+   icardwav.h \
+   audio.h \
+   voicemgr.h \
+   timer.h
+	@touch cardwo.h
+cardmi.h: \
+   icardmid.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h
+	@touch cardmi.h
+timer.o: timer.c \
+   hwaccess.h \
+   8010.h \
+   irqmgr.h \
+   timer.h
+hwaccess.o: hwaccess.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   hwaccess.h \
+   8010.h \
+   icardmid.h
+.PRECIOUS:	ecard.h \
+	recmgr.h \
+	cardmo.h \
+	8010.h \
+	cardwi.h \
+	voicemgr.h \
+	timer.h \
+	hwaccess.h \
+	cardwo.h \
+	cardmi.h \
+

@@ -1,0 +1,148 @@
+isdn_tty.o: isdn_tty.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   isdn_common.h \
+   isdn_tty.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/audio.h) \
+   isdn_audio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/devfs/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h) \
+   avmb1/capicmd.h
+isdn_audio.o: isdn_audio.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   isdn_audio.h \
+   isdn_common.h
+isdn_tty.h: \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h)
+	@touch isdn_tty.h
+isdn_x25iface.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wanrouter.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/concap.h
+	@touch isdn_x25iface.h
+isdn_x25iface.o: isdn_x25iface.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/concap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wanrouter.h \
+   isdn_x25iface.h
+isdn_net.o: isdn_net.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/dst.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/pkt_sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inetdevice.h \
+   isdn_common.h \
+   isdn_net.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/ppp.h) \
+   isdn_ppp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/x25.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/concap.h \
+   isdn_concap.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/inet.h)
+isdn_concap.o: isdn_concap.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   isdn_x25iface.h \
+   isdn_net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/concap.h \
+   isdn_concap.h
+isdn_cards.o: isdn_cards.c \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/icn.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/hisax.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/pcbit.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/old.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/eicon/divas.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/drv/act2000.h)
+isdn_common.o: isdn_common.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vmalloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   isdn_common.h \
+   isdn_tty.h \
+   isdn_net.h \
+   isdn_ppp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/audio.h) \
+   isdn_audio.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/diversion/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/diversion.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn_divertif.h \
+   isdn_v110.h \
+   isdn_cards.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/devfs_fs_kernel.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/ppp.h) \
+   avmb1/capicmd.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/x25.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/tty/fax.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netdevices.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/devfs/fs.h)
+isdn_ppp.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ppp_defs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn_ppp.h
+	@touch isdn_ppp.h
+isdn_v110.o: isdn_v110.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   isdn_v110.h
+isdn_bsdcomp.o: isdn_bsdcomp.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcntl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/in.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ether.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ppp_defs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn_ppp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tcp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ppp-comp.h \
+   isdn_ppp.h
+isdn_ppp.o: isdn_ppp.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ppp-comp.h \
+   isdn_common.h \
+   isdn_ppp.h \
+   isdn_net.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/mpp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/isdn/ppp/vj.h)
+isdn_ttyfax.o: isdn_ttyfax.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/isdn.h \
+   isdn_common.h \
+   isdn_tty.h \
+   isdn_ttyfax.h
+.PRECIOUS:	isdn_tty.h \
+	isdn_x25iface.h \
+	isdn_ppp.h \
+

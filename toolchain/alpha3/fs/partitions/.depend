@@ -1,0 +1,152 @@
+check.o: check.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/raid/md.h \
+   check.h \
+   acorn.h \
+   amiga.h \
+   atari.h \
+   mac.h \
+   msdos.h \
+   osf.h \
+   sgi.h \
+   sun.h \
+   ibm.h \
+   ultrix.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/acorn/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/msdos/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/osf/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/amiga/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atari/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mac/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sgi/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ultrix/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ibm/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/devfs/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/ram.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/initrd.h)
+ibm.o: ibm.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   ../../drivers/s390/block/dasd_types.h
+ultrix.o: ultrix.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   check.h
+msdos.o: msdos.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/ide.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ide.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   check.h \
+   msdos.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/md.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/autodetect/raid.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/unaligned.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/solaris/x86/partition.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bsd/disklabel.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/unixware/disklabel.h)
+sgi.o: sgi.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   check.h \
+   sgi.h
+atari.o: atari.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   check.h \
+   atari.h
+mac.o: mac.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   check.h \
+   mac.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h)
+sun.o: sun.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   check.h \
+   sun.h
+acorn.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/adfs_fs.h
+	@touch acorn.h
+amiga.o: amiga.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/affs_hardblocks.h \
+   check.h \
+   amiga.h
+acorn.o: acorn.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kdev_t.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   check.h \
+   acorn.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/blk/dev/mfm.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/acorn/partition/riscix.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/acorn/partition/cumana.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/acorn/partition/adfs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/acorn/partition/ics.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/acorn/partition/powertec.h)
+osf.o: osf.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/genhd.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/blk.h \
+   check.h \
+   osf.h
+.PRECIOUS:	acorn.h \
+

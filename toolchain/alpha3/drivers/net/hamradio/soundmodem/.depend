@@ -1,0 +1,82 @@
+sm_afsk1200.o: sm_afsk1200.c \
+   sm.h \
+   sm_tbl_afsk1200.h
+sm_fsk9600.o: sm_fsk9600.c \
+   sm.h \
+   sm_tbl_fsk9600.h
+sm.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hdlcdrv.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundmodem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/processor.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h
+	@touch sm.h
+sm.o: sm.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/parport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   sm.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/afsk1200.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/afsk2400/7.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/afsk2400/8.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/afsk2666.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/psk4800.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/hapn4800.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/fsk9600.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/sbc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/soundmodem/wss.h)
+sm_hapn4800.o: sm_hapn4800.c \
+   sm.h \
+   sm_tbl_hapn4800.h
+sm_psk4800.o: sm_psk4800.c \
+   sm.h \
+   sm_tbl_psk4800.h
+sm_afsk2400_8.o: sm_afsk2400_8.c \
+   sm.h \
+   sm_tbl_afsk2400_8.h
+sm_afsk2666.o: sm_afsk2666.c \
+   sm.h \
+   sm_tbl_afsk2666.h
+sm_sbc.o: sm_sbc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundmodem.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   sm.h \
+   smdma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h
+sm_wss.o: sm_wss.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/soundmodem.h \
+   sm.h \
+   smdma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h
+sm_afsk2400_7.o: sm_afsk2400_7.c \
+   sm.h \
+   sm_tbl_afsk2400_7.h
+smdma.h: \
+   sm.h
+	@touch smdma.h
+.PRECIOUS:	sm.h \
+	smdma.h \
+

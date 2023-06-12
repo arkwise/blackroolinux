@@ -1,0 +1,142 @@
+matroxfb_maven.o: matroxfb_maven.c \
+   matroxfb_maven.h \
+   matroxfb_misc.h \
+   matroxfb_DAC1064.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/matroxfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/div64.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+matroxfb_accel.h: \
+   matroxfb_base.h
+	@touch matroxfb_accel.h
+matroxfb_crtc2.o: matroxfb_crtc2.c \
+   matroxfb_maven.h \
+   matroxfb_crtc2.h \
+   matroxfb_misc.h \
+   matroxfb_DAC1064.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/matroxfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+matroxfb_Ti3026.h: \
+   matroxfb_base.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/millenium.h)
+	@touch matroxfb_Ti3026.h
+matroxfb_accel.o: matroxfb_accel.c \
+   matroxfb_accel.h \
+   matroxfb_DAC1064.h \
+   matroxfb_Ti3026.h \
+   matroxfb_misc.h
+matroxfb_base.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/unaligned.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mtrr.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb4.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/macmodes.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/mystique.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/g100.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/millenium.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/32mb.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/multihead.h)
+	@touch matroxfb_base.h
+matroxfb_g450.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioctl.h \
+   matroxfb_base.h
+	@touch matroxfb_g450.h
+i2c-matroxfb.o: i2c-matroxfb.c \
+   matroxfb_base.h \
+   matroxfb_maven.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h
+matroxfb_DAC1064.h: \
+   matroxfb_base.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/mystique.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/g100.h)
+	@touch matroxfb_DAC1064.h
+matroxfb_Ti3026.o: matroxfb_Ti3026.c \
+   matroxfb_Ti3026.h \
+   matroxfb_misc.h \
+   matroxfb_accel.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/millenium.h)
+matroxfb_base.o: matroxfb_base.c \
+   matroxfb_base.h \
+   matroxfb_misc.h \
+   matroxfb_accel.h \
+   matroxfb_DAC1064.h \
+   matroxfb_Ti3026.h \
+   matroxfb_maven.h \
+   matroxfb_crtc2.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/matroxfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/32mb.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mtrr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/multihead.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/millenium.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/mystique.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/g100.h)
+matroxfb_g450.o: matroxfb_g450.c \
+   matroxfb_g450.h \
+   matroxfb_misc.h \
+   matroxfb_DAC1064.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/matroxfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+matroxfb_DAC1064.o: matroxfb_DAC1064.c \
+   matroxfb_DAC1064.h \
+   matroxfb_misc.h \
+   matroxfb_accel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/matroxfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/mystique.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/g100.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/32mb.h)
+matroxfb_misc.h: \
+   matroxfb_base.h
+	@touch matroxfb_misc.h
+matroxfb_maven.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h \
+   matroxfb_base.h
+	@touch matroxfb_maven.h
+matroxfb_crtc2.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/i2c-algo-bit.h \
+   matroxfb_base.h
+	@touch matroxfb_crtc2.h
+matroxfb_misc.o: matroxfb_misc.c \
+   matroxfb_misc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/matroxfb.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/matrox/multihead.h)
+.PRECIOUS:	matroxfb_accel.h \
+	matroxfb_Ti3026.h \
+	matroxfb_base.h \
+	matroxfb_g450.h \
+	matroxfb_DAC1064.h \
+	matroxfb_misc.h \
+	matroxfb_maven.h \
+	matroxfb_crtc2.h \
+

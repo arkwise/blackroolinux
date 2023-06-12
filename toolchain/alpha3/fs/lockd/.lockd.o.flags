@@ -1,0 +1,3 @@
+ifeq (clntlock.o clntproc.o host.o svc.o svclock.o svcshare.o svcproc.o svcsubs.o mon.o xdr.o lockd_syms.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += lockd.o
+endif

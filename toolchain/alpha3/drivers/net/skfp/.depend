@@ -1,0 +1,118 @@
+ecm.o: ecm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+drvfbi.o: drvfbi.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/skfbiinc.h
+smtparse.o: smtparse.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+queue.o: queue.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+lnkstat.o: lnkstat.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/lnkstat.h
+cfm.o: cfm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+smtinit.o: smtinit.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+hwt.o: hwt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+srf.o: srf.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+pmf.o: pmf.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+skfddi.o: skfddi.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fddidevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   h/types.h \
+   h/skfbi.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+smt.o: smt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+smtdef.o: smtdef.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+hwmtm.o: hwmtm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/skfbiinc.h
+pcmplc.o: pcmplc.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/smtstate.h
+smttimer.o: smttimer.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+ess.o: ess.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h
+fplustm.o: fplustm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   can.c
+rmt.o: rmt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h

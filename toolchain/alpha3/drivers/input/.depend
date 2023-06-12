@@ -1,0 +1,57 @@
+keybdev.o: keybdev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kbd_ll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/input.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kbd_kern.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/x86.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ia64.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sparc64.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/superh.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ppc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mac/emumousebtn.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/mac/adbkeycodes.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/adb/keyboard.h)
+mousedev.o: mousedev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/input.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/random.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/input/mousedev/screen/x.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/input/mousedev/screen/y.h)
+evdev.o: evdev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/input.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+joydev.o: joydev.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/joystick.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/input.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/slab.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/miscdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+input.o: input.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/input.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/random.h

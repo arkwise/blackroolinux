@@ -1,0 +1,343 @@
+lec.o: lec.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ether.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/etherdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/dst.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/tr.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/trdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmlec.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_bridge.h \
+   ../bridge/br_private.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   lec.h \
+   lec_arpc.h \
+   resources.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/param.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/atomic.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inetdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/route.h
+lec_arpc.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ether.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmlec.h
+	@touch lec_arpc.h
+common.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h
+	@touch common.h
+mpc.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmmpc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   mpoa_caches.h
+	@touch mpc.h
+common.o: common.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmclip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmarp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sonet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/capability.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/time.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/atomic.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/poll.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/lane.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/lane/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmlec.h \
+   lec.h \
+   lec_arpc.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/mpoa.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/mpoa/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmmpc.h \
+   mpc.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/tcp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/tcp/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm_tcp.h \
+   resources.h \
+   common.h \
+   protocols.h \
+   addr.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/clip.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/atmclip.h \
+   signaling.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge/module.h)
+ipcommon.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h
+	@touch ipcommon.h
+addr.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h
+	@touch addr.h
+signaling.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmsvc.h
+	@touch signaling.h
+svc.o: svc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wait.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcntl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmsap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmsvc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   resources.h \
+   common.h \
+   signaling.h \
+   addr.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+mpc.o: mpc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ether.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/etherdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/checksum.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/dst.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmlec.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmmpc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   lec.h \
+   mpc.h \
+   resources.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+clip.o: clip.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wait.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/notifier.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmclip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmarp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/in.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inetdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/route.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/icmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/param.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/atomic.h \
+   common.h \
+   resources.h \
+   ipcommon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/atmclip.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/clip/no/icmp.h)
+ipcommon.o: ipcommon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/in.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmclip.h \
+   common.h \
+   ipcommon.h
+raw.o: raw.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   common.h \
+   protocols.h
+mpoa_proc.o: mpoa_proc.c \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/time.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmmpc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   mpc.h \
+   mpoa_caches.h
+addr.o: addr.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   signaling.h \
+   addr.h
+signaling.o: signaling.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wait.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmsap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmsvc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   resources.h \
+   signaling.h
+mpoa_caches.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmmpc.h
+	@touch mpoa_caches.h
+resources.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h
+	@touch resources.h
+lec.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmlec.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_bridge.h
+	@touch lec.h
+mpoa_caches.o: mpoa_caches.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmmpc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/time.h \
+   mpoa_caches.h \
+   mpc.h
+proc.o: proc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/stat.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmclip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmarp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/atomic.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/param.h \
+   resources.h \
+   common.h \
+   signaling.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/clip.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/atmclip.h \
+   ipcommon.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/lane.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/lane/module.h) \
+   lec.h \
+   lec_arpc.h
+resources.o: resources.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ctype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   common.h \
+   resources.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+pvc.o: pvc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmclip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atm/clip.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/atmclip.h \
+   resources.h \
+   common.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)
+atm_misc.o: atm_misc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/atmdev.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sonet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/atomic.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/errno.h
+.PRECIOUS:	lec_arpc.h \
+	common.h \
+	mpc.h \
+	ipcommon.h \
+	addr.h \
+	signaling.h \
+	mpoa_caches.h \
+	resources.h \
+	lec.h \
+

@@ -1,0 +1,7 @@
+printgpu.o: printgpu.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ps/gpu.h \
+   font/font.S
+libpsx.o: libpsx.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ps/gpu.h

@@ -1,0 +1,67 @@
+memset.o: memset.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/offset.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h
+csum_partial.o: csum_partial.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h
+rtc-std.o: rtc-std.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mc146818rtc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h
+csum_partial_copy.o: csum_partial_copy.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/checksum.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/byteorder.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h
+watch.o: watch.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mipsregs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h
+r3k_dump_tlb.o: r3k_dump_tlb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bootinfo.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/cachectl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mipsregs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/page.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h
+strlen_user.o: strlen_user.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/offset.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/sgidefs.h
+dump_tlb.o: dump_tlb.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bootinfo.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/cachectl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/mipsregs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/page.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h
+strnlen_user.o: strnlen_user.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/offset.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/sgidefs.h
+memcpy.o: memcpy.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/offset.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h
+tinycon.o: tinycon.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bootinfo.h
+rtc-no.o: rtc-no.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/spinlock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mc146818rtc.h
+strncpy_user.o: strncpy_user.S \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/asm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/offset.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/regdef.h

@@ -1,0 +1,302 @@
+ftape_syms.o: ftape_syms.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-buffer.h \
+   ../lowlevel/ftape-format.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/no/trace/at/all.h)
+ftape-io.o: ftape-io.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mtio.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-calibr.h
+ftape-proc.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h
+	@touch ftape-proc.h
+ftape_syms.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h
+	@touch ftape_syms.h
+ftape-ecc.h: \
+   ../lowlevel/ftape-bsm.h
+	@touch ftape-ecc.h
+fdc-io.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fdreg.h \
+   ../lowlevel/ftape-bsm.h
+	@touch fdc-io.h
+fdc-isr.o: fdc-isr.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-isr.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-calibr.h \
+   ../lowlevel/ftape-bsm.h
+ftape-format.o: ftape-format.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-format.h
+ftape-proc.o: ftape-proc.c \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/proc/fs.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-proc.h \
+   ../lowlevel/ftape-tracing.h
+ftape-ecc.o: ftape-ecc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-ecc.h
+ftape-calibr.o: ftape-calibr.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timex.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-calibr.h \
+   ../lowlevel/fdc-io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/alpha/clock.h)
+ftape-bsm.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape-header-segment.h
+	@touch ftape-bsm.h
+fdc-io.o: fdc-io.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/fdc-isr.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-calibr.h \
+   ../lowlevel/fc-10.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/base.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/irq.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/dma.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/thr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/probe/fc10.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/mach2.h)
+ftape-read.o: ftape-read.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h
+ftape-rw.h: \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-bsm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/unaligned.h
+	@touch ftape-rw.h
+ftape-bsm.o: ftape-bsm.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h
+ftape-rw.o: ftape-rw.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h
+ftape-ctl.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioctl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mtio.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape-vendors.h \
+   ../lowlevel/ftape-rw.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape-header-segment.h
+	@touch ftape-ctl.h
+ftape-init.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/linkage.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h
+	@touch ftape-init.h
+ftape-tracing.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/no/trace.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/full/debug.h)
+	@touch ftape-tracing.h
+ftape-write.o: ftape-write.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/fdc-isr.h
+ftape-ctl.o: ftape-ctl.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wrapper.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-bsm.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/two/drives.h)
+ftape-io.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape-vendors.h
+	@touch ftape-io.h
+fc-10.o: fc-10.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/fc-10.h
+ftape-init.o: ftape-init.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/version.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/qic117.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/zftape.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zftape.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape_syms.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-buffer.h \
+   ../lowlevel/ftape-proc.h \
+   ../lowlevel/ftape-tracing.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/nr/buffers.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/proc/fs.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/no/trace/at/all.h)
+ftape-setup.o: ftape-setup.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/base.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/irq.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/dma.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/thr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/probe/fc10.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ft/mach2.h)
+ftape-tracing.o: ftape-tracing.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h
+ftape-buffer.o: ftape-buffer.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mman.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wrapper.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ftape.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-tracing.h
+.PRECIOUS:	ftape-proc.h \
+	ftape_syms.h \
+	ftape-ecc.h \
+	fdc-io.h \
+	ftape-bsm.h \
+	ftape-rw.h \
+	ftape-ctl.h \
+	ftape-init.h \
+	ftape-tracing.h \
+	ftape-io.h \
+

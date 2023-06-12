@@ -1,0 +1,1 @@
+#undef  CONFIG_PSX_PIO_EXTENSION

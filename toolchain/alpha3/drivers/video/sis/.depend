@@ -1,0 +1,52 @@
+initdef.h: \
+   sis.h
+	@touch initdef.h
+sis_300.o: sis_300.c \
+   sis_300.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sis/linuxbios.h)
+sis_main.o: sis_main.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/selection.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/vt_kern.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/capability.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sisfb.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb8.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb16.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb24.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/video/fbcon-cfb32.h \
+   sis.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sis/linuxbios.h)
+sis_301.h: \
+   initdef.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sis/linuxbios.h)
+	@touch sis_301.h
+sis.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h
+	@touch sis.h
+sis_301.o: sis_301.c \
+   sis_301.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sis/linuxbios.h)
+sis_300.h: \
+   initdef.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fb/sis/linuxbios.h)
+	@touch sis_300.h
+.PRECIOUS:	initdef.h \
+	sis_301.h \
+	sis.h \
+	sis_300.h \
+

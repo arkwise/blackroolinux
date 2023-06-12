@@ -1,0 +1,22 @@
+dir.o: dir.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs.h
+file.o: file.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs.h
+namei.o: namei.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs.h
+symlink.o: symlink.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pagemap.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h
+inode.o: inode.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs_sb.h
+super.o: super.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/locks.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_vh.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/efs_fs_sb.h

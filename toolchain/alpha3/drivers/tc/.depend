@@ -1,0 +1,46 @@
+tcsyms.o: tcsyms.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/tc.h
+tc.o: tc.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/addrspace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/machtype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/tcinfo.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/tcmodule.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/interrupts.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/ptrace.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h
+zs.o: zs.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/signal.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/tty_flip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/major.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcntl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/serial/console.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/console.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/pgtable.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/bitops.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/wbflush.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/interrupts.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/machtype.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/tc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dec/ioasic_addrs.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kgdb.h) \
+   zs.h

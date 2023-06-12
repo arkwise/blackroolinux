@@ -1,0 +1,20 @@
+dvma.o: dvma.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/delay.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/io.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun4.h)
+sbus.o: sbus.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kernel.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/malloc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/pci.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/dma.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/irq.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun/auxio.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sun4.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/pci.h)

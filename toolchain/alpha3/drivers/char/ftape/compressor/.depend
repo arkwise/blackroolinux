@@ -1,0 +1,30 @@
+lzrw3.o: lzrw3.c \
+   ../compressor/lzrw3.h
+zftape-compress.h: \
+   ../zftape/zftape-buffers.h \
+   ../zftape/zftape-vtbl.h \
+   ../compressor/lzrw3.h
+	@touch zftape-compress.h
+zftape-compress.o: zftape-compress.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/zftape.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/segment.h \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../compressor/zftape-compress.h \
+   ../zftape/zftape-vtbl.h \
+   ../compressor/lzrw3.h
+lzrw3.h: \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/string.h
+	@touch lzrw3.h
+.PRECIOUS:	zftape-compress.h \
+	lzrw3.h \
+

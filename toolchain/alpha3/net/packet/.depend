@@ -1,0 +1,39 @@
+af_packet.o: af_packet.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcntl.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/in.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_packet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wireless.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/protocol.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/skbuff.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/errno.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/timer.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/system.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_bridge.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/divert.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/divert.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/inet.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/inet_common.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dlci.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/packet/multicast.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/packet/mmap.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sock/packet.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/filter.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/radio.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/proc/fs.h)

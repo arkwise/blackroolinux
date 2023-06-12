@@ -1,0 +1,114 @@
+sysctl_net.o: sysctl_net.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/sysctl.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/inet.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ipx.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/unix.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ipv6.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/tr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/econet.h)
+netsyms.o: netsyms.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/types.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/in.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inetdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fddidevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/trdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/fcdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ioport.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/neighbour.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/snmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/dst.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/checksum.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/etherdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/route.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/hippi.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/hippidevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/pkt_sched.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/scm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_bridge.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/random.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/divert.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/divert.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/inet.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/protocol.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/arp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/udp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/tcp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/icmp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/inet_common.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mroute.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/igmp.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ipv6.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ipv6/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/khttpd.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/khttpd/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/in6.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/icmpv6.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/ipv6.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/ndisc.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/transp_v6.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/rtnetlink.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/ipx/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atalk/module.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/sysctl.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/filter.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/arpd.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/bridge/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/dlci/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netlink.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netlink/dev.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netlink/dev/module.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/rtnetlink.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/tr.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/fc.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/fddi.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/atalk.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/if_ltalk.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/sched.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/estimator.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/cls/police.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net/cls.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netfilter.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netfilter.h
+socket.o: socket.c \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/mm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/smp_lock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/socket.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/file.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/net.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/interrupt.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netdevice.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/proc_fs.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/wanrouter.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/init.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/poll.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/cache.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/module.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/kmod.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/net.h) \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/kmod.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/asm/uaccess.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/inet.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/ip.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/sock.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/tcp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/udp.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/net/scm.h \
+   /home/hoang/blackroo/toolchain/PSXLinux/include/linux/netfilter.h \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/smp.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/wan/router.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/rtnetlink.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netlink/dev.h) \
+   $(wildcard /home/hoang/blackroo/toolchain/PSXLinux/include/config/netfilter.h)

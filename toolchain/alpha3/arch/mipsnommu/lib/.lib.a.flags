@@ -1,0 +1,3 @@
+ifeq (csum_partial.o csum_partial_copy.o rtc-std.o rtc-no.o memcpy.o memset.o watch.o strlen_user.o strncpy_user.o strnlen_user.o r3k_dump_tlb.o,$(strip $(subst $(comma),:,$(EXTRA_ARFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += lib.a
+endif

@@ -1,0 +1,1 @@
+#define CONFIG_PSX_MEM_CARD 1

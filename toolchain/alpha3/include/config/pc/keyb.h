@@ -1,0 +1,1 @@
+#define CONFIG_PC_KEYB 1

@@ -1,0 +1,3 @@
+ifeq (nfssvc.o nfsctl.o nfsproc.o nfsfh.o vfs.o export.o auth.o lockd.o nfscache.o nfsxdr.o stats.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += nfsd.o
+endif
