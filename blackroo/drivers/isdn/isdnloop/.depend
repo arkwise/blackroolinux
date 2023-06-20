@@ -1,0 +1,3 @@
+isdnloop.o: isdnloop.c \
+   isdnloop.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/x25.h)

@@ -1,0 +1,9 @@
+numa.o: numa.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/discontigmem.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/numa.h)
+page_alloc.o: page_alloc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/discontigmem.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/highmem.h)
+slab.o: slab.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

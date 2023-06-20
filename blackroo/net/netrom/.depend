@@ -1,0 +1,5 @@
+af_netrom.o: af_netrom.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+nr_dev.o: nr_dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)

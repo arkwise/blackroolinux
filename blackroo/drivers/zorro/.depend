@@ -1,0 +1,2 @@
+names.o: names.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zorro/names.h)

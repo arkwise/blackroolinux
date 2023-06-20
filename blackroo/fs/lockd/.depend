@@ -1,0 +1,13 @@
+xdr.o: xdr.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lockd/v4.h)
+svcproc.o: svcproc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lockd/v4.h)
+lockd_syms.o: lockd_syms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modules.h)
+svc.o: svc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfsd/tcp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lockd/v4.h)
+svclock.o: svclock.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lockd/v4.h)
+svcsubs.o: svcsubs.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lockd/v4.h)

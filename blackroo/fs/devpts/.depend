@@ -1,0 +1,4 @@
+inode.o: inode.c \
+   devpts_i.h
+root.o: root.c \
+   devpts_i.h

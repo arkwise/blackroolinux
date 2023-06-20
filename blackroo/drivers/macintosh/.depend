@@ -1,0 +1,44 @@
+mac_keyb.o: mac_keyb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/backlight.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adbmouse.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h)
+adb.o: adb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/macii.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/maciisi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/cuda.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/iop.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/pmu.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/macio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h)
+via-pmu.o: via-pmu.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/backlight.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/xmon.h)
+mac_hid.o: mac_hid.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/adbkeycodes.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/emumousebtn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h)
+macserial.o: macserial.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kgdb.h) \
+   macserial.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/xmon.h)
+via-cuda.o: via-cuda.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/xmon.h)
+mediabay.o: mediabay.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h)
+adbhid.o: adbhid.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/backlight.h)

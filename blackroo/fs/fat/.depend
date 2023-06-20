@@ -1,0 +1,16 @@
+dir.o: dir.c \
+   msbuffer.h
+file.o: file.c \
+   msbuffer.h
+inode.o: inode.c \
+   msbuffer.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nls/default.h)
+fatfs_syms.o: fatfs_syms.c \
+   msbuffer.h \
+   tables.h
+misc.o: misc.c \
+   msbuffer.h
+cache.o: cache.c \
+   msbuffer.h
+cvf.o: cvf.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)

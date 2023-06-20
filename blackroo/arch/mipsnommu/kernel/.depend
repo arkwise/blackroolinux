@@ -1,0 +1,62 @@
+mips_ksyms.o: mips_ksyms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/fd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/jazz.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpe/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/module.h)
+syscall.o: syscall.c \
+   syscalls.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/binfmt/irix.h)
+setup.o: setup.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ram.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/fd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pc/keyb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r3000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/baget/mips.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decstation.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/atlas.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/jazz.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/malta.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmc/cp7000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sni/rm200/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ddb5074.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ddb5476.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/ev96100.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/ev64120.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/playstation.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/initrd.h)
+time.o: time.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ddb5074.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h)
+ptrace.o: ptrace.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpu/emulator.h)
+traps.o: traps.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpu/emulator.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/has/llsc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpe/module.h)
+unaligned.o: unaligned.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpu/emulator.h)
+r2300_misc.o: r2300_misc.S \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/playstation.h)
+irq.o: irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+entry.o: entry.S \
+   syscalls.h \
+   syscalls.h
+branch.o: branch.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpu/emulator.h)
+process.o: process.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/fpu/emulator.h)
+head.o: head.S \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+old-irq.o: old-irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ddb5074.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ddb5476.h)
+signal.o: signal.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/binfmt/irix.h)

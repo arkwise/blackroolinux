@@ -1,0 +1,14 @@
+21142.o: 21142.c \
+   tulip.h
+interrupt.o: interrupt.c \
+   tulip.h
+tulip_core.o: tulip_core.c \
+   tulip.h
+pnic.o: pnic.c \
+   tulip.h
+eeprom.o: eeprom.c \
+   tulip.h
+media.o: media.c \
+   tulip.h
+timer.o: timer.c \
+   tulip.h

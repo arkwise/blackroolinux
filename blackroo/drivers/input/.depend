@@ -1,0 +1,12 @@
+keybdev.o: keybdev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/x86.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ia64.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparc64.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/superh.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/emumousebtn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/adbkeycodes.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/keyboard.h)
+mousedev.o: mousedev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/input/mousedev/screen/x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/input/mousedev/screen/y.h)

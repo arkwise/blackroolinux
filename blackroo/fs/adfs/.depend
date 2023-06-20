@@ -1,0 +1,24 @@
+dir.o: dir.c \
+   adfs.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adfs/fs/rw.h)
+file.o: file.c \
+   adfs.h
+dir_fplus.o: dir_fplus.c \
+   adfs.h \
+   dir_fplus.h
+inode.o: inode.c \
+   adfs.h
+super.o: super.c \
+   adfs.h \
+   dir_f.h \
+   dir_fplus.h
+dir_f.o: dir_f.c \
+   adfs.h \
+   dir_f.h
+adfs.h: \
+   dir_f.h
+	@touch adfs.h
+map.o: map.c \
+   adfs.h
+.PRECIOUS:	adfs.h \
+

@@ -1,0 +1,6 @@
+super.o: super.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ext2/check.h)
+ialloc.o: ialloc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ext2/check.h)
+balloc.o: balloc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ext2/check.h)

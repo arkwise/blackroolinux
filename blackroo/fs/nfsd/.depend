@@ -1,0 +1,7 @@
+nfsctl.o: nfsctl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfsd.h)
+nfssvc.o: nfssvc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfsd/v3.h)
+vfs.o: vfs.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfsd/v3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/quota.h)

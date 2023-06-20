@@ -1,0 +1,12 @@
+shm.o: shm.c \
+   util.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+msg.o: msg.c \
+   util.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+sem.o: sem.c \
+   util.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+util.o: util.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysvipc.h) \
+   util.h

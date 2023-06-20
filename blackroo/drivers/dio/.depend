@@ -1,0 +1,2 @@
+dio.o: dio.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dio/constants.h)

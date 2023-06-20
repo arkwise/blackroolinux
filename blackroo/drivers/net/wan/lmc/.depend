@@ -1,0 +1,32 @@
+lmc_debug.o: lmc_debug.c \
+   lmc_ver.h \
+   lmc_debug.h
+lmc_media.o: lmc_media.c \
+   ../syncppp.h \
+   lmc_ver.h \
+   lmc.h \
+   lmc_var.h \
+   lmc_ioctl.h \
+   lmc_debug.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lmc/ignore/hardware/handshake.h)
+lmc.h: \
+   lmc_var.h
+	@touch lmc.h
+lmc_proto.o: lmc_proto.c \
+   ../syncppp.h \
+   lmc_ver.h \
+   lmc.h \
+   lmc_var.h \
+   lmc_debug.h \
+   lmc_ioctl.h \
+   lmc_proto.h
+lmc_main.o: lmc_main.c \
+   ../syncppp.h \
+   lmc_ver.h \
+   lmc.h \
+   lmc_var.h \
+   lmc_ioctl.h \
+   lmc_debug.h \
+   lmc_proto.h
+.PRECIOUS:	lmc.h \
+

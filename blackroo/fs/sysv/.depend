@@ -1,0 +1,2 @@
+inode.o: inode.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysv/fs/write.h)

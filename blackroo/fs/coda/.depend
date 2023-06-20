@@ -1,0 +1,3 @@
+sysctl.o: sysctl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)

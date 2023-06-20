@@ -1,0 +1,67 @@
+check.o: check.c \
+   check.h \
+   acorn.h \
+   amiga.h \
+   atari.h \
+   mac.h \
+   msdos.h \
+   osf.h \
+   sgi.h \
+   sun.h \
+   ibm.h \
+   ultrix.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acorn/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/msdos/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/osf/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ultrix/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ibm/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ram.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/initrd.h)
+ibm.o: ibm.c \
+   ../../drivers/s390/block/dasd_types.h
+ultrix.o: ultrix.c \
+   check.h
+msdos.o: msdos.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h) \
+   check.h \
+   msdos.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/md.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/autodetect/raid.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/solaris/x86/partition.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bsd/disklabel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/unixware/disklabel.h)
+sgi.o: sgi.c \
+   check.h \
+   sgi.h
+atari.o: atari.c \
+   check.h \
+   atari.h
+mac.o: mac.c \
+   check.h \
+   mac.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h)
+sun.o: sun.c \
+   check.h \
+   sun.h
+amiga.o: amiga.c \
+   check.h \
+   amiga.h
+acorn.o: acorn.c \
+   check.h \
+   acorn.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/mfm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acorn/partition/riscix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acorn/partition/cumana.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acorn/partition/adfs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acorn/partition/ics.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acorn/partition/powertec.h)
+osf.o: osf.c \
+   check.h \
+   osf.h

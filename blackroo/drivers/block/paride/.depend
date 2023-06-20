@@ -1,0 +1,69 @@
+pd.o: pd.c \
+   setup.h \
+   paride.h \
+   pseudo.h
+dstr.o: dstr.c \
+   paride.h
+aten.o: aten.c \
+   paride.h
+frpw.o: frpw.c \
+   paride.h
+comm.o: comm.c \
+   paride.h
+pt.o: pt.c \
+   setup.h \
+   paride.h
+kbic.o: kbic.c \
+   paride.h
+pg.o: pg.c \
+   setup.h \
+   paride.h
+ktti.o: ktti.c \
+   paride.h
+on20.o: on20.c \
+   paride.h
+bpck.o: bpck.c \
+   paride.h
+fit2.o: fit2.c \
+   paride.h
+paride.o: paride.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport.h) \
+   paride.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/aten.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/bpck.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/comm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/dstr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/epat.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/epia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/frpw.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/friq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/fit2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/fit3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/kbic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/ktti.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/on20.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/on26.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/pd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/pcd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/pf.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/pt.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/paride/pg.h)
+epat.o: epat.c \
+   paride.h
+pf.o: pf.c \
+   setup.h \
+   paride.h \
+   pseudo.h
+friq.o: friq.c \
+   paride.h
+fit3.o: fit3.c \
+   paride.h
+on26.o: on26.c \
+   paride.h
+epia.o: epia.c \
+   paride.h
+pcd.o: pcd.c \
+   setup.h \
+   paride.h \
+   pseudo.h

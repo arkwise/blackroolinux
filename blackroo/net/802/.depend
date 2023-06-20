@@ -1,0 +1,13 @@
+fddi.o: fddi.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+sysctl_net_802.o: sysctl_net_802.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h)
+cl2llc.o: cl2llc.c \
+   pseudo/pseudocode.h \
+   transit/pdutr.h \
+   transit/timertr.h
+tr.o: tr.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+fc.o: fc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)

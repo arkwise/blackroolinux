@@ -1,0 +1,26 @@
+exec.o: exec.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)
+devices.o: devices.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)
+block_dev.o: block_dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)
+filesystems.o: filesystems.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devpts/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfs/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfsd/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfsd.h)
+binfmt_flat.o: binfmt_flat.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/binfmt/flat/separately.h)
+inode.o: inode.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/quota.h)
+super.o: super.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/root/nfs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/fd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ram.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/initrd.h)
+buffer.o: buffer.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+dcache.o: dcache.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/quota.h)
+binfmt_misc.o: binfmt_misc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

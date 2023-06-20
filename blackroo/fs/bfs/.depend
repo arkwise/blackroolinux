@@ -1,0 +1,6 @@
+dir.o: dir.c \
+   bfs_defs.h
+file.o: file.c \
+   bfs_defs.h
+inode.o: inode.c \
+   bfs_defs.h

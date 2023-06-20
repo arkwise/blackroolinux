@@ -1,0 +1,241 @@
+cyber2000fb.o: cyber2000fb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/footbridge.h) \
+   cyber2000fb.h
+p9100fb.o: p9100fb.c \
+   p9100.h
+fbcon.o: fbcon.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/vga/planes.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/fontwidth8/only.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb24.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb8.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/afb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/ilbm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/iplan2p2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/iplan2p4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/iplan2p8.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/mfb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/hga.h)
+cyberfb.o: cyberfb.c \
+   cyberfb.h
+igafb.o: igafb.c \
+   iga.h
+sun3fb.o: sun3fb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun3x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/cgsix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/bwtwo.h)
+sticon-bmode.o: sticon-bmode.c \
+   sti-bmode.h
+S3triofb.o: S3triofb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h)
+tgafb.o: tgafb.c \
+   tgafb.h
+fbmem.o: fbmem.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/retinaz3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/cyber.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/cyber2000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/pm2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/clgen.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/aty.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/matrox.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/aty128.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/virge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/riva.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/control.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/platinum.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/valkyrie.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/ct65550.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/imstt.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/s3trio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/fm2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sis.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/of.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/vesa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/3dfx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sgivw.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/acorn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/hga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/iga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apollo.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/q40.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/tga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/hp300.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/g364.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sa1100.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sun3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/hit.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/vga16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sti.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/gsp/resolver.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/virtual.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/acorn.h)
+psxcon.o: psxcon.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt/console/hires.h)
+sticon.o: sticon.c \
+   sti.h
+sticore.o: sticore.c \
+   sti.h
+hitfb.o: hitfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hd64461/iobase.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/lcd/videobase.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/lcd/videosize.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/lcd/horz.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/lcd/vert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/lcd/defaultbpp.h)
+dn_cfb4.o: dn_cfb4.c \
+   dn_accel.h
+sbusfb.o: sbusfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/creator.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/cgsix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/cgthree.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/tcx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/leo.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/bwtwo.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/cgfourteen.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/p9100.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun4.h)
+tdfxfb.o: tdfxfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtrr.h)
+macmodes.o: macmodes.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h)
+vga.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h)
+	@touch vga.h
+font_acorn_8x8.o: font_acorn_8x8.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/acorn.h)
+sgivwfb.o: sgivwfb.c \
+   sgivwfb.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtrr.h)
+chipsfb.o: chipsfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/backlight.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h)
+fbcon-sti.o: fbcon-sti.c \
+   sti.h
+cyber2000fb.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/debug/ll.h)
+	@touch cyber2000fb.h
+imsttfb.o: imsttfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   macmodes.c
+aty128fb.o: aty128fb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nvram.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/pmu.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/backlight.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtrr.h) \
+   aty128.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cntl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/memsize.h)
+promcon.o: promcon.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dummy/console.h)
+fonts.o: fonts.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/8x8.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/8x16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/6x11.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/sun8x16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/sun12x22.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb8.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb24.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fbcon/cfb32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/acorn/8x8.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/font/pearl/8x8.h)
+vga16fb.o: vga16fb.c \
+   vga.h
+platinumfb.o: platinumfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   platinumfb.h
+dnfb.o: dnfb.c \
+   dn_accel.h
+controlfb.o: controlfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   controlfb.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/cuda.h)
+valkyriefb.o: valkyriefb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   valkyriefb.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/cuda.h)
+acornfb.o: acornfb.c \
+   acornfb.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/a5k.h)
+stifb.o: stifb.c \
+   sti.h
+sa1100fb.o: sa1100fb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sa1100/assabet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sa1100/bitsy.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sa1100/penny.h)
+amifb.o: amifb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/amiga/ocs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/amiga/ecs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/amiga/aga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/gsp/resolver.h)
+cvisionppc.h: \
+   pm2fb.h
+	@touch cvisionppc.h
+clgenfb.o: clgenfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zorro.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h) \
+   clgenfb.h \
+   vga.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/prep.h)
+atyfb.o: atyfb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/pmu.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nvram.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/backlight.h) \
+   aty.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nvram/not/defined.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/chip/id.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/stat0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/stat1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+offb.o: offb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h)
+vgacon.o: vgacon.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ia64/softsdv/hacks.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dummy/console.h)
+dn_cfb8.o: dn_cfb8.c \
+   dn_accel.h
+pm2fb.o: pm2fb.c \
+   pm2fb.h \
+   cvisionppc.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/pm2/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/pm2/cvppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/pm2/fifo/disconnect.h)
+bwtwofb.o: bwtwofb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sun3.h)
+retz3fb.o: retz3fb.c \
+   retz3fb.h
+.PRECIOUS:	vga.h \
+	cyber2000fb.h \
+	cvisionppc.h \
+

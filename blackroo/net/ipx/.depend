@@ -1,0 +1,8 @@
+af_spx.o: af_spx.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/spx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/spx/module.h)
+af_ipx.o: af_ipx.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipx/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipx/intern.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

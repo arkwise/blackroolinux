@@ -1,0 +1,15 @@
+irnet_ppp.h: \
+   irnet.h
+	@touch irnet_ppp.h
+irnet_ppp.o: irnet_ppp.c \
+   irnet_ppp.h
+irnet_irda.h: \
+   irnet.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+	@touch irnet_irda.h
+irnet_irda.o: irnet_irda.c \
+   irnet_irda.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+.PRECIOUS:	irnet_ppp.h \
+	irnet_irda.h \
+

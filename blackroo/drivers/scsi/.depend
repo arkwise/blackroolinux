@@ -1,0 +1,929 @@
+mvme147.o: mvme147.c \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   mvme147.h \
+   mvme147.h \
+   scsi_module.c
+qlogicfc.o: qlogicfc.c \
+   sd.h \
+   hosts.h \
+   qlogicfc.h \
+   qlogicfc_asm.c \
+   scsi_module.c
+cpqfcTSi2c.o: cpqfcTSi2c.c \
+   cpqfcTSchip.h
+eata_pio.h: \
+   scsi.h \
+   hosts.h \
+   eata_generic.h
+	@touch eata_pio.h
+sym53c8xx.h: \
+   sym53c8xx_defs.h
+	@touch sym53c8xx.h
+BusLogic.o: BusLogic.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   BusLogic.h \
+   FlashPoint.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/omit/flashpoint.h) \
+   scsi_module.c
+tmscsim.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+	@touch tmscsim.h
+dmx3191d.o: dmx3191d.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   dmx3191d.h \
+   NCR5380.h \
+   NCR5380.c \
+   scsi_module.c
+aha1740.o: aha1740.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   aha1740.h \
+   scsi_module.c
+gdth.o: gdth.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   gdth.h \
+   gdth_proc.h \
+   gdth_proc.c \
+   scsi_module.c
+blz1230.o: blz1230.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   blz1230.h \
+   blz1230.h \
+   scsi_module.c
+gdth_proc.o: gdth_proc.c \
+   gdth_ioctl.h
+imm.h: \
+   sd.h \
+   hosts.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/izip/epp16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/izip/slow/ctr.h)
+	@touch imm.h
+NCR53C9x.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/oktagon/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/oktagon/scsi/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blz1230/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blz1230/scsi/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blz2060/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blz2060/scsi/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyberstorm/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyberstorm/scsi/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyberstormii/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyberstormii/scsi/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fastlane/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fastlane/scsi/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/jazz/esp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/has/wb.h)
+	@touch NCR53C9x.h
+sd.h: \
+   scsi.h
+	@touch sd.h
+fcal.h: \
+   ../fc4/fcp_impl.h
+	@touch fcal.h
+inia100.h: \
+   sd.h
+	@touch inia100.h
+qlogicisp.o: qlogicisp.c \
+   sd.h \
+   hosts.h \
+   qlogicisp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ql/isp/a64.h) \
+   qlogicisp_asm.c \
+   scsi_module.c
+3w-xxxx.o: 3w-xxxx.c \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   3w-xxxx.h \
+   scsi_module.c
+bvme6000.o: bvme6000.c \
+   scsi.h \
+   hosts.h \
+   53c7xx.h \
+   bvme6000.h
+psi240i.o: psi240i.c \
+   scsi.h \
+   hosts.h \
+   psi240i.h \
+   psi_chip.h \
+   sd.h \
+   scsi_module.c
+sun3_NCR5380.o: sun3_NCR5380.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/scsi/toshiba/delay.h)
+sr.h: \
+   scsi.h
+	@touch sr.h
+eata_pio.o: eata_pio.c \
+   eata_pio.h \
+   eata_dma_proc.h \
+   scsi.h \
+   sd.h \
+   eata_pio_proc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   scsi_module.c
+scsi.o: scsi.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/logging.h)
+scsi_ioctl.o: scsi_ioctl.c \
+   scsi.h \
+   hosts.h
+scsi_lib.o: scsi_lib.c \
+   scsi.h \
+   hosts.h \
+   constants.h
+blz2060.o: blz2060.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   blz2060.h \
+   blz2060.h \
+   scsi_module.c
+jazz_esp.o: jazz_esp.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   jazz_esp.h
+mca_53c9x.o: mca_53c9x.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   mca_53c9x.h \
+   scsi_module.c
+sun3x_esp.o: sun3x_esp.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   sun3x_esp.h \
+   scsi_module.c
+in2000.o: in2000.c \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   in2000.h \
+   scsi_module.c
+scsi_proc.o: scsi_proc.c \
+   scsi.h \
+   hosts.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+osst.o: osst.c \
+   scsi.h \
+   hosts.h \
+   st.h \
+   osst.h \
+   osst_options.h \
+   osst_detect.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+constants.o: constants.c \
+   scsi.h \
+   hosts.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/constants.h)
+qlogicpti.o: qlogicpti.c \
+   scsi.h \
+   hosts.h \
+   qlogicpti.h \
+   qlogicpti_asm.c \
+   scsi_module.c
+cyberstorm.o: cyberstorm.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   cyberstorm.h \
+   cyberstorm.h \
+   scsi_module.c
+fd_mcs.o: fd_mcs.c \
+   scsi.h \
+   hosts.h \
+   fd_mcs.h \
+   sd.h \
+   scsi_module.c
+fastlane.h: \
+   NCR53C9x.h
+	@touch fastlane.h
+scsi_obsolete.o: scsi_obsolete.c \
+   scsi.h \
+   hosts.h \
+   constants.h
+aha152x.h: \
+   scsi.h
+	@touch aha152x.h
+tmscsim.o: tmscsim.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   dc390.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   tmscsim.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/dc390t/nogensupp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/multi/lun.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/dc390t/tradmap.h) \
+   scsiiom.c \
+   scsi_module.c \
+   scsi_module.c
+mesh.o: mesh.c \
+   scsi.h \
+   hosts.h \
+   mesh.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/mesh/sync/rate.h) \
+   scsi_module.c
+st.h: \
+   scsi.h
+	@touch st.h
+scsi_merge.o: scsi_merge.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/debug/queues.h)
+eata.o: eata.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   eata.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/eata/tagged/queue.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/eata/linked/commands.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/eata/max/tags.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   scsi_module.c
+53c7xx.o: 53c7xx.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme16x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000.h) \
+   scsi.h \
+   hosts.h \
+   53c7xx.h \
+   constants.h \
+   sd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c7xx/fast.h) \
+   scsi_module.c
+pci2000.o: pci2000.c \
+   scsi.h \
+   hosts.h \
+   pci2000.h \
+   psi_roy.h \
+   sd.h \
+   scsi_module.c
+cpqfcTSworker.o: cpqfcTSworker.c \
+   sd.h \
+   hosts.h \
+   cpqfcTSchip.h \
+   cpqfcTSstructs.h
+scsi.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/user/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/logging.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   scsi_obsolete.h
+	@touch scsi.h
+sym53c8xx.o: sym53c8xx.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   sym53c8xx.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   scsi_module.c
+t128.o: t128.c \
+   scsi.h \
+   hosts.h \
+   t128.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   NCR5380.c \
+   scsi_module.c
+NCR53c406a.o: NCR53c406a.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   NCR53c406a.h \
+   scsi_module.c
+scsi_error.o: scsi_error.c \
+   scsi.h \
+   hosts.h \
+   constants.h
+53c7,8xx.o: 53c7,8xx.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c7xx/sync.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c7xx/disconnect.h) \
+   scsi.h \
+   hosts.h \
+   53c7,8xx.h \
+   constants.h \
+   sd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c7xx/fast.h) \
+   53c8xx_d.h \
+   53c8xx_u.h \
+   scsi_module.c
+fastlane.o: fastlane.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   fastlane.h \
+   fastlane.h \
+   scsi_module.c
+a3000.o: a3000.c \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   a3000.h \
+   scsi_module.c
+oktagon_esp.o: oktagon_esp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   oktagon_esp.h \
+   oktagon_esp.h \
+   scsi_module.c
+u14-34f.o: u14-34f.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   u14-34f.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/u14/34f/linked/commands.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/u14/34f/max/tags.h) \
+   scsi_module.c
+cpqfcTSstructs.h: \
+   cpqfcTSioctl.h
+	@touch cpqfcTSstructs.h
+oktagon_esp.h: \
+   NCR53C9x.h
+	@touch oktagon_esp.h
+pluto.h: \
+   ../fc4/fcp_impl.h
+	@touch pluto.h
+mac_scsi.o: mac_scsi.c \
+   scsi.h \
+   hosts.h \
+   mac_scsi.h \
+   NCR5380.h \
+   constants.h \
+   NCR5380.c \
+   scsi_module.c
+wd33c93.o: wd33c93.c \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme147/scsi.h)
+aha152x.o: aha152x.c \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   constants.h \
+   aha152x.h \
+   scsi_module.c
+sym53c8xx_defs.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/pqs/pds.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/nvram/detect.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/profile.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/integrity/check.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/max/tags.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/default/tags.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/tagged/queue.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/iomapped.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/iarb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/sync.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/no/disconnect.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/force/sync/nego.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/disable/mparity/check.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/disable/parity/check.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/ncr53c8xx/symbios/compat.h)
+	@touch sym53c8xx_defs.h
+sg.o: sg.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   scsi.h \
+   hosts.h
+g_NCR5380.o: g_NCR5380.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/generic/ncr53c400.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/g/ncr5380/port.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/g/ncr5380/mem.h) \
+   scsi.h \
+   hosts.h \
+   g_NCR5380.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   NCR5380.c \
+   scsi_module.c
+ultrastor.o: ultrastor.c \
+   scsi.h \
+   hosts.h \
+   ultrastor.h \
+   sd.h \
+   scsi_module.c
+ncr53c8xx.o: ncr53c8xx.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   ncr53c8xx.h \
+   sym53c8xx_comm.h \
+   scsi_module.c
+scsi_dma.o: scsi_dma.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)
+sun3_scsi.o: sun3_scsi.c \
+   scsi.h \
+   hosts.h \
+   sun3_scsi.h \
+   NCR5380.h \
+   constants.h \
+   sun3_NCR5380.c \
+   scsi_module.c
+sr_ioctl.o: sr_ioctl.c \
+   scsi.h \
+   hosts.h \
+   sr.h
+scsi_queue.o: scsi_queue.c \
+   scsi.h \
+   hosts.h \
+   constants.h
+ini9100u.h: \
+   sd.h
+	@touch ini9100u.h
+aic7xxx_proc.o: aic7xxx_proc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aic7xxx/tcq/on/by/default.h)
+mac_esp.o: mac_esp.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   mac_esp.h \
+   scsi_module.c
+qlogicfas.o: qlogicfas.c \
+   sd.h \
+   hosts.h \
+   qlogicfas.h \
+   scsi_module.c
+aha1542.o: aha1542.c \
+   scsi.h \
+   hosts.h \
+   aha1542.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h) \
+   sd.h \
+   scsi_module.c
+aic7xxx.o: aic7xxx.c \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   aic7xxx.h \
+   aic7xxx/sequencer.h \
+   aic7xxx/scsi_message.h \
+   aic7xxx_reg.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aic7xxx/cmds/per/device.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aic7xxx/proc/stats.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aic7xxx/tcq/on/by/default.h) \
+   aic7xxx_seq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   aic7xxx_proc.c \
+   scsi_module.c
+ppa.o: ppa.c \
+   sd.h \
+   hosts.h \
+   ppa.h \
+   scsi_module.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/izip/epp16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/module.h)
+BusLogic.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/omit/flashpoint.h)
+	@touch BusLogic.h
+mac_NCR5380.o: mac_NCR5380.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/scsi/toshiba/delay.h) \
+   scsi_module.c
+fdomain.o: fdomain.c \
+   scsi.h \
+   hosts.h \
+   fdomain.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   sd.h \
+   scsi_module.c
+sgiwd93.o: sgiwd93.c \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   sgiwd93.h \
+   sgiwd93.h \
+   scsi_module.c
+sd.o: sd.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/logging.h)
+g_NCR5380.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/g/ncr5380/port.h)
+	@touch g_NCR5380.h
+st.o: st.c \
+   scsi.h \
+   hosts.h \
+   st_options.h \
+   st.h \
+   constants.h \
+   osst_detect.h
+ide-scsi.o: ide-scsi.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   ide-scsi.h
+dec_esp.o: dec_esp.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   dec_esp.h
+sim710.o: sim710.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tp34v/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h) \
+   scsi.h \
+   hosts.h \
+   sim710.h \
+   sim710_d.h \
+   scsi_module.c
+AM53C974.o: AM53C974.c \
+   scsi.h \
+   hosts.h \
+   AM53C974.h \
+   constants.h \
+   sd.h \
+   scsi_module.c
+atari_NCR5380.o: atari_NCR5380.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/scsi/toshiba/delay.h)
+mac53c94.o: mac53c94.c \
+   scsi.h \
+   hosts.h \
+   mac53c94.h \
+   scsi_module.c
+scsi_syms.o: scsi_syms.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/logging.h)
+pas16.o: pas16.c \
+   scsi.h \
+   hosts.h \
+   pas16.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   NCR5380.c \
+   scsi_module.c
+esp.o: esp.c \
+   scsi.h \
+   hosts.h \
+   esp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   scsi_module.c
+seagate.o: seagate.c \
+   scsi.h \
+   hosts.h \
+   seagate.h \
+   constants.h \
+   sd.h \
+   scsi_module.c
+gvp11.o: gvp11.c \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   gvp11.h \
+   gvp11.h \
+   scsi_module.c
+i91uscsi.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adr.h)
+	@touch i91uscsi.h
+dec_esp.h: \
+   NCR53C9x.h
+	@touch dec_esp.h
+cyberstormII.o: cyberstormII.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   cyberstormII.h \
+   cyberstormII.h \
+   scsi_module.c
+cpqioctl.o: cpqioctl.c \
+   ../../include/scsi/scsi.h \
+   cpqfcTSioctl.h
+i91uscsi.o: i91uscsi.c \
+   i91uscsi.h
+sr_vendor.o: sr_vendor.c \
+   scsi.h \
+   hosts.h \
+   sr.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/sr/vendor.h)
+pci2220i.o: pci2220i.c \
+   scsi.h \
+   hosts.h \
+   pci2220i.h \
+   psi_dale.h \
+   sd.h \
+   scsi_module.c
+blz2060.h: \
+   NCR53C9x.h
+	@touch blz2060.h
+jazz_esp.h: \
+   NCR53C9x.h
+	@touch jazz_esp.h
+mca_53c9x.h: \
+   NCR53C9x.h
+	@touch mca_53c9x.h
+hosts.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sd/extra/devs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sr/extra/devs.h)
+	@touch hosts.h
+osst.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+	@touch osst.h
+ini9100u.o: ini9100u.c \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   ini9100u.h \
+   scsi_module.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+pluto.o: pluto.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   scsi.h \
+   hosts.h \
+   ../fc4/fcp_impl.h \
+   pluto.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fc4/soc/module.h) \
+   scsi_module.c
+fcal.o: fcal.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   scsi.h \
+   hosts.h \
+   ../fc4/fcp_impl.h \
+   fcal.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fc4/socal/module.h) \
+   scsi_module.c
+i60uscsi.o: i60uscsi.c \
+   i60uscsi.h
+cpqfcTScontrol.o: cpqfcTScontrol.c \
+   sd.h \
+   hosts.h \
+   cpqfcTSchip.h \
+   cpqfcTSstructs.h
+cyberstormII.h: \
+   NCR53C9x.h
+	@touch cyberstormII.h
+scsicam.o: scsicam.c \
+   scsi.h \
+   hosts.h \
+   sd.h
+atp870u.o: atp870u.c \
+   scsi.h \
+   hosts.h \
+   atp870u.h \
+   sd.h \
+   scsi_module.c
+eata_dma.o: eata_dma.c \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   eata_dma.h \
+   eata_dma_proc.h \
+   eata_dma_proc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   scsi_module.c
+a2091.o: a2091.c \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   a2091.h \
+   scsi_module.c
+atari_scsi.o: atari_scsi.c \
+   scsi.h \
+   hosts.h \
+   atari_scsi.h \
+   NCR5380.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/scsi/toshiba/delay.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/scsi/reset/boot.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tt/dma/emul.h) \
+   atari_dma_emul.c \
+   atari_NCR5380.c \
+   scsi_module.c
+advansys.o: advansys.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   advansys.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   scsi_module.c
+cyberstorm.h: \
+   NCR53C9x.h
+	@touch cyberstorm.h
+wd33c93.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme147/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h)
+	@touch wd33c93.h
+amiga7xx.o: amiga7xx.c \
+   scsi.h \
+   hosts.h \
+   53c7xx.h \
+   amiga7xx.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/a4000t/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blz603eplus/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/warpengine/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/a4091/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/gvp/turbo/scsi.h)
+cpqfcTS.h: \
+   cpqfcTSstructs.h
+	@touch cpqfcTS.h
+FlashPoint.o: FlashPoint.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/omit/flashpoint.h)
+cpqfcTSinit.o: cpqfcTSinit.c \
+   sd.h \
+   hosts.h \
+   cpqfcTSchip.h \
+   cpqfcTSstructs.h \
+   cpqfcTS.h \
+   scsi_module.c
+ncr53c8xx.h: \
+   sym53c8xx_defs.h
+	@touch ncr53c8xx.h
+blz1230.h: \
+   NCR53C9x.h
+	@touch blz1230.h
+oktagon_io.o: oktagon_io.S \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h)
+wd7000.o: wd7000.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   wd7000.h \
+   scsi_module.c
+scsi_scan.o: scsi_scan.c \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/multi/lun.h)
+imm.o: imm.c \
+   sd.h \
+   hosts.h \
+   imm.h \
+   scsi_module.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/izip/epp16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/module.h)
+hosts.o: hosts.c \
+   scsi.h \
+   hosts.h
+NCR53C9x.o: NCR53C9x.c \
+   scsi.h \
+   hosts.h \
+   NCR53C9x.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/mac/esp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+inia100.o: inia100.c \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   inia100.h \
+   scsi_module.c
+mac_esp.h: \
+   NCR53C9x.h
+	@touch mac_esp.h
+i60uscsi.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adr.h)
+	@touch i60uscsi.h
+qla1280.o: qla1280.c \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   qla1280.h \
+   ql12160_fw.h \
+   ql1280_fw.h \
+   scsi_module.c
+sr.o: sr.c \
+   scsi.h \
+   hosts.h \
+   sr.h \
+   constants.h
+mvme16x.o: mvme16x.c \
+   scsi.h \
+   hosts.h \
+   53c7xx.h \
+   mvme16x.h
+ips.o: ips.c \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   ips.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   scsi_module.c
+eata_dma.h: \
+   eata_generic.h
+	@touch eata_dma.h
+megaraid.o: megaraid.c \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   megaraid.h \
+   scsi_module.c
+ppa.h: \
+   sd.h \
+   hosts.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/izip/epp16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/izip/slow/ctr.h)
+	@touch ppa.h
+scsi_debug.o: scsi_debug.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   scsi_debug.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/user/debug.h) \
+   scsi_module.c
+dtc.o: dtc.c \
+   scsi.h \
+   hosts.h \
+   dtc.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   NCR5380.c \
+   scsi_module.c
+sym53c416.o: sym53c416.c \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   sym53c416.h \
+   scsi_module.c
+ibmmca.o: ibmmca.c \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   ibmmca.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ibmmca/scsi/order/standard.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ibmmca/scsi/dev/reset.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/multi/lun.h) \
+   scsi_module.c
+.PRECIOUS:	eata_pio.h \
+	sym53c8xx.h \
+	tmscsim.h \
+	imm.h \
+	NCR53C9x.h \
+	sd.h \
+	fcal.h \
+	inia100.h \
+	sr.h \
+	fastlane.h \
+	aha152x.h \
+	st.h \
+	scsi.h \
+	cpqfcTSstructs.h \
+	oktagon_esp.h \
+	pluto.h \
+	sym53c8xx_defs.h \
+	ini9100u.h \
+	BusLogic.h \
+	g_NCR5380.h \
+	i91uscsi.h \
+	dec_esp.h \
+	blz2060.h \
+	jazz_esp.h \
+	mca_53c9x.h \
+	hosts.h \
+	osst.h \
+	cyberstormII.h \
+	cyberstorm.h \
+	wd33c93.h \
+	cpqfcTS.h \
+	ncr53c8xx.h \
+	blz1230.h \
+	mac_esp.h \
+	i60uscsi.h \
+	eata_dma.h \
+	ppa.h \
+

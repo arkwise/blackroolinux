@@ -1,0 +1,1 @@
+#define CONFIG_GPUPSX_CONSOLE 1

@@ -1,0 +1,32 @@
+fcp_impl.h: \
+   ../scsi/scsi.h \
+   fc.h \
+   fcp.h \
+   fc-al.h
+	@touch fcp_impl.h
+fc_syms.o: fc_syms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modules.h) \
+   fcp_impl.h
+soc.h: \
+   fc.h \
+   fcp.h \
+   fcp_impl.h
+	@touch soc.h
+soc.o: soc.c \
+   fcp_impl.h \
+   soc.h
+socal.h: \
+   fc.h \
+   fcp.h \
+   fcp_impl.h
+	@touch socal.h
+socal.o: socal.c \
+   fcp_impl.h \
+   socal.h
+fc.o: fc.c \
+   fcp_impl.h \
+   ../scsi/hosts.h
+.PRECIOUS:	fcp_impl.h \
+	soc.h \
+	socal.h \
+

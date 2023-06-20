@@ -1,0 +1,7 @@
+arcnet.o: arcnet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arcnet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arcnet/1201.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arcnet/1051.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arcnet/raw.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arcnet/com90xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)

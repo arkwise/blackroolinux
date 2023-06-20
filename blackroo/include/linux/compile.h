@@ -1,0 +1,6 @@
+#define UTS_VERSION "#1 Monday 19 June 17:03:41 AEST 2023"
+#define LINUX_COMPILE_TIME "17:03:41"
+#define LINUX_COMPILE_BY "chelson"
+#define LINUX_COMPILE_HOST "chelson-VirtualBox"
+#define LINUX_COMPILE_DOMAIN ""
+#define LINUX_COMPILER "gcc version egcs-2.91.66 19990314 (egcs-1.1.2 release)"

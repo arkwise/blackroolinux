@@ -1,0 +1,32 @@
+smctr_firmware.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smctr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smctr/module.h)
+	@touch smctr_firmware.h
+tmspci.o: tmspci.c \
+   tms380tr.h
+tms380tr.o: tms380tr.c \
+   tms380tr.h \
+   tms380tr_microcode.h
+lanstreamer.o: lanstreamer.c \
+   lanstreamer.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+smctr.o: smctr.c \
+   smctr.h \
+   smctr_firmware.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h)
+abyss.o: abyss.c \
+   tms380tr.h \
+   abyss.h
+tms380tr_microcode.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tms380tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tms380tr/module.h)
+	@touch tms380tr_microcode.h
+olympic.o: olympic.c \
+   olympic.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+madgemc.o: madgemc.c \
+   tms380tr.h \
+   madgemc.h
+.PRECIOUS:	smctr_firmware.h \
+	tms380tr_microcode.h \
+

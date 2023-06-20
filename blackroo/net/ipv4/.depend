@@ -1,0 +1,150 @@
+tcp_ipv4.o: tcp_ipv4.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/syn/cookies.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+protocol.o: protocol.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multicast.h)
+ip_fragment.o: ip_fragment.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)
+ip_input.o: ip_input.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/route.h)
+ipmr.o: ipmr.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pimsm/v1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pimsm/v2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pimsm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+tcp_minisocks.o: tcp_minisocks.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+fib_semantics.o: fib_semantics.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/multipath.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/nat.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/route.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/pervasive.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/nosiocrt.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ip_sockglue.o: ip_sockglue.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/mroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet/ecn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h)
+fib_rules.o: fib_rules.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/fwmark.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/route.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/tos.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+fib_hash.o: fib_hash.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/large/tables.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/tos.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multiple/tables.h)
+ip_nat_dumb.o: ip_nat_dumb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/tos.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/fwmark.h)
+arp.o: arp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netrom.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netrom/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/clip.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arpd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fddi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/ethernet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/accept/unsolicited/arp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+af_inet.o: af_inet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/mroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/divert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/radio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/pcmcia/radio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/ipip.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/ipgre.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+igmp.o: igmp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/mroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multicast.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pimsm/v1.h)
+ipconfig.o: ipconfig.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pnp/bootp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pnp/rarp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/pnp/dynamic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/root/nfs.h)
+raw.o: raw.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/mroute.h)
+ip_output.o: ip_output.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/nat.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/mroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multicast.h)
+tcp.o: tcp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet/ecn.h)
+ipip.o: ipip.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)
+devinet.o: devinet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multiple/tables.h)
+sysctl_net_ipv4.o: sysctl_net_ipv4.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/syn/cookies.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multicast.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet/ecn.h)
+ip_gre.o: ip_gre.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet/ecn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/ipgre/broadcast.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)
+ip_forward.o: ip_forward.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fastroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/nat.h)
+tcp_input.o: tcp_input.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet/ecn.h)
+fib_frontend.o: fib_frontend.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multiple/tables.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/multipath.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/nosiocrt.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+syncookies.o: syncookies.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/syn/cookies.h)
+icmp.o: icmp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/nat.h)
+udp.o: udp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+route.o: route.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet/ecn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/verbose.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/nat.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/route.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multiple/tables.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/fwmark.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/mroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/multipath.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fastroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)

@@ -1,0 +1,20 @@
+i2c-core.o: i2c-core.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/chardev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/algobit.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/bitlp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/bitelv.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/bitvelle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/bitvia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/algopcf.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/pcfisa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/philipspar.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/elv.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/velleman.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c/elektor.h)
+i2c-algo-pcf.o: i2c-algo-pcf.c \
+   i2c-pcf8584.h
+i2c-dev.o: i2c-dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+i2c-elektor.o: i2c-elektor.c \
+   i2c-pcf8584.h

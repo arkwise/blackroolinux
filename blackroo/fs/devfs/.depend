@@ -1,0 +1,4 @@
+base.o: base.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/mount.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)

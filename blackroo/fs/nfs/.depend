@@ -1,0 +1,11 @@
+flushd.o: flushd.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfs/v3.h)
+read.o: read.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfs/v3.h)
+inode.o: inode.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfs/v3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+nfsroot.o: nfsroot.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfs/v3.h)
+write.o: write.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nfs/v3.h)

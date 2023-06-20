@@ -1,0 +1,50 @@
+softirq.o: softirq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/s390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+printk.o: printk.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/uclinux.h)
+kmod.o: kmod.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hotplug.h)
+sysctl.o: sysctl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/root/nfs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hotplug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/chr/dev/sg.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysvipc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bsd/process/acct.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/initrd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h)
+panic.o: panic.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/s390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+module.o: module.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modules.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kallsyms.h)
+sched.o: sched.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/x86.h)
+signal.o: signal.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+acct.o: acct.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bsd/process/acct.h)
+exit.o: exit.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bsd/process/acct.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+ksyms.o: ksyms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modversions.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/discontigmem.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/highmem.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/s390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/uid16.h)
+fork.o: fork.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/uclinux.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+timer.o: timer.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)

@@ -1,0 +1,13 @@
+ddp.o: ddp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipddp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipddp/module.h)
+sysctl_net_atalk.o: sysctl_net_atalk.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+aarp.o: aarp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

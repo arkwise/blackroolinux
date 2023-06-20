@@ -1,0 +1,62 @@
+tcic.o: tcic.c \
+   tcic.h
+ds.o: ds.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cardbus.h)
+cs.o: cs.c \
+   cs_internal.h \
+   rsrc_mgr.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cardbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/locked.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/io/req.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irq/req.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isa.h)
+rsrc_mgr.o: rsrc_mgr.c \
+   cs_internal.h \
+   rsrc_mgr.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cardbus.h)
+bulkmem.o: bulkmem.c \
+   cs_internal.h
+cs_internal.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cardbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+	@touch cs_internal.h
+yenta.h: \
+   pci_socket.h
+	@touch yenta.h
+pci_socket.o: pci_socket.c \
+   pci_socket.h
+i82365.o: i82365.c \
+   i82365.h \
+   cirrus.h \
+   vg468.h \
+   ricoh.h \
+   o2micro.h \
+   old-yenta.h \
+   smc34c90.h \
+   topic.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+cistpl.o: cistpl.c \
+   cs_internal.h \
+   rsrc_mgr.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cardbus.h)
+yenta.o: yenta.c \
+   yenta.h \
+   i82365.h \
+   ti113x.h \
+   ricoh.h
+cardbus.o: cardbus.c \
+   cs_internal.h \
+   rsrc_mgr.h
+ti113x.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cardbus.h)
+	@touch ti113x.h
+.PRECIOUS:	cs_internal.h \
+	yenta.h \
+	ti113x.h \
+

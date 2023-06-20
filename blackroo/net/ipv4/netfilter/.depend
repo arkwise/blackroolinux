@@ -1,0 +1,29 @@
+ipchains_core.o: ipchains_core.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+ip_conntrack_core.o: ip_conntrack_core.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+ip_tables.o: ip_tables.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ipt_REJECT.o: ipt_REJECT.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)
+ip_nat_standalone.o: ip_nat_standalone.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/fwmark.h)
+ipfwadm_core.o: ipfwadm_core.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/acct.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/firewall.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/firewall/netlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/firewall/verbose.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/transparent/proxy.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/masquerade.h)
+iptable_mangle.o: iptable_mangle.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/route/fwmark.h)
+ip_fw_compat_redir.o: ip_fw_compat_redir.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)

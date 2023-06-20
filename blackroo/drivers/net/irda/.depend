@@ -1,0 +1,6 @@
+w83977af_ir.o: w83977af_ir.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/netwinder.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/use/w977/pnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/use/internal/timer.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netwinder/tx/dma/problems.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netwinder/rx/dma/problems.h)

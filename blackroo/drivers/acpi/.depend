@@ -1,0 +1,19 @@
+ec.o: ec.c \
+   driver.h \
+   ec.h
+driver.o: driver.c \
+   driver.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acpi/kernel/config.h)
+os.o: os.c \
+   driver.h
+power.o: power.c \
+   driver.h
+table.o: table.c \
+   driver.h
+cpu.o: cpu.c \
+   driver.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+sys.o: sys.c \
+   driver.h
+cmbatt.o: cmbatt.c \
+   driver.h

@@ -1,0 +1,28 @@
+dmasound_q40.o: dmasound_q40.c \
+   dmasound.h
+dmasound_core.o: dmasound_core.c \
+   dmasound.h
+dmasound_awacs.o: dmasound_awacs.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/cuda.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb/pmu.h) \
+   awacs_defs.h \
+   dmasound.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h)
+dmasound_atari.o: dmasound_atari.c \
+   dmasound.h
+dmasound_paula.o: dmasound_paula.c \
+   dmasound.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/heartbeat.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h)
+dmasound.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/atari/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/paula.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/paula/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/q40.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/q40/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/awacs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmasound/awacs/module.h)
+	@touch dmasound.h
+.PRECIOUS:	dmasound.h \
+

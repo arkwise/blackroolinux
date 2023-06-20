@@ -1,0 +1,4 @@
+nubus.o: nubus.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+nubus_syms.o: nubus_syms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

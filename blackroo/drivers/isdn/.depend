@@ -1,0 +1,68 @@
+isdn_audio.o: isdn_audio.c \
+   isdn_audio.h \
+   isdn_common.h
+isdn_tty.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/tty/fax.h)
+	@touch isdn_tty.h
+isdn_x25iface.o: isdn_x25iface.c \
+   isdn_x25iface.h
+isdn_net.o: isdn_net.c \
+   isdn_common.h \
+   isdn_net.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/ppp.h) \
+   isdn_ppp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/x25.h) \
+   isdn_concap.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+isdn_concap.o: isdn_concap.c \
+   isdn_x25iface.h \
+   isdn_net.h \
+   isdn_concap.h
+isdn_cards.o: isdn_cards.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/icn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/hisax.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/pcbit.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/eicon/old.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/eicon/divas.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/act2000.h)
+isdn_common.o: isdn_common.c \
+   isdn_common.h \
+   isdn_tty.h \
+   isdn_net.h \
+   isdn_ppp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/audio.h) \
+   isdn_audio.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/diversion/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/diversion.h) \
+   isdn_v110.h \
+   isdn_cards.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/ppp.h) \
+   avmb1/capicmd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/x25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/tty/fax.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netdevices.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+isdn_tty.o: isdn_tty.c \
+   isdn_common.h \
+   isdn_tty.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/audio.h) \
+   isdn_audio.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/tty/fax.h) \
+   avmb1/capicmd.h
+isdn_ppp.o: isdn_ppp.c \
+   isdn_common.h \
+   isdn_ppp.h \
+   isdn_net.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/mpp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/ppp/vj.h)
+isdn_bsdcomp.o: isdn_bsdcomp.c \
+   isdn_ppp.h
+isdn_v110.o: isdn_v110.c \
+   isdn_v110.h
+isdn_ttyfax.o: isdn_ttyfax.c \
+   isdn_common.h \
+   isdn_tty.h \
+   isdn_ttyfax.h
+.PRECIOUS:	isdn_tty.h \
+

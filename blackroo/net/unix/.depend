@@ -1,0 +1,5 @@
+af_unix.o: af_unix.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+sysctl_net_unix.o: sysctl_net_unix.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)

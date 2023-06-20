@@ -1,0 +1,58 @@
+trans.o: trans.c \
+   hfs.h
+file_cap.o: file_cap.c \
+   hfs.h
+bdelete.o: bdelete.c \
+   hfs_btree.h
+mdb.o: mdb.c \
+   hfs.h
+hfs_btree.h: \
+   hfs.h
+	@touch hfs_btree.h
+dir_nat.o: dir_nat.c \
+   hfs.h
+binsert.o: binsert.c \
+   hfs_btree.h
+dir_dbl.o: dir_dbl.c \
+   hfs.h
+file.o: file.c \
+   hfs.h
+bitops.o: bitops.c \
+   hfs.h
+part_tbl.o: part_tbl.c \
+   hfs.h
+brec.o: brec.c \
+   hfs_btree.h
+bnode.o: bnode.c \
+   hfs_btree.h
+inode.o: inode.c \
+   hfs.h
+super.o: super.c \
+   hfs.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/partition.h)
+bins_del.o: bins_del.c \
+   hfs_btree.h
+dir.o: dir.c \
+   hfs.h
+extent.o: extent.c \
+   hfs.h
+bfind.o: bfind.c \
+   hfs_btree.h
+sysdep.o: sysdep.c \
+   hfs.h
+btree.o: btree.c \
+   hfs_btree.h
+bitmap.o: bitmap.c \
+   hfs.h
+dir_cap.o: dir_cap.c \
+   hfs.h
+catalog.o: catalog.c \
+   hfs.h
+balloc.o: balloc.c \
+   hfs_btree.h
+string.o: string.c \
+   hfs.h
+file_hdr.o: file_hdr.c \
+   hfs.h
+.PRECIOUS:	hfs_btree.h \
+

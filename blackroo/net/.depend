@@ -1,0 +1,48 @@
+sysctl_net.o: sysctl_net.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/unix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/econet.h)
+netsyms.o: netsyms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hippi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/divert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/khttpd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/khttpd/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipx/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arpd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fddi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/hw/flowcontrol.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sched.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/estimator.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h)
+socket.o: socket.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wan/router.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h)

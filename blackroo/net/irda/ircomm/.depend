@@ -1,0 +1,5 @@
+ircomm_core.o: ircomm_core.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ircomm_tty.o: ircomm_tty.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)

@@ -1,0 +1,68 @@
+t1pci.o: t1pci.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   avmcard.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+t1isa.o: t1isa.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   avmcard.h
+kcapi.o: kcapi.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/avmb1/compat.h)
+b1pci.o: b1pci.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   avmcard.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/avmb1/b1pciv4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+b1isa.o: b1isa.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   avmcard.h
+capiutil.o: capiutil.c \
+   capiutil.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/drv/avmb1/verbose/reason.h)
+capidrv.o: capidrv.c \
+   capiutil.h \
+   capicmd.h \
+   capidrv.h
+b1.o: b1.c \
+   capilli.h \
+   avmcard.h \
+   capicmd.h \
+   capiutil.h
+capi.o: capi.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/capi/middleware.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppp.h) \
+   capiutil.h \
+   capicmd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/capi/capifs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn/capi/capifs/module.h) \
+   capifs.h
+c4.o: c4.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   avmcard.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/c4/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/c4/polldebug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+b1pcmcia.o: b1pcmcia.c \
+   capicmd.h \
+   capiutil.h \
+   capilli.h \
+   avmcard.h
+b1dma.o: b1dma.c \
+   capilli.h \
+   avmcard.h \
+   capicmd.h \
+   capiutil.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/b1dma/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/b1dma/polldebug.h)

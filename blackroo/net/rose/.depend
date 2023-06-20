@@ -1,0 +1,4 @@
+af_rose.o: af_rose.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+rose_dev.o: rose_dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)

@@ -1,0 +1,22 @@
+ax25_in.o: ax25_in.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/dama/slave.h)
+af_ax25.o: af_ax25.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/dama/slave.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netrom.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rose.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netrom/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rose/module.h)
+ax25_iface.o: ax25_iface.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+ax25_ip.o: ax25_ip.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+sysctl_net_ax25.o: sysctl_net_ax25.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/dama/slave.h)
+ax25_out.o: ax25_out.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/dama/slave.h)
+ax25_dev.o: ax25_dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/dama/slave.h)
+ax25_timer.o: ax25_timer.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/dama/slave.h)

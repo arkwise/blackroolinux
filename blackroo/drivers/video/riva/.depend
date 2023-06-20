@@ -1,0 +1,10 @@
+riva_hw.o: riva_hw.c \
+   riva_hw.h \
+   riva_tbl.h
+fbdev.o: fbdev.c \
+   riva_hw.h \
+   nv4ref.h \
+   nvreg.h \
+   ../vga.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/prep.h)

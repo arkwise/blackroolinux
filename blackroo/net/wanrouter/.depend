@@ -1,0 +1,5 @@
+wanproc.o: wanproc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+wanmain.o: wanmain.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vendor/sangoma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyclades/sync.h)

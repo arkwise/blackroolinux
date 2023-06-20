@@ -1,0 +1,51 @@
+ip6_fw.o: ip6_fw.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink.h)
+sit.o: sit.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)
+sysctl_net_ipv6.o: sysctl_net_ipv6.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+ipv6_sockglue.o: ipv6_sockglue.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+addrconf.o: addrconf.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/no/pb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/eui64.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+tcp_ipv6.o: tcp_ipv6.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+mcast.o: mcast.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ip6_output.o: ip6_output.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h)
+af_inet6.o: af_inet6.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+ip6_fib.o: ip6_fib.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/subtrees.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+ip6_flowlabel.o: ip6_flowlabel.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ndisc.o: ndisc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/no/pb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/eui64.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arpd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+reassembly.o: reassembly.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+udp.o: udp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+route.o: route.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/route.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rt6/policy.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/subtrees.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/eui64.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/no/pb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)

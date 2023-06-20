@@ -1,0 +1,26 @@
+capi.o: capi.c \
+   pcbit.h \
+   edss1.h \
+   capi.h
+callbacks.o: callbacks.c \
+   pcbit.h \
+   layer2.h \
+   edss1.h \
+   callbacks.h \
+   capi.h
+drv.o: drv.c \
+   pcbit.h \
+   edss1.h \
+   layer2.h \
+   capi.h
+module.o: module.c \
+   pcbit.h
+edss1.o: edss1.c \
+   pcbit.h \
+   edss1.h \
+   layer2.h \
+   callbacks.h
+layer2.o: layer2.c \
+   pcbit.h \
+   layer2.h \
+   edss1.h

@@ -1,0 +1,11 @@
+ns558.o: ns558.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isapnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isapnp/module.h)
+iforce.o: iforce.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/input/iforce/232.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/input/iforce/232/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/input/iforce/usb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/input/iforce/usb/module.h)
+analog.o: analog.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/x86/tsc.h)

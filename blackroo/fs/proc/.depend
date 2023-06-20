@@ -1,0 +1,23 @@
+base.o: base.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+proc_misc.o: proc_misc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/debug/malloc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modules.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ds1286.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/hardware.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/stram/proc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/s390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+procfs_syms.o: procfs_syms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+kcore.o: kcore.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kcore/aout.h)
+root.o: root.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysvipc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun/openpromfs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun/openpromfs/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/devicetree.h)
+array.o: array.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/s390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)

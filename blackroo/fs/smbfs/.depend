@@ -1,0 +1,17 @@
+dir.o: dir.c \
+   smb_debug.h
+getopt.o: getopt.c \
+   getopt.h
+file.o: file.c \
+   smb_debug.h
+sock.o: sock.c \
+   smb_debug.h
+inode.o: inode.c \
+   smb_debug.h \
+   getopt.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smb/nls/remote.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nls/default.h)
+cache.o: cache.c \
+   smb_debug.h
+proc.o: proc.c \
+   smb_debug.h

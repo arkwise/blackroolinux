@@ -1,0 +1,5 @@
+irlan_eth.o: irlan_eth.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+irlan_common.o: irlan_common.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irlan/send/gratuitous/arp.h)

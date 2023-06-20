@@ -1,0 +1,28 @@
+mtdcore.o: mtdcore.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pm.h)
+mtdblock.o: mtdblock.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+docprobe.o: docprobe.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/docprobe/address.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/docprobe/high.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/docprobe/55aa.h)
+mtdchar.o: mtdchar.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+physmap.o: physmap.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/physmap/start.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/physmap/len.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/physmap/buswidth.h)
+nftl.o: nftl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nftl/rw.h)
+pmc551.o: pmc551.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/pmc551/bugfix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/pmc551/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtd/pmc551/aperture/size.h)
+doc1000.o: doc1000.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+mtdram.o: mtdram.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtdram/total/size.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtdram/erase/size.h)

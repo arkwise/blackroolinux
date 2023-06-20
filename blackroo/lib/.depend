@@ -1,0 +1,2 @@
+brlock.o: brlock.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)

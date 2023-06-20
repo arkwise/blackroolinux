@@ -1,0 +1,24 @@
+initdef.h: \
+   sis.h
+	@touch initdef.h
+sis_300.o: sis_300.c \
+   sis_300.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sis/linuxbios.h)
+sis_main.o: sis_main.c \
+   sis.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sis/linuxbios.h)
+sis_301.h: \
+   initdef.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sis/linuxbios.h)
+	@touch sis_301.h
+sis_301.o: sis_301.c \
+   sis_301.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sis/linuxbios.h)
+sis_300.h: \
+   initdef.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/sis/linuxbios.h)
+	@touch sis_300.h
+.PRECIOUS:	initdef.h \
+	sis_301.h \
+	sis_300.h \
+

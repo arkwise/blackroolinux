@@ -1,0 +1,93 @@
+lec.o: lec.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h) \
+   ../bridge/br_private.h \
+   lec.h \
+   lec_arpc.h \
+   resources.h
+mpc.h: \
+   mpoa_caches.h
+	@touch mpc.h
+common.o: common.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/lane.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/lane/module.h) \
+   lec.h \
+   lec_arpc.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/mpoa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/mpoa/module.h) \
+   mpc.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/tcp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/tcp/module.h) \
+   resources.h \
+   common.h \
+   protocols.h \
+   addr.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/clip.h) \
+   signaling.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h)
+svc.o: svc.c \
+   resources.h \
+   common.h \
+   signaling.h \
+   addr.h
+mpc.o: mpc.c \
+   lec.h \
+   mpc.h \
+   resources.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+clip.o: clip.c \
+   common.h \
+   resources.h \
+   ipcommon.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/clip/no/icmp.h)
+ipcommon.o: ipcommon.c \
+   common.h \
+   ipcommon.h
+raw.o: raw.c \
+   common.h \
+   protocols.h
+mpoa_proc.o: mpoa_proc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   mpc.h \
+   mpoa_caches.h
+addr.o: addr.c \
+   signaling.h \
+   addr.h
+signaling.o: signaling.c \
+   resources.h \
+   signaling.h
+resources.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+	@touch resources.h
+lec.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h)
+	@touch lec.h
+mpoa_caches.o: mpoa_caches.c \
+   mpoa_caches.h \
+   mpc.h
+proc.o: proc.c \
+   resources.h \
+   common.h \
+   signaling.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/clip.h) \
+   ipcommon.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/lane.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/lane/module.h) \
+   lec.h \
+   lec_arpc.h
+resources.o: resources.c \
+   common.h \
+   resources.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+pvc.o: pvc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/clip.h) \
+   resources.h \
+   common.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+.PRECIOUS:	mpc.h \
+	resources.h \
+	lec.h \
+

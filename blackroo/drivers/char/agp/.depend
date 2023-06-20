@@ -1,0 +1,11 @@
+agpgart_be.o: agpgart_be.c \
+   agp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/agp/i810.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/agp/intel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/agp/via.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/agp/sis.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/agp/amd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/agp/ali.h)
+agpgart_fe.o: agpgart_fe.c \
+   agp.h

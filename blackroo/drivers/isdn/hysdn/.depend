@@ -1,0 +1,33 @@
+hysdn_procconf.o: hysdn_procconf.c \
+   hysdn_defs.h
+boardergo.o: boardergo.c \
+   hysdn_defs.h \
+   boardergo.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hysdn/capi.h)
+hysdn_proclog.o: hysdn_proclog.c \
+   hysdn_defs.h
+hysdn_init.o: hysdn_init.c \
+   hysdn_defs.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modules.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hysdn/capi.h)
+hysdn_procfs.o: hysdn_procfs.c \
+   hysdn_defs.h
+hysdn_net.o: hysdn_net.c \
+   hysdn_defs.h
+hycapi.o: hycapi.c \
+   hysdn_defs.h
+hysdn_defs.h: \
+   ince1pc.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hysdn/capi.h) \
+   ../avmb1/capicmd.h \
+   ../avmb1/capiutil.h \
+   ../avmb1/capilli.h
+	@touch hysdn_defs.h
+hysdn_boot.o: hysdn_boot.c \
+   hysdn_defs.h \
+   hysdn_pof.h
+hysdn_sched.o: hysdn_sched.c \
+   hysdn_defs.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hysdn/capi.h)
+.PRECIOUS:	hysdn_defs.h \
+

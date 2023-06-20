@@ -1,0 +1,8 @@
+dir.o: dir.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/joliet.h)
+namei.o: namei.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/joliet.h)
+rock.o: rock.c \
+   rock.h
+inode.o: inode.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/joliet.h)

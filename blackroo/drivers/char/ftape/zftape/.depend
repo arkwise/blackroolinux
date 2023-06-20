@@ -1,0 +1,107 @@
+zftape-eof.h: \
+   ../zftape/zftape-buffers.h
+	@touch zftape-eof.h
+zftape-vtbl.o: zftape-vtbl.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h
+zftape-write.o: zftape-write.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h
+zftape-ctl.h: \
+   ../zftape/zftape-rw.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zftape/module.h)
+	@touch zftape-ctl.h
+zftape-read.h: \
+   ../lowlevel/ftape-read.h
+	@touch zftape-read.h
+zftape_syms.o: zftape_syms.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-buffers.h \
+   ../zftape/zftape-ctl.h
+zftape-eof.o: zftape-eof.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-eof.h
+zftape-read.o: zftape-read.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h
+zftape-rw.h: \
+   ../zftape/zftape-buffers.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zft/dflt/blk/sz.h)
+	@touch zftape-rw.h
+zftape-rw.o: zftape-rw.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zft/dflt/blk/sz.h)
+zftape-init.h: \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-buffer.h \
+   ../lowlevel/ftape-format.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h
+	@touch zftape-init.h
+zftape-buffers.o: zftape-buffers.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h
+zftape-init.o: zftape-init.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-buffers.h \
+   ../zftape/zftape_syms.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zft/compressor.h)
+zftape-ctl.o: zftape-ctl.c \
+   ../zftape/zftape-init.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-write.h \
+   ../zftape/zftape-read.h \
+   ../zftape/zftape-rw.h \
+   ../zftape/zftape-vtbl.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/zft/dflt/blk/sz.h)
+zftape-vtbl.h: \
+   ../lowlevel/ftape-tracing.h \
+   ../zftape/zftape-eof.h \
+   ../zftape/zftape-ctl.h \
+   ../zftape/zftape-rw.h
+	@touch zftape-vtbl.h
+.PRECIOUS:	zftape-eof.h \
+	zftape-ctl.h \
+	zftape-read.h \
+	zftape-rw.h \
+	zftape-init.h \
+	zftape-vtbl.h \
+

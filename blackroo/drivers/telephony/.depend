@@ -1,0 +1,5 @@
+ixj.o: ixj.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pcmcia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isapnp.h) \
+   ixj.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)

@@ -1,0 +1,3 @@
+nls_base.o: nls_base.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nls/default.h)

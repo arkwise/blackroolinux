@@ -1,0 +1,32 @@
+dn_route.o: dn_route.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/router.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/route/fwmark.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+dn_rules.o: dn_rules.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/route/fwmark.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+af_decnet.o: af_decnet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/router.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+dn_fib.o: dn_fib.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+dn_nsp_in.o: dn_nsp_in.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+dn_table.o: dn_table.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+sysctl_net_decnet.o: sysctl_net_decnet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)
+dn_neigh.o: dn_neigh.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/router.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+dn_dev.o: dn_dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/router.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decnet/siocgifconf.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

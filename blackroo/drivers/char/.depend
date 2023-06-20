@@ -1,0 +1,310 @@
+68328serial.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68ez328.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68328.h)
+	@touch 68328serial.h
+mem.o: mem.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2c.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isdn.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/video/dev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/prom/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mda/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/adb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/printer.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68k/printer.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qic02/tape.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ftape.h)
+sh-sci.o: sh-sci.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/debug/kernel/with/gdb/stub.h) \
+   sh-sci.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/subtype/sh7750.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   generic_serial.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/early/printk.h)
+istallion.o: istallion.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+sh-sci.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/subtype/sh7708.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/subtype/sh7707.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/subtype/sh7709.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/subtype/sh7750.h)
+	@touch sh-sci.h
+pc110pad.o: pc110pad.c \
+   pc110pad.h
+wdt_pci.o: wdt_pci.c \
+   wd501p.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdt/501.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdt/501/pci.h)
+q40_keyb.o: q40_keyb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h)
+mcfwatchdog.o: mcfwatchdog.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/oldmask.h)
+pcxx.o: pcxx.c \
+   digi.h \
+   fep.h \
+   pcxx.h \
+   digi_fep.h \
+   digi_bios.h
+sysrq.o: sysrq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt.h)
+pc_keyb.o: pc_keyb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/psmouse.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt.h)
+synclink.o: synclink.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/synclink/syncppp/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/synclink/syncppp.h) \
+   ../net/wan/syncppp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hard/pps.h)
+specialix.o: specialix.c \
+   specialix_io8.h \
+   cd1865.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/specialix/rtscts.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+lp.o: lp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lp/console.h)
+nwbutton.o: nwbutton.c \
+   nwbutton.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nwbutton/reboot.h)
+serial_21285.o: serial_21285.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/21285/console.h)
+atarimouse.o: atarimouse.c \
+   busmouse.h
+vme_scc.o: vme_scc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme147/scc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme162/scc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000/scc.h) \
+   scc.h
+vt.o: vt.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fb/compat/xpmac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/host/footbridge.h)
+cyclades.o: cyclades.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cobalt/27.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyz/intr.h)
+serial.o: serial.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/share/irq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/many/ports.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isapnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isapnp/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/multiport.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hub6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m386.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m486.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/serial.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/rsa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/gsc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hard/pps.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/detect/irq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ddb5074.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+ds1620.o: ds1620.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+wd501p.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdt/501.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdt501/fan.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdt/500.h)
+	@touch wd501p.h
+sx.o: sx.c \
+   sxboards.h \
+   sxwindow.h \
+   sx.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+dn_keyb.o: dn_keyb.c \
+   busmouse.h
+tty_io.o: tty_io.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/unix98/ptys.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/8xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/8260.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/serial.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme162/scc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000/scc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme147/scc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial167.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sh/sci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/3215.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hwc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/21285/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/sa1100/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/amba/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/68328/serial.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/coldfire.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/espserial.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/computone.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac/serial.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rocketport.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyclades.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/stallion.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/istallion.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/digi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/digiepca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/specialix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/moxa/smartio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/moxa/intellio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/psx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/psx/console.h)
+acquirewdt.o: acquirewdt.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h)
+adbmouse.o: adbmouse.c \
+   busmouse.h
+nvram.o: nvram.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+hp600_keyb.o: hp600_keyb.c \
+   scan_keyb.h
+amigamouse.o: amigamouse.c \
+   busmouse.h
+misc.o: misc.c \
+   busmouse.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/newport/gfx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/82c710/mouse.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pc110/pad.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme16x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun/mostek/rtc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ds1286.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/dsp56k.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/misc/radio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/toshiba.h)
+ip2.o: ip2.c \
+   ./ip2/ip2types.h \
+   ./ip2/fip_firm.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modversions.h)
+rocket.o: rocket.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   rocket_int.h
+ledman.o: ledman.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nettel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m5307.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m5206e.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/elia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/coldfire.h)
+mcfserial.o: mcfserial.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ledman.h) \
+   mcfserial.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m5272.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nettel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m5307.h)
+applicom.o: applicom.c \
+   applicom.h
+i810-tco.o: i810-tco.c \
+   i810-tco.h
+amiserial.o: amiserial.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hard/pps.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h)
+msbusmouse.o: msbusmouse.c \
+   busmouse.h
+ip2main.o: ip2main.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modversions.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h) \
+   ./ip2/ip2types.h \
+   ./ip2/ip2trace.h \
+   ./ip2/ip2ioctl.h \
+   ./ip2/ip2.h \
+   ./ip2/i2ellis.h \
+   ./ip2/i2lib.h \
+   ./ip2/i2ellis.c \
+   ./ip2/i2cmd.c \
+   ./ip2/i2lib.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+h8.o: h8.c \
+   h8.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/h8/display/blank.h)
+serial_amba.o: serial_amba.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/amba/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hard/pps.h)
+pty.o: pty.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/unix98/ptys.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+atixlmouse.o: atixlmouse.c \
+   busmouse.h
+logibusmouse.o: logibusmouse.c \
+   busmouse.h
+n_hdlc.o: n_hdlc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kerneld.h)
+console.o: console.c \
+   console_macros.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vt.h)
+amikeyb.o: amikeyb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h)
+serial167.o: serial167.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/remote/debug.h)
+wdt977.o: wdt977.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h)
+mixcomwd.o: mixcomwd.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h)
+moxa.o: moxa.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+68328serial.o: 68328serial.c \
+   68328serial.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/xcopilot/bugs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68ez328ads.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/alma/ans.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/68328/serial/rts/cts.h)
+busmouse.o: busmouse.c \
+   busmouse.h
+keyboard.o: keyboard.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h)
+rtc.o: rtc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/decstation.h)
+tpqic02.o: tpqic02.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qic02/dynconf.h)
+stallion.o: stallion.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+random.o: random.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipv6/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/syn/cookies.h)
+softdog.o: softdog.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h)
+mxser.o: mxser.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+pcwd.o: pcwd.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h)
+wdt.o: wdt.c \
+   wd501p.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/watchdog/nowayout.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdt/501.h)
+vc_screen.o: vc_screen.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+epca.o: epca.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   digiPCI.h \
+   digi1.h \
+   digiFep1.h \
+   epca.h \
+   epcaconfig.h
+riscom8.o: riscom8.c \
+   riscom8.h \
+   riscom8_reg.h
+dz.o: dz.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   dz.h
+.PRECIOUS:	68328serial.h \
+	sh-sci.h \
+	wd501p.h \
+

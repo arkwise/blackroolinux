@@ -1,0 +1,99 @@
+ecm.o: ecm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+drvfbi.o: drvfbi.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/skfbiinc.h
+queue.o: queue.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+smtparse.o: smtparse.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+hwmtm.o: hwmtm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/skfbiinc.h
+lnkstat.o: lnkstat.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/lnkstat.h
+pmf.o: pmf.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+smtinit.o: smtinit.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+hwt.o: hwt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+cfm.o: cfm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+skfddi.o: skfddi.c \
+   h/types.h \
+   h/skfbi.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+smtdef.o: smtdef.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+smt.o: smt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+pcmplc.o: pcmplc.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/smtstate.h
+srf.o: srf.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h \
+   h/smtstate.h
+smttimer.o: smttimer.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+ess.o: ess.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smt_p.h
+fplustm.o: fplustm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   can.c
+rmt.o: rmt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h

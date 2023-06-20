@@ -1,0 +1,43 @@
+skbuff.o: skbuff.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sched.h)
+dev_mcast.o: dev_mcast.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+sysctl_net_core.o: sysctl_net_core.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/divert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fastroute.h)
+profile.o: profile.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/profile.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+sock.o: sock.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netdevices.h)
+netfilter.o: netfilter.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter/debug.h)
+filter.o: filter.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h)
+dev.o: dev.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/radio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/pcmcia/radio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/plip.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hotplug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fastroute.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/hw/flowcontrol.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/divert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sched.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/profile.h)
+rtnetlink.o: rtnetlink.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+neighbour.o: neighbour.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arpd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)

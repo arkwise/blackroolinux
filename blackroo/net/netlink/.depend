@@ -1,0 +1,4 @@
+af_netlink.o: af_netlink.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netlink/dev/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

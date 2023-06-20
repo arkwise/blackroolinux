@@ -1,0 +1,4 @@
+uncompress.o: uncompress.c \
+   inflate/zlib.h
+inode.o: inode.c \
+   cramfs.h

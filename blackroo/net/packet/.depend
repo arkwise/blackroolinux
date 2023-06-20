@@ -1,0 +1,13 @@
+af_packet.o: af_packet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/divert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/packet/multicast.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/packet/mmap.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sock/packet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/filter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bridge/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/radio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

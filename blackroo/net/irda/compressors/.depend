@@ -1,0 +1,2 @@
+irda_deflate.o: irda_deflate.c \
+   ../../../drivers/net/zlib.c

@@ -1,0 +1,429 @@
+mvme147.o: mvme147.c \
+   7990.h
+acenic.o: acenic.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acenic/omit/tigon/i.h) \
+   acenic.h \
+   acenic_firmware.h
+net_init.o: net_init.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fddi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hippi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atalk/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fc.h)
+ncr885e.o: ncr885e.c \
+   ncr885e.h \
+   ncr885_debug.h
+Space.o: Space.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/divert.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/de4x5.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ultra32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ac3200.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/es3210.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lne390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ne3210.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ultramca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ne2/mca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/elmc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/elmc/ii.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/skmc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/el3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hp100.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/3c515.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ultra.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wd80x3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/el2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hplan.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hplan/plus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/e2100.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ne2000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lance.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smc9194.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/seeq8005.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/at1500.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cs89x0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/at1700.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fmv18x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/eth16i.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/znet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/eexpress.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/eexpress/pro.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/depca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ewrk3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apricot.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme16x/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/el1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wavelan.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arlan.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/el16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/elplus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sk/g16.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ni5010.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ni52.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ni65.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/de600.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/de620.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/coldfire.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fec.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atarilance.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun3lance.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apne.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/bionet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari/pamsnet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hplance.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme147/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/macmace.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/macsonic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac8390.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac89x0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgiseeq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/jazz/sonic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bagetlance.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fddi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apfddi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/skfp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/iphase5526.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ethertap.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sdla.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ltpc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cops.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ibmtr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ibmol.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smctr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbni.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ctc.h)
+sunhme.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+	@touch sunhme.h
+ne.o: ne.c \
+   8390.h
+sgiseeq.o: sgiseeq.c \
+   sgiseeq.h
+myri_sbus.o: myri_sbus.c \
+   myri_sbus.h \
+   myri_code.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+sk_g16.o: sk_g16.c \
+   sk_g16.h
+3c501.o: 3c501.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ip/multicast.h)
+apne.o: apne.c \
+   8390.h
+atp.o: atp.c \
+   atp.h
+rcpci45.o: rcpci45.c \
+   rclanmtl.h \
+   rcif.h
+dummy.o: dummy.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fastroute.h)
+smc-ultra.o: smc-ultra.c \
+   8390.h
+eexpress.o: eexpress.c \
+   eexpress.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+a2065.o: a2065.c \
+   a2065.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sunlance.h)
+depca.o: depca.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h) \
+   depca.h
+slip.o: slip.c \
+   slip.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/slip/mode/slip6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/slip/smart.h)
+hp.o: hp.c \
+   8390.h
+8390.o: 8390.c \
+   8390.h
+3c523.o: 3c523.c \
+   3c523.h
+mac89x0.o: mac89x0.c \
+   cs89x0.h
+e2100.o: e2100.c \
+   8390.h
+smc-ultra32.o: smc-ultra32.c \
+   8390.h
+ne3210.o: ne3210.c \
+   8390.h
+macsonic.o: macsonic.c \
+   sonic.h \
+   sonic.c
+uCcs8900.o: uCcs8900.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/uccs8900/hw/swap.h) \
+   uCcs8900.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68328.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68ez328.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ucsimm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/alma/ans.h)
+aironet4500_card.o: aironet4500_card.c \
+   aironet4500.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/pnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/isa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/365.h)
+7990.o: 7990.c \
+   7990.h
+defxx.o: defxx.c \
+   defxx.h
+sk_mca.o: sk_mca.c \
+   sk_mca.h
+3c507.o: 3c507.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cmd.h)
+hydra.o: hydra.c \
+   8390.h
+smc9194.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/coldfire.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68ez328.h)
+	@touch smc9194.h
+sunbmac.o: sunbmac.c \
+   sunbmac.h
+ppp_deflate.o: ppp_deflate.c \
+   zlib.c
+aironet4500_proc.o: aironet4500_proc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   aironet4500.h \
+   aironet4500_rid.c
+ni52.o: ni52.c \
+   ni52.h
+rrunner.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/roadrunner/large/rings.h)
+	@touch rrunner.h
+ni65.o: ni65.c \
+   ni65.h
+jazzsonic.o: jazzsonic.c \
+   sonic.h \
+   sonic.c
+fec.o: fec.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fec/packethook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m5272.h) \
+   fec.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fec/lxt970.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fec/lxt971.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fec/qs6612.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rpxclassic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fads.h)
+ni5010.o: ni5010.c \
+   ni5010.h
+aironet4500_rid.o: aironet4500_rid.c \
+   aironet4500.h
+bmac.o: bmac.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   bmac.h
+sonic.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/macsonic.h)
+	@touch sonic.h
+ppp_generic.o: ppp_generic.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppp/multilink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)
+acenic_firmware.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/acenic/omit/tigon/i.h)
+	@touch acenic_firmware.h
+de4x5.o: de4x5.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   de4x5.h
+shaper.o: shaper.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+arlan-proc.o: arlan-proc.c \
+   arlan.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+hp-plus.o: hp-plus.c \
+   8390.h
+ariadne2.o: ariadne2.c \
+   8390.h
+ewrk3.o: ewrk3.c \
+   ewrk3.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+eth16i.o: eth16i.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/reg/0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/reg/1.h)
+sis900.o: sis900.c \
+   sis900.h
+3c503.o: 3c503.c \
+   8390.h \
+   3c503.h
+hp100.o: hp100.c \
+   hp100.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+zlib.o: zlib.c \
+   zlib.h
+82596.o: 82596.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme16x/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mvme16x/net/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000/net.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/bvme6000/net/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apricot.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apricot/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/vme.h)
+daynaport.o: daynaport.c \
+   8390.h
+mace.o: mace.c \
+   mace.h
+smc-mca.o: smc-mca.c \
+   8390.h \
+   smc-mca.h
+at1700.o: at1700.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/1.h)
+cs89x0.o: cs89x0.c \
+   cs89x0.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/clps7500.h)
+8139too.o: 8139too.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/8139too/pio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/8139too/tune/twister.h)
+8390.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga/pcmcia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ariadne2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ariadne2/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hydra.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hydra/module.h)
+	@touch 8390.h
+sunhme.o: sunhme.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   sunhme.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbus.h)
+wd.o: wd.c \
+   8390.h
+3c505.o: 3c505.c \
+   3c505.h
+arlan.o: arlan.c \
+   arlan.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+smc9194.o: smc9194.c \
+   smc9194.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/coldfire.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/m68ez328.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ledman.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nettel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/elia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/disktel.h)
+strip.o: strip.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+de620.o: de620.c \
+   de620.h
+rrunner.o: rrunner.c \
+   rrunner.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+ibmlana.o: ibmlana.c \
+   ibmlana.h
+am79c961a.o: am79c961a.c \
+   am79c961a.h
+ac3200.o: ac3200.c \
+   8390.h
+ethertap.o: ethertap.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ethertap/mc.h)
+slhc.o: slhc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+rclanmtl.o: rclanmtl.c \
+   rclanmtl.h
+gmac.o: gmac.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   gmac.h
+seeq8005.o: seeq8005.c \
+   seeq8005.h
+stnic.o: stnic.c \
+   8390.h
+fmv18x.o: fmv18x.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/1.h)
+3c527.o: 3c527.c \
+   3c527.h
+ptifddi.o: ptifddi.c \
+   ptifddi.h \
+   ptifddi_asm.h
+wavelan.p.h: \
+   i82586.h \
+   wavelan.h
+	@touch wavelan.p.h
+lne390.o: lne390.c \
+   8390.h
+setup.o: setup.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dmascc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sdla.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapbether.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arcnet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scc/enet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fec/enet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lanmedia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/noncs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aironet4500/pnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/madgemc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/slip.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/x25/asy.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/strip.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sb1000.h)
+hplance.o: hplance.c \
+   hplance.h \
+   7990.h
+sunlance.o: sunlance.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun4.h)
+ne2k-pci.o: ne2k-pci.c \
+   8390.h
+slip.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/slip/compressed.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/slip/mode/slip6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/slip/smart.h)
+	@touch slip.h
+ne2.o: ne2.c \
+   8390.h
+oaknet.o: oaknet.c \
+   8390.h
+eepro100.o: eepro100.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/eepro100/pm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/data/size.h)
+tlan.o: tlan.c \
+   tlan.h
+3c509.o: 3c509.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mca.h)
+aironet4500_core.o: aironet4500_core.c \
+   aironet4500.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+wavelan.o: wavelan.c \
+   wavelan.p.h
+arlan.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+	@touch arlan.h
+dgrs.o: dgrs.c \
+   dgrs.h \
+   dgrs_es4h.h \
+   dgrs_plx9060.h \
+   dgrs_i82596.h \
+   dgrs_ether.h \
+   dgrs_asstruct.h \
+   dgrs_bcomm.h \
+   dgrs_firmware.c
+ariadne.o: ariadne.c \
+   ariadne.h
+cs89x0.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h)
+	@touch cs89x0.h
+macmace.o: macmace.c \
+   mace.h
+declance.o: declance.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tc.h)
+sunqe.o: sunqe.c \
+   sunqe.h
+es3210.o: es3210.c \
+   8390.h
+.PRECIOUS:	sunhme.h \
+	smc9194.h \
+	rrunner.h \
+	sonic.h \
+	acenic_firmware.h \
+	8390.h \
+	wavelan.p.h \
+	slip.h \
+	arlan.h \
+	cs89x0.h \
+

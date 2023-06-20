@@ -1,0 +1,29 @@
+procfs.o: procfs.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h)
+parport_pc.o: parport_pc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/pc/fifo.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/pc/superio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/pc/pcmcia.h)
+init.o: init.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/pc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/mfc3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/arc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/sunbpp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h)
+ieee1284.o: ieee1284.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lp/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h)
+ieee1284_ops.o: ieee1284_ops.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lp/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h)
+parport_mfc3.o: parport_mfc3.c \
+   multiface.h
+share.o: share.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/parport/1284.h)

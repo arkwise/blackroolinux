@@ -1,0 +1,14 @@
+dir.o: dir.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)
+fsync.o: fsync.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)
+file.o: file.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)
+namei.o: namei.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)
+inode.o: inode.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)
+truncate.o: truncate.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)
+bitmap.o: bitmap.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/qnx4fs/rw.h)

@@ -1,0 +1,2 @@
+namei.o: namei.c \
+   ../fat/msbuffer.h

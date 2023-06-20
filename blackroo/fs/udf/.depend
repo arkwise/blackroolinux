@@ -1,0 +1,65 @@
+dir.o: dir.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+fsync.o: fsync.c \
+   udfdecl.h \
+   udf_i.h
+crc.o: crc.c \
+   udfdecl.h
+partition.o: partition.c \
+   udfdecl.h \
+   udf_sb.h \
+   udf_i.h
+lowlevel.o: lowlevel.c \
+   udfdecl.h \
+   udf_sb.h
+file.o: file.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+namei.o: namei.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+directory.o: directory.c \
+   udfdecl.h
+symlink.o: symlink.c \
+   udfdecl.h \
+   udf_i.h
+inode.o: inode.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+udfdecl.h: \
+   udfend.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/udf/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/udf/fs/module.h)
+	@touch udfdecl.h
+super.o: super.c \
+   udfdecl.h \
+   udf_sb.h \
+   udf_i.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/udf/rw.h)
+misc.o: misc.c \
+   udfdecl.h \
+   udf_sb.h \
+   udf_i.h
+truncate.o: truncate.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+udftime.o: udftime.c \
+   udfdecl.h
+ialloc.o: ialloc.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+balloc.o: balloc.c \
+   udfdecl.h \
+   udf_i.h \
+   udf_sb.h
+unicode.o: unicode.c \
+   udfdecl.h
+.PRECIOUS:	udfdecl.h \
+

@@ -1,0 +1,13 @@
+lvm.o: lvm.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kerneld.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lvm/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+raid5.o: raid5.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/highmem.h)
+md.o: md.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/autodetect/raid.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/md/boot.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

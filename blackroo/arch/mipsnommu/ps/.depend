@@ -1,0 +1,4 @@
+setup.o: setup.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/psx/pio/extension.h)
+time.o: time.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/psx/pio/extension.h)

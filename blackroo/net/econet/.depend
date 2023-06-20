@@ -1,0 +1,4 @@
+af_econet.o: af_econet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/econet/aunudp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/econet/native.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h)

@@ -1,0 +1,15 @@
+lapb_out.o: lapb_out.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb/module.h)
+lapb_timer.o: lapb_timer.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb/module.h)
+lapb_in.o: lapb_in.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb/module.h)
+lapb_iface.o: lapb_iface.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb/module.h)
+lapb_subr.o: lapb_subr.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/lapb/module.h)

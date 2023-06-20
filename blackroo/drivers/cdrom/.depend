@@ -1,0 +1,36 @@
+cdu31a.o: cdu31a.c \
+   cdu31a.h
+sbpcd4.o: sbpcd4.c \
+   sbpcd.c
+mcd.o: mcd.c \
+   mcd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mcd/base.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mcd/irq.h)
+sjcd.o: sjcd.c \
+   sjcd.h
+sbpcd3.o: sbpcd3.c \
+   sbpcd.c
+aztcd.o: aztcd.c \
+   aztcd.h
+sbpcd2.o: sbpcd2.c \
+   sbpcd.c
+mcdx.o: mcdx.c \
+   mcdx.h
+cm206.o: cm206.c \
+   cm206.h
+sbpcd.o: sbpcd.c \
+   sbpcd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbpcd2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbpcd3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sbpcd4.h)
+isp16.o: isp16.c \
+   isp16.h
+gscd.o: gscd.c \
+   gscd.h
+cdrom.o: cdrom.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+optcd.o: optcd.c \
+   optcd.h
+sonycd535.o: sonycd535.c \
+   sonycd535.h

@@ -1,0 +1,6 @@
+dvma.o: dvma.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun4.h)
+sbus.o: sbus.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun/auxio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sun4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)

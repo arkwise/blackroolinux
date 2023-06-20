@@ -1,0 +1,2 @@
+printgpu.o: printgpu.S \
+   font/font.S

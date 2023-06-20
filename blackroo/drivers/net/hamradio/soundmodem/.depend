@@ -1,0 +1,43 @@
+sm_afsk1200.o: sm_afsk1200.c \
+   sm.h \
+   sm_tbl_afsk1200.h
+sm_fsk9600.o: sm_fsk9600.c \
+   sm.h \
+   sm_tbl_fsk9600.h
+sm.o: sm.c \
+   sm.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/afsk1200.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/afsk2400/7.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/afsk2400/8.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/afsk2666.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/psk4800.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/hapn4800.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/fsk9600.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/sbc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/soundmodem/wss.h)
+sm_hapn4800.o: sm_hapn4800.c \
+   sm.h \
+   sm_tbl_hapn4800.h
+sm_psk4800.o: sm_psk4800.c \
+   sm.h \
+   sm_tbl_psk4800.h
+sm_afsk2400_8.o: sm_afsk2400_8.c \
+   sm.h \
+   sm_tbl_afsk2400_8.h
+sm_afsk2400_7.o: sm_afsk2400_7.c \
+   sm.h \
+   sm_tbl_afsk2400_7.h
+sm_afsk2666.o: sm_afsk2666.c \
+   sm.h \
+   sm_tbl_afsk2666.h
+sm_sbc.o: sm_sbc.c \
+   sm.h \
+   smdma.h
+sm_wss.o: sm_wss.c \
+   sm.h \
+   smdma.h
+smdma.h: \
+   sm.h
+	@touch smdma.h
+.PRECIOUS:	smdma.h \
+

@@ -1,0 +1,6 @@
+names.o: names.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci/names.h)
+pci.o: pci.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hotplug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pm.h)

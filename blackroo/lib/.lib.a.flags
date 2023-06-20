@@ -1,0 +1,3 @@
+ifeq (errno.o ctype.o string.o vsprintf.o brlock.o cmdline.o dec_and_lock.o,$(strip $(subst $(comma),:,$(EXTRA_ARFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += lib.a
+endif

@@ -1,0 +1,23 @@
+i2o_pci.o: i2o_pci.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mtrr.h)
+i2o_lan.o: i2o_lan.c \
+   i2o_lan.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/fc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/fddi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/anylan.h)
+i2o_scsi.o: i2o_scsi.c \
+   ../scsi/scsi.h \
+   ../scsi/hosts.h \
+   ../scsi/sd.h \
+   i2o_scsi.h \
+   ../scsi/scsi_module.c
+i2o_core.o: i2o_core.c \
+   i2o_lan.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2o/pci/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2o/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2o/block.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2o/lan.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/i2o/proc.h)
+i2o_proc.o: i2o_proc.c \
+   i2o_lan.h

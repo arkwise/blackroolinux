@@ -1,0 +1,339 @@
+sedlbauer.o: sedlbauer.c \
+   hisax.h \
+   isac.h \
+   ipac.h \
+   hscx.h \
+   isar.h \
+   isdnl1.h \
+   hscx_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+hfc_sx.o: hfc_sx.c \
+   hisax.h \
+   hfc_sx.h \
+   isdnl1.h
+gazel.o: gazel.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   ipac.h \
+   hscx_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+niccy.o: niccy.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+isdnl2.o: isdnl2.c \
+   hisax.h \
+   isdnl2.h
+tei.o: tei.c \
+   hisax.h \
+   isdnl2.h
+l3_1tr6.o: l3_1tr6.c \
+   hisax.h \
+   l3_1tr6.h \
+   isdnl3.h
+isurf.o: isurf.c \
+   hisax.h \
+   isac.h \
+   isar.h \
+   isdnl1.h
+nj_s.o: nj_s.c \
+   hisax.h \
+   isac.h \
+   isdnl1.h \
+   netjet.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+hfc_2bs0.o: hfc_2bs0.c \
+   hisax.h \
+   hfc_2bs0.h \
+   isac.h \
+   isdnl1.h
+avm_a1p.o: avm_a1p.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+teleint.o: teleint.c \
+   hisax.h \
+   isac.h \
+   hfc_2bs0.h \
+   isdnl1.h
+saphir.o: saphir.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+hscx.o: hscx.c \
+   hisax.h \
+   hscx.h \
+   isac.h \
+   isdnl1.h
+jade.o: jade.c \
+   hisax.h \
+   hscx.h \
+   jade.h \
+   isdnl1.h
+teles3.o: teles3.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+hfc_pci.o: hfc_pci.c \
+   hisax.h \
+   hfc_pci.h \
+   isdnl1.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+nj_u.o: nj_u.c \
+   hisax.h \
+   icc.h \
+   isdnl1.h \
+   netjet.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+bkm_a4t.o: bkm_a4t.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   jade.h \
+   isdnl1.h \
+   bkm_ax.h \
+   jade_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+asuscom.o: asuscom.c \
+   hisax.h \
+   isac.h \
+   ipac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+config.o: config.c \
+   hisax.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/elsa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/avm/a1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/avm/a1/pcmcia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/fritzpci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/16/3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/s0box.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/16/0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/telespci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/ix1micror2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/diehldiva.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/asuscom.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/teleint.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/sedlbauer.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/sportster.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/mic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/netjet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hfcs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hfc/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hfc/sx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/amd7930.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/niccy.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/isurf.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hstsaphir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/bkm/a4t.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/sct/quadro.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/gazel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/w6692.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/netjet/u.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/1tr6.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/ni1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/euro.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/frtizpci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/quadro.h)
+elsa_ser.o: elsa_ser.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/nopause/io.h)
+arcofi.o: arcofi.c \
+   hisax.h \
+   isdnl1.h \
+   isac.h \
+   arcofi.h
+icc.o: icc.c \
+   hisax.h \
+   icc.h \
+   isdnl1.h
+q931.o: q931.c \
+   hisax.h \
+   l3_1tr6.h
+isdnl1.o: isdnl1.c \
+   hisax.h \
+   isdnl1.h
+amd7930.o: amd7930.c \
+   hisax.h \
+   ../../sbus/audio/amd7930.h \
+   isac.h \
+   isdnl1.h \
+   rawhdlc.h
+hfcscard.o: hfcscard.c \
+   hisax.h \
+   hfc_2bds0.h \
+   isdnl1.h
+mic.o: mic.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+elsa.o: elsa.c \
+   hisax.h \
+   arcofi.h \
+   isac.h \
+   ipac.h \
+   hscx.h \
+   isdnl1.h \
+   elsa_ser.c \
+   hscx_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+rawhdlc.o: rawhdlc.c \
+   rawhdlc.h
+avm_a1.o: avm_a1.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+ix1_micro.o: ix1_micro.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+bkm_a8.o: bkm_a8.c \
+   hisax.h \
+   isac.h \
+   ipac.h \
+   hscx.h \
+   isdnl1.h \
+   bkm_ax.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   hscx_irq.c
+hisax.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/euro.h) \
+   l3dss1.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/ni1.h) \
+   l3ni1.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/testemu.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/16/0.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/16/3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/telespci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/avm/a1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/avm/a1/pcmcia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/fritzpci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/elsa.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/ix1micror2.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/diehldiva.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/asuscom.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/teleint.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/sedlbauer.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/sportster.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/mic.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/netjet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hfcs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hfc/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hfc/sx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/amd7930.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/niccy.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/isurf.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/s0box.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/hstsaphir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/bkm/a4t.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/sct/quadro.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/gazel.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/w6692.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/netjet/u.h)
+	@touch hisax.h
+isar.o: isar.c \
+   hisax.h \
+   isar.h \
+   isdnl1.h
+isac.o: isac.c \
+   hisax.h \
+   isac.h \
+   arcofi.h \
+   isdnl1.h
+sportster.o: sportster.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+l3ni1.o: l3ni1.c \
+   hisax.h \
+   isdnl3.h \
+   l3ni1.h
+fsm.o: fsm.c \
+   hisax.h
+l3dss1.o: l3dss1.c \
+   hisax.h \
+   isdnl3.h \
+   l3dss1.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/no/keypad.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/no/sendcomplete.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/no/llc.h)
+diva.o: diva.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   ipac.h \
+   isdnl1.h \
+   hscx_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+s0box.o: s0box.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c
+hfc_2bds0.o: hfc_2bds0.c \
+   hisax.h \
+   hfc_2bds0.h \
+   isdnl1.h
+callc.o: callc.c \
+   hisax.h \
+   ../avmb1/capicmd.h
+telespci.o: telespci.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   hscx_irq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+w6692.o: w6692.c \
+   hisax.h \
+   w6692.h \
+   isdnl1.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+isdnl3.o: isdnl3.c \
+   hisax.h \
+   isdnl3.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/euro.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/ni1.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hisax/1tr6.h)
+netjet.o: netjet.c \
+   hisax.h \
+   isac.h \
+   hscx.h \
+   isdnl1.h \
+   netjet.h
+avm_pci.o: avm_pci.c \
+   hisax.h \
+   isac.h \
+   isdnl1.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+lmgr.o: lmgr.c \
+   hisax.h
+teles0.o: teles0.c \
+   hisax.h \
+   isdnl1.h \
+   isac.h \
+   hscx.h \
+   hscx_irq.c
+.PRECIOUS:	hisax.h \
+

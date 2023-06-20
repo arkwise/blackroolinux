@@ -1,0 +1,118 @@
+ecard.h: \
+   8010.h \
+   hwaccess.h
+	@touch ecard.h
+irqmgr.o: irqmgr.c \
+   hwaccess.h \
+   8010.h \
+   cardmi.h \
+   cardmo.h \
+   irqmgr.h
+emuadxmg.o: emuadxmg.c \
+   hwaccess.h
+recmgr.h: \
+   hwaccess.h \
+   cardwi.h
+	@touch recmgr.h
+mixer.o: mixer.c \
+   hwaccess.h \
+   8010.h \
+   recmgr.h
+ecard.o: ecard.c \
+   ecard.h \
+   hwaccess.h
+midi.o: midi.c \
+   hwaccess.h \
+   cardmo.h \
+   cardmi.h \
+   midi.h
+recmgr.o: recmgr.c \
+   8010.h \
+   recmgr.h
+cardwo.h: \
+   icardwav.h \
+   audio.h \
+   voicemgr.h \
+   timer.h
+	@touch cardwo.h
+audio.o: audio.c \
+   hwaccess.h \
+   cardwo.h \
+   cardwi.h \
+   recmgr.h \
+   irqmgr.h \
+   audio.h
+hwaccess.o: hwaccess.c \
+   hwaccess.h \
+   8010.h \
+   icardmid.h
+cardmo.o: cardmo.c \
+   hwaccess.h \
+   8010.h \
+   cardmo.h \
+   irqmgr.h
+cardwo.o: cardwo.c \
+   hwaccess.h \
+   8010.h \
+   voicemgr.h \
+   cardwo.h \
+   audio.h
+main.o: main.c \
+   hwaccess.h \
+   8010.h \
+   efxmgr.h \
+   cardwo.h \
+   cardwi.h \
+   cardmo.h \
+   cardmi.h \
+   recmgr.h \
+   ecard.h
+voicemgr.h: \
+   hwaccess.h
+	@touch voicemgr.h
+cardwi.o: cardwi.c \
+   hwaccess.h \
+   timer.h \
+   recmgr.h \
+   audio.h \
+   cardwi.h
+timer.h: \
+   hwaccess.h
+	@touch timer.h
+voicemgr.o: voicemgr.c \
+   voicemgr.h \
+   8010.h
+hwaccess.h: \
+   emu_wrapper.h
+	@touch hwaccess.h
+cardmi.o: cardmi.c \
+   hwaccess.h \
+   8010.h \
+   cardmi.h \
+   irqmgr.h
+cardmo.h: \
+   icardmid.h
+	@touch cardmo.h
+cardmi.h: \
+   icardmid.h
+	@touch cardmi.h
+timer.o: timer.c \
+   hwaccess.h \
+   8010.h \
+   irqmgr.h \
+   timer.h
+cardwi.h: \
+   icardwav.h \
+   audio.h \
+   timer.h
+	@touch cardwi.h
+.PRECIOUS:	ecard.h \
+	recmgr.h \
+	cardwo.h \
+	voicemgr.h \
+	timer.h \
+	hwaccess.h \
+	cardmo.h \
+	cardmi.h \
+	cardwi.h \
+

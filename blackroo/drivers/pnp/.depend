@@ -1,0 +1,3 @@
+isapnp.o: isapnp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

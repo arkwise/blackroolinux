@@ -1,0 +1,62 @@
+irlap_event.o: irlap_event.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/fast/rr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/dynamic/window.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h)
+irlmp.o: irlmp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/cache/last/lsap.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h)
+irsyms.o: irsyms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/compression.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/deflate.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irtty.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sysctl.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irlan.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ircomm.h)
+qos.o: qos.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/compression.h) \
+   ../../drivers/net/zlib.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/dynamic/window.h)
+irttp.o: irttp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+irlmp_frame.o: irlmp_frame.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/cache/last/lsap.h)
+irda_device.o: irda_device.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irtty/sir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/winbond/fir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/nsc/fir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/toshiba/fir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smc/ircc/fir.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/esi/dongle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/tekram/dongle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/actisys/dongle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/girbil/dongle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/litelink/dongle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/old/belkin.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h)
+irlap.o: irlap.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/compression.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/recycle/rr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/dynamic/window.h)
+iriap.o: iriap.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+irlmp_event.o: irlmp_event.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h)
+af_irda.o: af_irda.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+irsysctl.o: irsysctl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/fast/rr.h)
+irlap_comp.o: irlap_comp.c \
+   ../../drivers/net/zlib.h
+timer.o: timer.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/irda/ultra.h)

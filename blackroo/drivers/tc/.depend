@@ -1,0 +1,4 @@
+zs.o: zs.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kgdb.h) \
+   zs.h

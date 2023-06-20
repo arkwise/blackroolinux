@@ -1,0 +1,3 @@
+ifeq (branch.o process.o signal.o entry.o traps.o ptrace.o vm86.o ioport.o reset.o semaphore.o setup.o syscall.o sysmips.o ipc.o scall_o32.o unaligned.o r2300_misc.o r2300_fpu.o r2300_switch.o softfp.o proc.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += kernel.o
+endif

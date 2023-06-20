@@ -1,0 +1,20 @@
+cops_ltdrv.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cops/tangent.h)
+	@touch cops_ltdrv.h
+ipddp.o: ipddp.c \
+   ipddp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipddp/encap.h)
+ltpc.o: ltpc.c \
+   ltpc.h
+cops.o: cops.c \
+   cops.h \
+   cops_ltdrv.h \
+   cops_ffdrv.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cops/dayna.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cops/tangent.h)
+cops_ffdrv.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cops/dayna.h)
+	@touch cops_ffdrv.h
+.PRECIOUS:	cops_ltdrv.h \
+	cops_ffdrv.h \
+

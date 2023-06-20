@@ -1,0 +1,112 @@
+ohci1394.o: ohci1394.c \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   ohci1394.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/verbosedebug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ieee1394_syms.o: ieee1394_syms.c \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   ieee1394_transactions.h \
+   highlevel.h \
+   guid.h
+aic5800.o: aic5800.c \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   ieee1394.h \
+   aic5800.h
+pcilynx.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/pcilynx/localram.h)
+	@touch pcilynx.h
+video1394.o: video1394.c \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   video1394.h \
+   ohci1394.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/verbosedebug.h)
+highlevel.o: highlevel.c \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/rawio.h)
+ieee1394_transactions.h: \
+   ieee1394_core.h
+	@touch ieee1394_transactions.h
+guid.o: guid.c \
+   ieee1394_types.h \
+   ieee1394.h \
+   hosts.h \
+   ieee1394_transactions.h \
+   highlevel.h \
+   csr.h
+raw1394.o: raw1394.c \
+   ieee1394.h \
+   ieee1394_types.h \
+   ieee1394_core.h \
+   hosts.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   raw1394.h
+ieee1394_transactions.o: ieee1394_transactions.c \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+hosts.h: \
+   ieee1394_types.h \
+   csr.h
+	@touch hosts.h
+csr.o: csr.c \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394.h \
+   highlevel.h
+ieee1394_core.h: \
+   hosts.h
+	@touch ieee1394_core.h
+hosts.o: hosts.c \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/pcilynx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/aic5800.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/ohci1394.h)
+ohci1394.h: \
+   ieee1394_types.h
+	@touch ohci1394.h
+ieee1394_core.o: ieee1394_core.c \
+   ieee1394_types.h \
+   ieee1394.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   csr.h \
+   guid.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/verbosedebug.h)
+pcilynx.o: pcilynx.c \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   pcilynx.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/verbosedebug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ieee1394/pcilynx/localram.h)
+.PRECIOUS:	pcilynx.h \
+	ieee1394_transactions.h \
+	hosts.h \
+	ieee1394_core.h \
+	ohci1394.h \
+

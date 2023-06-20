@@ -1,0 +1,82 @@
+sealevel.o: sealevel.c \
+   syncppp.h \
+   z85230.h
+cycx_main.o: cycx_main.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyclomx/cards.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cyclomx/x25.h)
+z85230.o: z85230.c \
+   z85230.h \
+   syncppp.h
+comx.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/debug/raw.h)
+	@touch comx.h
+sdla.o: sdla.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci/max.h)
+sbni.o: sbni.c \
+   sbni.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+comx.o: comx.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   comx.h \
+   syncppp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/hw/comx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/hw/locomx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/hw/mixcom.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/proto/hdlc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/proto/ppp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/proto/lapb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/comx/proto/fr.h)
+comx-hw-locomx.o: comx-hw-locomx.c \
+   comx.h \
+   z85230.h
+hostess_sv11.o: hostess_sv11.c \
+   syncppp.h \
+   z85230.h
+comx-proto-ppp.o: comx-proto-ppp.c \
+   syncppp.h \
+   comx.h
+comx-hw-comx.o: comx-hw-comx.c \
+   comx.h \
+   comxhw.h
+x25_asy.o: x25_asy.c \
+   x25_asy.h
+sdladrv.o: sdladrv.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+sdlamain.o: sdlamain.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/cards.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/x25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/fr.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/ppp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/chdlc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/bstrm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wanpipe/hdlc.h)
+sdla_fr.o: sdla_fr.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+cosa.o: cosa.c \
+   syncppp.h \
+   cosa.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+dlci.o: dlci.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dlci/count.h)
+comx-proto-lapb.o: comx-proto-lapb.c \
+   comx.h \
+   comxhw.h
+sdla_ppp.o: sdla_ppp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+comx-hw-mixcom.o: comx-hw-mixcom.c \
+   comx.h \
+   mixcom.h \
+   hscx.h
+sdla_chdlc.o: sdla_chdlc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+comx-proto-fr.o: comx-proto-fr.c \
+   comx.h \
+   comxhw.h
+syncppp.o: syncppp.c \
+   syncppp.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ipx.h)
+.PRECIOUS:	comx.h \
+

@@ -1,0 +1,4 @@
+itree_v1.o: itree_v1.c \
+   itree_common.c
+itree_v2.o: itree_v2.c \
+   itree_common.c

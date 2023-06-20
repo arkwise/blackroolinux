@@ -1,0 +1,61 @@
+sunkbd.o: sunkbd.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   sunkbd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparc32/compat.h)
+pcikbd.o: pcikbd.c \
+   pcikbd.h \
+   sunserial.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/magic/sysrq.h)
+openprom.o: openprom.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+sunserial.o: sunserial.c \
+   sunserial.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sab82532.h)
+aurora.o: aurora.c \
+   aurora.h \
+   cd180.h
+vfc_dev.o: vfc_dev.c \
+   vfc.h
+sunserial.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+	@touch sunserial.h
+sab82532.o: sab82532.c \
+   sunserial.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+sunkbdmap.o: sunkbdmap.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   sunkeymap.c
+vfc_i2c.o: vfc_i2c.c \
+   vfc.h \
+   vfc_i2c.h
+flash.o: flash.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+su.o: su.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   sunserial.h \
+   sunkbd.h \
+   sunmouse.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hard/pps.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+zs.o: zs.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   sunserial.h \
+   zs.h \
+   sunkbd.h \
+   sunmouse.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/serial/console.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/devfs/fs.h)
+sunmouse.o: sunmouse.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparc32/compat.h)
+sunkbd.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+	@touch sunkbd.h
+envctrl.o: envctrl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h)
+.PRECIOUS:	sunserial.h \
+	sunkbd.h \
+

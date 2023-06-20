@@ -1,0 +1,2 @@
+eth.o: eth.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)

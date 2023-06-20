@@ -1,0 +1,85 @@
+iphase.o: iphase.c \
+   iphase.h \
+   suni.h
+zatm.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/zatm/exact/ts.h)
+	@touch zatm.h
+firestream.o: firestream.c \
+   firestream.h
+eni.h: \
+   midway.h
+	@touch eni.h
+fore200e.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e/sba.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e/pca.h)
+	@touch fore200e.h
+zatm.o: zatm.c \
+   uPD98401.h \
+   uPD98402.h \
+   zeprom.h \
+   zatm.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/zatm/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/zatm/exact/ts.h)
+eni.o: eni.c \
+   tonga.h \
+   midway.h \
+   suni.h \
+   eni.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/tune/burst.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/rx/16w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/rx/8w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/rx/4w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/rx/2w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/tx/16w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/tx/8w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/tx/4w.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/eni/burst/tx/2w.h)
+nicstar.o: nicstar.c \
+   nicstar.h \
+   nicstarmac.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/nicstar/use/suni.h) \
+   suni.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/nicstar/use/idt77105.h) \
+   idt77105.h \
+   nicstarmac.c
+fore200e.o: fore200e.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e/sba.h) \
+   fore200e.h \
+   suni.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e/pca.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e/tx/retry.h)
+idt77105.o: idt77105.c \
+   idt77105.h
+uPD98402.o: uPD98402.c \
+   uPD98402.h
+suni.o: suni.c \
+   suni.h
+ambassador.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/ambassador/debug.h)
+	@touch ambassador.h
+horizon.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/horizon/debug.h)
+	@touch horizon.h
+ambassador.o: ambassador.c \
+   ambassador.h
+horizon.o: horizon.c \
+   horizon.h
+iphase.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/ia/debug.h)
+	@touch iphase.h
+atmdev_init.o: atmdev_init.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/zatm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/nicstar.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/ambassador.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/horizon.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/ia.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atm/fore200e.h)
+.PRECIOUS:	zatm.h \
+	eni.h \
+	fore200e.h \
+	ambassador.h \
+	horizon.h \
+	iphase.h \
+

@@ -1,0 +1,68 @@
+dc2xx.o: dc2xx.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/debug.h)
+sl811h.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/sl811h/debug.h)
+	@touch sl811h.h
+usb-debug.o: usb-debug.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/debug.h)
+dabusb.o: dabusb.c \
+   dabusb.h \
+   dabfirmware.h
+hub.o: hub.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/debug.h) \
+   hub.h
+uhci-debug.h: \
+   uhci.h
+	@touch uhci-debug.h
+usb.o: usb.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/debug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/bandwidth.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hotplug.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/devicefs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+usb-ohci.o: usb-ohci.c \
+   usb-ohci.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pm.h)
+inode.o: inode.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+pegasus.o: pegasus.c \
+   pegasus.h \
+   pegasus.h \
+   pegasus.h
+usb-uhci.o: usb-uhci.c \
+   usb-uhci.h \
+   usb-uhci-debug.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/uhci/high/bandwidth.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pm.h)
+ibmcam.o: ibmcam.c \
+   ibmcam.h
+uhci.o: uhci.c \
+   uhci.h \
+   uhci-debug.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pm.h)
+ov511.o: ov511.c \
+   ov511.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/video/proc/fs.h)
+net1080.o: net1080.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/usb/debug.h)
+sl811h.o: sl811h.c \
+   sl811h.h
+microtek.o: microtek.c \
+   ../scsi/scsi.h \
+   ../scsi/hosts.h \
+   ../scsi/sd.h \
+   microtek.h
+hid.o: hid.c \
+   hid.h \
+   hid-debug.h
+rio500.o: rio500.c \
+   rio500_usb.h
+audio.o: audio.c \
+   audio.h
+scanner.o: scanner.c \
+   scanner.h
+.PRECIOUS:	sl811h.h \
+	uhci-debug.h \
+

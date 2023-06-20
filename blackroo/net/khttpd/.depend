@@ -1,0 +1,47 @@
+sysctl.o: sysctl.c \
+   prototypes.h
+datasending.o: datasending.c \
+   structure.h \
+   prototypes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/khttpd/numcpu.h)
+logging.o: logging.c \
+   structure.h \
+   prototypes.h
+waitheaders.o: waitheaders.c \
+   structure.h \
+   prototypes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/khttpd/numcpu.h)
+security.o: security.c \
+   sysctl.h \
+   security.h \
+   prototypes.h
+userspace.o: userspace.c \
+   structure.h \
+   prototypes.h \
+   sysctl.h
+accept.o: accept.c \
+   structure.h \
+   prototypes.h \
+   sysctl.h
+misc.o: misc.c \
+   structure.h \
+   prototypes.h
+main.o: main.c \
+   structure.h \
+   prototypes.h \
+   sysctl.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/khttpd/numcpu.h)
+prototypes.h: \
+   structure.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/khttpd/numcpu.h)
+	@touch prototypes.h
+sockets.o: sockets.c \
+   prototypes.h
+rfc_time.o: rfc_time.c \
+   prototypes.h
+rfc.o: rfc.c \
+   prototypes.h \
+   structure.h \
+   sysctl.h
+.PRECIOUS:	prototypes.h \
+

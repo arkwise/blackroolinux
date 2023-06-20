@@ -1,0 +1,231 @@
+ide-pci.o: ide-pci.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/aec62xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ali15x3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/amd7409.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cmd64x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cy82c693.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cs5530.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/hpt34x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/hpt366.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ns87415.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/opti621.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/osb4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/pdc202xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/piix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/rz1000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/sis5513.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/slc90e66.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/sl82c105.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/trm290.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/via82cxxx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idedma/auto.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+ide-tape.o: ide-tape.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idepci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+ide-cd.o: ide-cd.c \
+   ide-cd.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+trm290.o: trm290.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+ide-features.o: ide-features.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idedma/ivb.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dma/nonpci.h)
+ide-pmac.o: ide-pmac.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/pbook.h) \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma/pmac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pmac/idedma/auto.h)
+pdc202xx.o: pdc202xx.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pdc202xx/burst.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pdc202xx/master.h)
+ide_modes.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/modes.h)
+	@touch ide_modes.h
+ide-dma.o: ide-dma.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idedma/new/drive/listings.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/trm290.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma/timeout.h)
+qd6580.o: qd6580.c \
+   ide_modes.h
+rz1000.o: rz1000.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idepci.h)
+cmd640.o: cmd640.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cmd640/enhanced.h)
+ide-probe.o: ide-probe.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/eata/dma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/eata/pio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi/eata.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/pdc4030.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cmd640.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idepci/share/irq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/hd.h)
+cy82c693.o: cy82c693.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+ht6560b.o: ht6560b.c \
+   ide_modes.h
+ide-proc.o: ide-proc.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/aec62xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ali15x3.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/amd7409.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cmd64x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cs5530.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/hpt34x.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/hpt366.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/osb4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/pdc202xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/piix.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/sis5513.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/slc90e66.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/via82cxxx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idepci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h)
+amd7409.o: amd7409.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amd7409/override.h)
+cs5530.o: cs5530.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+macide.o: macide.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/mac/mediabay.h)
+icside.o: icside.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma/ics.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idedma/ics/auto.h)
+piix.o: piix.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/piix/tuning.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ia64.h)
+opti621.o: opti621.c \
+   ide_modes.h
+ns87415.o: ns87415.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+sl82c105.o: sl82c105.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/arch/netwinder.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mbx.h)
+osb4.o: osb4.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/smp.h)
+ide-disk.o: ide-disk.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/pdc4030.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idedisk/multi/mode.h)
+ali14xx.o: ali14xx.c \
+   ide_modes.h
+aec62xx.o: aec62xx.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/aec62xx/tuning.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+slc90e66.o: slc90e66.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+ide-geometry.o: ide-geometry.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/pdc4030.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h)
+gayle.o: gayle.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedoubler.h)
+hpt366.o: hpt366.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+alim15x3.o: alim15x3.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/wdc/ali15x3.h)
+umc8672.o: umc8672.c \
+   ide_modes.h
+via82cxxx.o: via82cxxx.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+sis5513.o: sis5513.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h)
+hpt34x.o: hpt34x.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/hpt34x/autodma.h)
+pdc4030.o: pdc4030.c \
+   pdc4030.h
+dtc2278.o: dtc2278.c \
+   ide_modes.h
+ide.o: ide.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idepci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/apus.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/hd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/atari.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/q40.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/idepci/share/irq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/isapnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/pdc4030.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/module.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/amiga.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/dma/nonpci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idecs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/dtc2278.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedoubler.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idescsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scsi.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ali14xx.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/umc8672.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/cmd640.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ht6560b.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/qd6580.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/4drives.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/rz1000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/pmac.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/icside.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide/rapide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/gayle.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/falcon/ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/mac/ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/q40ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/buddha.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isapnp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/ide.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedisk.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idecd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idetape.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idefloppy.h)
+cmd64x.o: cmd64x.c \
+   ide_modes.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h)
+ide-floppy.o: ide-floppy.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/idedma.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ppc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+.PRECIOUS:	ide_modes.h \
+

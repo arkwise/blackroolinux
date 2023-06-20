@@ -1,0 +1,11 @@
+capi.o: capi.c \
+   act2000.h \
+   capi.h
+module.o: module.c \
+   act2000.h \
+   act2000_isa.h \
+   capi.h
+act2000_isa.o: act2000_isa.c \
+   act2000.h \
+   act2000_isa.h \
+   capi.h

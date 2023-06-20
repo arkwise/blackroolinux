@@ -1,0 +1,33 @@
+dir.o: dir.c \
+   swab.h \
+   util.h
+namei.o: namei.c \
+   swab.h \
+   util.h
+cylinder.o: cylinder.c \
+   swab.h \
+   util.h
+inode.o: inode.c \
+   swab.h \
+   util.h
+super.o: super.c \
+   swab.h \
+   util.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ufs/fs/write.h)
+util.h: \
+   swab.h
+	@touch util.h
+truncate.o: truncate.c \
+   swab.h \
+   util.h
+util.o: util.c \
+   swab.h \
+   util.h
+ialloc.o: ialloc.c \
+   swab.h \
+   util.h
+balloc.o: balloc.c \
+   swab.h \
+   util.h
+.PRECIOUS:	util.h \
+

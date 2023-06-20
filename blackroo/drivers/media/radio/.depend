@@ -1,0 +1,25 @@
+radio-trust.o: radio-trust.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/trust/port.h)
+radio-sf16fmi.o: radio-sf16fmi.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/sf16fmi/port.h)
+radio-gemtek.o: radio-gemtek.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/gemtek/port.h)
+radio-aimslab.o: radio-aimslab.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/rtrack/port.h)
+radio-aztech.o: radio-aztech.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/aztech/port.h)
+radio-zoltrix.o: radio-zoltrix.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/zoltrix/port.h)
+radio-cadet.o: radio-cadet.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/cadet/port.h)
+radio-miropcm20.o: radio-miropcm20.c \
+   ../../sound/miroaci.h
+radio-typhoon.o: radio-typhoon.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/typhoon/port.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/typhoon/mutefreq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/typhoon/proc/fs.h)
+radio-terratec.o: radio-terratec.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/terratec/port.h)
+radio-rtrack2.o: radio-rtrack2.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/radio/rtrack2/port.h)

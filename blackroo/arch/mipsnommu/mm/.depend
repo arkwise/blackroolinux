@@ -1,0 +1,21 @@
+r4xx0.o: r4xx0.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/uncached.h)
+init.o: init.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/blk/dev/initrd.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sgi/ip22.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/isa.h)
+loadmmu.o: loadmmu.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r4x00.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r4300.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r5000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/nevada.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/mips32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r3000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r5432.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/rm7000.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/cpu/r10000.h)
+extable.o: extable.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/modules.h)
+mips32.o: mips32.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/mips/uncached.h)

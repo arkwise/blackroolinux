@@ -1,0 +1,6 @@
+pmap_clnt.o: pmap_clnt.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/root/nfs.h)
+sysctl.o: sysctl.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)
+sunrpc_syms.o: sunrpc_syms.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h)

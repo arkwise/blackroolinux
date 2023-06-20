@@ -1,0 +1,26 @@
+hdlcdrv.o: hdlcdrv.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/module.h)
+6pack.o: 6pack.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h)
+dmascc.o: dmascc.c \
+   z8530.h
+yam.o: yam.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/module.h) \
+   yam9600.h \
+   yam1200.h
+mkiss.o: mkiss.c \
+   mkiss.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/inet.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/module.h)
+bpqether.o: bpqether.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/module.h)
+baycom_epp.o: baycom_epp.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/ax25/module.h)
+scc.o: scc.c \
+   z8530.h \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/scc/trxecho.h)

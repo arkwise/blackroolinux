@@ -1,0 +1,23 @@
+dbri.o: dbri.c \
+   dbri.h \
+   ../../isdn/hisax/hisax.h \
+   ../../isdn/hisax/isdnl1.h
+cs4231.o: cs4231.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/pci.h) \
+   cs4231.h
+dmy.o: dmy.c \
+   dummy.h
+audio.o: audio.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparcaudio/amd7930.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparcaudio/dbri.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparcaudio/cs4231.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/sparcaudio/dummy.h)
+amd7930.o: amd7930.c \
+   amd7930.h \
+   ../../isdn/hisax/hisax.h \
+   ../../isdn/hisax/isdnl1.h
+dbri.h: \
+   cs4215.h
+	@touch dbri.h
+.PRECIOUS:	dbri.h \
+

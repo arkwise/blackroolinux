@@ -1,0 +1,2 @@
+icn.o: icn.c \
+   icn.h

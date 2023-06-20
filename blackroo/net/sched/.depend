@@ -1,0 +1,88 @@
+police.o: police.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/estimator.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_red.o: sch_red.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+cls_rsvp6.o: cls_rsvp6.c \
+   cls_rsvp.h
+cls_fw.o: cls_fw.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/netfilter.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_sfq.o: sch_sfq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_fifo.o: sch_fifo.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_generic.o: sch_generic.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sched.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/estimator.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/ingress.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/ingress/module.h)
+cls_route.o: cls_route.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_dsmark.o: sch_dsmark.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+cls_api.o: cls_api.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/u32.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/route4.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/fw.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/rsvp.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/tcindex.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/rsvp6.h)
+cls_u32.o: cls_u32.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_atm.o: sch_atm.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_cbq.o: sch_cbq.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/estimator.h)
+sch_tbf.o: sch_tbf.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_csz.o: sch_csz.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+cls_tcindex.o: cls_tcindex.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+sch_prio.o: sch_prio.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+cls_rsvp.o: cls_rsvp.c \
+   cls_rsvp.h
+sch_api.o: sch_api.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/kmod.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/estimator.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/proc/fs.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/cbq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/csz.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/hpfq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/hfsc.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/red.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/gred.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/ingress.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/dsmark.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/sfq.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/tbf.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/teql.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/prio.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/sch/atm.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls.h)
+sch_gred.o: sch_gred.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+cls_rsvp.h: \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+	@touch cls_rsvp.h
+sch_ingress.o: sch_ingress.c \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/net/cls/police.h) \
+   $(wildcard /home/chelson/blackroo/alpha3/include /config/rtnetlink.h)
+.PRECIOUS:	cls_rsvp.h \
+

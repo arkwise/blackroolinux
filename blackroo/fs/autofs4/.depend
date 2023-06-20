@@ -1,0 +1,12 @@
+init.o: init.c \
+   autofs_i.h
+symlink.o: symlink.c \
+   autofs_i.h
+inode.o: inode.c \
+   autofs_i.h
+waitq.o: waitq.c \
+   autofs_i.h
+expire.o: expire.c \
+   autofs_i.h
+root.o: root.c \
+   autofs_i.h

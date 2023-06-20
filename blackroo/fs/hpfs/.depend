@@ -1,0 +1,31 @@
+name.o: name.c \
+   hpfs_fn.h
+dir.o: dir.c \
+   hpfs_fn.h
+file.o: file.c \
+   hpfs_fn.h
+namei.o: namei.c \
+   hpfs_fn.h
+alloc.o: alloc.c \
+   hpfs_fn.h
+dnode.o: dnode.c \
+   hpfs_fn.h
+inode.o: inode.c \
+   hpfs_fn.h
+hpfs_fn.h: \
+   hpfs.h
+	@touch hpfs_fn.h
+super.o: super.c \
+   hpfs_fn.h
+buffer.o: buffer.c \
+   hpfs_fn.h
+ea.o: ea.c \
+   hpfs_fn.h
+map.o: map.c \
+   hpfs_fn.h
+anode.o: anode.c \
+   hpfs_fn.h
+dentry.o: dentry.c \
+   hpfs_fn.h
+.PRECIOUS:	hpfs_fn.h \
+
