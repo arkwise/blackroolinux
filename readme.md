@@ -1,20 +1,25 @@
 
 
-#  ____  _            _                      _ _                  
-# | __ )| | __ _  ___| | ___ __ ___   ___   | (_)_ __  _   ___  __
-# |  _ \| |/ _` |/ __| |/ / '__/ _ \ / _ \  | | | '_ \| | | \ \/ /
-# | |_) | | (_| | (__|   <| | | (_) | (_) | | | | | | | |_| |>  < 
-# |____/|_|\__,_|\___|_|\_\_|  \___/ \___/  |_|_|_| |_|\__,_/_/\_\ rev 0.2
-#                                                                 
+  ____  _            _                      _ _                  
+ | __ )| | __ _  ___| | ___ __ ___   ___   | (_)_ __  _   ___  __
+ |  _ \| |/ _` |/ __| |/ / '__/ _ \ / _ \  | | | '_ \| | | \ \/ /
+ | |_) | | (_| | (__|   <| | | (_) | (_) | | | | | | | |_| |>  < 
+ |____/|_|\__,_|\___|_|\_\_|  \___/ \___/  |_|_|_| |_|\__,_/_/\_\ rev 0.2
+
+
+# BLACKROO LINUX 
+
+                                                                 
 # 1 Intro
 # 2 Toolchain setup
 # 3 Building the alpha 3
 # 4 Kernel Conversion
 # 5 Initrd, RootFS & Ramdisk
+# 6 Boot, Root & Toot
 
- Developed by chelson aitcheson with the help of the PSX & Linux development community
+ Developed by chelson aitcheson with the help of the PSX & Linux development community and is a WIP. not everything is correct and we need help :)
 
-============================= What is Blackroo linux? ===========================
+
 
 
 #################
@@ -185,8 +190,90 @@ mkfs -t fat -i 8192 memcard.img
 
 techinically you get a fat12 drive i think but this might be a start as im pretty sure the ext2 format needs a bigger size that will work over raid
 
+while i tried this pushing it to a memory card resulted in a corrupt filesystem...so work needs to be done here
 
-1) make sure loopback block devices are configured into the kernel
- 2) create an empty file system of the appropriate size, e.g.
-    # dd if=/dev/zero of=initrd bs=300k count=1
-    # mke2fs -F -m0 initrd
+##########################
+# 5.1 the initrd of life #
+##########################
+
+so here is a "DRAFT" version of the initrd_maker.sh
+        
+ this will need to be used with the addinitrd program once you have created the ecoff then you need to bundle it into a PS EXE
+ 
+ "Usage: addinitrd <kernel> <initrd> <outfile>                                                                
+
+#!/bin/bash
+
+# Housekeeping...
+rm ‑f /tmp/ramdisk.img
+rm ‑f /tmp/ramdisk.img.gz
+
+# Ramdisk Constants
+RDSIZE=128
+BLKSIZE=8192
+
+# Create an empty ramdisk image
+dd if=/dev/zero of=/tmp/ramdisk.img bs=$BLKSIZE count=$RDSIZE
+
+# Make it an ext2 mountable file system
+/sbin/mke2fs ‑F ‑m 0 ‑b $BLKSIZE /tmp/ramdisk.img $RDSIZE
+
+# Mount it so that we can populate
+mount /tmp/ramdisk.img /mnt/initrd ‑t ext2 ‑o loop=/dev/loop0
+
+# Populate the filesystem (subdirectories)
+mkdir /mnt/initrd/bin
+mkdir /mnt/initrd/sys
+mkdir /mnt/initrd/dev
+mkdir /mnt/initrd/proc
+
+# Grab busybox and create the symbolic links
+pushd /mnt/initrd/bin
+cp /usr/local/src/busybox‑1.1.1/busybox .
+ln ‑s busybox ash
+ln ‑s busybox mount
+ln ‑s busybox echo
+ln ‑s busybox ls
+ln ‑s busybox cat
+ln ‑s busybox ps
+ln ‑s busybox dmesg
+ln ‑s busybox sysctl
+popd
+
+# Grab the necessary dev files
+cp ‑a /dev/console /mnt/initrd/dev
+cp ‑a /dev/ramdisk /mnt/initrd/dev
+cp ‑a /dev/ram0 /mnt/initrd/dev
+cp ‑a /dev/null /mnt/initrd/dev
+cp ‑a /dev/tty1 /mnt/initrd/dev
+cp ‑a /dev/tty2 /mnt/initrd/dev
+
+# Equate sbin with bin
+pushd /mnt/initrd
+ln ‑s bin sbin
+popd
+
+# Create the init file
+cat >> /mnt/initrd/linuxrc << EOF
+#!/bin/ash
+echo
+echo "Simple initrd is active"
+echo
+mount ‑t proc /proc /proc
+mount ‑t sysfs none /sys
+/bin/ash ‑‑login
+EOF
+
+chmod +x /mnt/initrd/linuxrc
+
+# Finish up...
+umount /mnt/initrd
+gzip ‑9 /tmp/ramdisk.img
+cp /tmp/ramdisk.img.gz /boot/ramdisk.img.gz
+
+
+##########################
+# 6.0 the boot, root and toot #
+##########################
+
+well.. this part is still to be done at this point
